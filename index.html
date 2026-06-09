@@ -1,0 +1,4208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Elavate Your Style</title>
+  <a href="index.html">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="TemplatesJungle">
+  <meta name="keywords" content="ecommerce,fashion,store">
+  <meta name="description" content="Bootstrap 5 Fashion Store HTML CSS Template">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="homepage">
+    <defs>
+      <symbol xmlns="images/main-logo.png" id="instagram" viewBox="0 0 15 15">
+        <path fill="none" stroke="red"
+          d="M11 3.5h1M4.5.5h6a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4Zm3 10a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="facebook" viewBox="0 0 15 15">
+        <path fill="none" stroke="red"
+          d="M7.5 14.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Zm0 0v-8a2 2 0 0 1 2-2h.5m-5 4h5" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="twitter" viewBox="0 0 15 15">
+        <path fill="red"
+          d="m14.478 1.5l.5-.033a.5.5 0 0 0-.871-.301l.371.334Zm-.498 2.959a.5.5 0 1 0-1 0h1Zm-6.49.082h-.5h.5Zm0 .959h.5h-.5Zm-6.99 7V12a.5.5 0 0 0-.278.916L.5 12.5Zm.998-11l.469-.175a.5.5 0 0 0-.916-.048l.447.223Zm3.994 9l.354.353a.5.5 0 0 0-.195-.827l-.159.474Zm7.224-8.027l-.37.336l.18.199l.265-.04l-.075-.495Zm1.264-.94c.051.778.003 1.25-.123 1.606c-.122.345-.336.629-.723 1l.692.722c.438-.42.776-.832.974-1.388c.193-.546.232-1.178.177-2.006l-.998.066Zm0 3.654V4.46h-1v.728h1Zm-6.99-.646V5.5h1v-.959h-1Zm0 .959V6h1v-.5h-1ZM10.525 1a3.539 3.539 0 0 0-3.537 3.541h1A2.539 2.539 0 0 1 10.526 2V1Zm2.454 4.187C12.98 9.503 9.487 13 5.18 13v1c4.86 0 8.8-3.946 8.8-8.813h-1ZM1.03 1.675C1.574 3.127 3.614 6 7.49 6V5C4.174 5 2.421 2.54 1.966 1.325l-.937.35Zm.021-.398C.004 3.373-.157 5.407.604 7.139c.759 1.727 2.392 3.055 4.73 3.835l.317-.948c-2.155-.72-3.518-1.892-4.132-3.29c-.612-1.393-.523-3.11.427-5.013l-.895-.446Zm4.087 8.87C4.536 10.75 2.726 12 .5 12v1c2.566 0 4.617-1.416 5.346-2.147l-.708-.706Zm7.949-8.009A3.445 3.445 0 0 0 10.526 1v1c.721 0 1.37.311 1.82.809l.74-.671Zm-.296.83a3.513 3.513 0 0 0 2.06-1.134l-.744-.668a2.514 2.514 0 0 1-1.466.813l.15.989ZM.222 12.916C1.863 14.01 3.583 14 5.18 14v-1c-1.63 0-3.048-.011-4.402-.916l-.556.832Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="pinterest" viewBox="0 0 15 15">
+        <path fill="none" stroke="red"
+          d="m4.5 13.5l3-7m-3.236 3a2.989 2.989 0 0 1-.764-2V7A3.5 3.5 0 0 1 7 3.5h1A3.5 3.5 0 0 1 11.5 7v.5a3 3 0 0 1-3 3a2.081 2.081 0 0 1-1.974-1.423L6.5 9m1 5.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="youtube" viewBox="0 0 15 15">
+        <path fill="red"
+          d="m1.61 12.738l-.104.489l.105-.489Zm11.78 0l.104.489l-.105-.489Zm0-10.476l.104-.489l-.105.489Zm-11.78 0l.106.489l-.105-.489ZM6.5 5.5l.277-.416A.5.5 0 0 0 6 5.5h.5Zm0 4H6a.5.5 0 0 0 .777.416L6.5 9.5Zm3-2l.277.416a.5.5 0 0 0 0-.832L9.5 7.5ZM0 3.636v7.728h1V3.636H0Zm15 7.728V3.636h-1v7.728h1ZM1.506 13.227c3.951.847 8.037.847 11.988 0l-.21-.978a27.605 27.605 0 0 1-11.568 0l-.21.978ZM13.494 1.773a28.606 28.606 0 0 0-11.988 0l.21.978a27.607 27.607 0 0 1 11.568 0l.21-.978ZM15 3.636c0-.898-.628-1.675-1.506-1.863l-.21.978c.418.09.716.458.716.885h1Zm-1 7.728a.905.905 0 0 1-.716.885l.21.978A1.905 1.905 0 0 0 15 11.364h-1Zm-14 0c0 .898.628 1.675 1.506 1.863l.21-.978A.905.905 0 0 1 1 11.364H0Zm1-7.728c0-.427.298-.796.716-.885l-.21-.978A1.905 1.905 0 0 0 0 3.636h1ZM6 5.5v4h1v-4H6Zm.777 4.416l3-2l-.554-.832l-3 2l.554.832Zm3-2.832l-3-2l-.554.832l3 2l.554-.832Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="dribble" viewBox="0 0 15 15">
+        <path fill="none" stroke="red" stroke-linecap="round" stroke-linejoin="round"
+          d="M4.839 1.024c3.346 4.041 5.096 7.922 5.704 12.782M.533 6.82c5.985-.138 9.402-1.083 11.97-4.216M2.7 12.594c3.221-4.902 7.171-5.65 11.755-4.293M14.5 7.5a7 7 0 1 0-14 0a7 7 0 0 0 14 0Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="calendar" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <rect width="20" height="18" x="2" y="4" rx="4" />
+          <path d="M8 2v4m8-4v4M2 10h20" />
+        </g>
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="shopping-bag" viewBox="0 0 24 24">
+        <g fill="none" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path
+            d="M3.977 9.84A2 2 0 0 1 5.971 8h12.058a2 2 0 0 1 1.994 1.84l.803 10A2 2 0 0 1 18.833 22H5.167a2 2 0 0 1-1.993-2.16l.803-10Z" />
+          <path d="M16 11V6a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v5" />
+        </g>
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="gift" viewBox="0 0 24 24">
+        <g fill="none" stroke="redr" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <rect width="18" height="14" x="3" y="8" rx="2" />
+          <path d="M12 5a3 3 0 1 0-3 3m6 0a3 3 0 1 0-3-3m0 0v17m9-7H3" />
+        </g>
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="arrow-cycle" viewBox="0 0 24 24">
+        <g fill="none" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path
+            d="M22 12c0 6-4.39 10-9.806 10C7.792 22 4.24 19.665 3 16m-1-4C2 6 6.39 2 11.806 2C16.209 2 19.76 4.335 21 8" />
+          <path d="m7 17l-4-1l-1 4M17 7l4 1l1-4" />
+        </g>
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="link" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="arrow-left" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M17 11H9.41l3.3-3.29a1 1 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33a1 1 0 0 0 0 .76a1 1 0 0 0 .21.33l5 5a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L9.41 13H17a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="arrow-right" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="play" viewBox="0 0 24 24">
+        <g fill="none" fill-rule="evenodd">
+          <path
+            d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z" />
+          <path fill="red"
+            d="M5.669 4.76a1.469 1.469 0 0 1 2.04-1.177c1.062.454 3.442 1.533 6.462 3.276c3.021 1.744 5.146 3.267 6.069 3.958c.788.591.79 1.763.001 2.356c-.914.687-3.013 2.19-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28c-.906.387-1.92-.2-2.038-1.177c-.138-1.142-.396-3.735-.396-7.237c0-3.5.257-6.092.396-7.235Z" />
+        </g>
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="category" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="calendar" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="heart" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="plus" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="minus" viewBox="0 0 24 24">
+        <path fill="red" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="cart" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="check" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="trash" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="star-outline" viewBox="0 0 15 15">
+        <path fill="none" stroke="red" stroke-linecap="round" stroke-linejoin="round"
+          d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="star-solid" viewBox="0 0 15 15">
+        <path fill="red"
+          d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="search" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="user" viewBox="0 0 24 24">
+        <path fill="red"
+          d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z" />
+      </symbol>
+      <symbol xmlns="images/main-logo.png" id="close" viewBox="0 0 15 15">
+        <path fill="red"
+          d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
+
+  <div class="search-popup">
+    <div class="search-popup-container">
+
+      <form role="search" method="get" class="form-group" action="">
+        <input type="search" id="search-form" class="form-control border-0 border-bottom"
+          placeholder="Type and press enter" value="" name="s" />
+        <button type="submit" class="search-submit border-0 position-absolute bg-white"
+          style="top: 15px;right: 15px;"><svg class="search" width="24" height="24">
+            <use xlink:href="#search"></use>
+          </svg></button>
+      </form>
+
+      <h5 class="cat-list-title">Browse Categories</h5>
+
+      <ul class="cat-list">
+        <li class="cat-list-item">
+          <a href="#" title="Jackets">Jackets</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="#" title="T-shirts">T-shirts</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="#" title="Jeans">Jeans</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="#" title="Accessories">Accessories</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="#" title="casuals">casuals</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="#" title="Dresses">Dresses</a>
+        </li>
+        <li class="cat-list-item">
+          <a href="#" title="Ethnics">Ethnics</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Your cart</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Growers cider</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Fresh grapes</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Heinz tomato ketchup</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+          </li>
+        </ul>
+
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center w-100">
+
+        <div class="col-auto">
+          <a class="navbar-brand text-white" href="index.html">
+            <img src="images/main-logo.png"alt="logo height="300">
+            <svg width="300" height="200" viewBox="0 0 300 200" xmlns="images/main-logo.png" fill="#111">
+              <path
+                d="8950 4e47 0d0a 1a0a 0000 000d 4948 4452
+0000 01d3 0000 00bc 0802 0000 00ac 49d3
+c100 0000 0970 4859 7300 002e 2300 002e
+2301 78a5 3f76 0000 0a4f 6943 4350 5068
+6f74 6f73 686f 7020 4943 4320 7072 6f66
+696c 6500 0078 da9d 5367 5453 e916 3df7
+def4 424b 8880 944b 6f52 1508 2052 428b
+8014 9126 2a21 0910 4a88 21a1 d915 51c1
+1145 4504 1bc8 a088 038e 8e80 8c15 512c
+0c8a 0ad8 07e4 21a2 8e83 a388 8aca fbe1
+7ba3 6bd6 bcf7 e6cd feb5 d73e e7ac f39d
+b3cf 07c0 080c 9648 3351 3580 0ca9 421e
+11e0 83c7 c4c6 e1e4 2e40 810a 2470 0010
+08b3 6421 73fd 2301 00f8 7e3c 3c2b 22c0
+07be 0001 78d3 0b08 00c0 4d9b c030 1c87
+ff0f ea42 995c 0180 8401 c074 9138 4b08
+8014 0040 7a8e 42a6 0040 4601 809d 9826
+5300 a004 0060 cb63 62e3 0050 2d00 6027
+7fe6 d300 809d f899 7b01 005b 9421 1501
+a091 0020 1365 8844 0068 3b00 accf 568a
+4500 5830 0014 664b c439 00d8 2d00 3049
+5766 4800 b0b7 00c0 ce10 0bb2 0008 0c00
+3051 8885 2900 047b 0060 c823 2378 0084
+9900 1446 f257 3cf1 2bae 10e7 2a00 0078
+99b2 3cb9 2439 4581 5b08 2d71 0757 572e
+1e28 ce49 172b 1436 6102 619a 402e c279
+9919 3281 340f e0f3 cc00 00a0 9115 11e0
+83f3 fd78 ce0e aece ce36 8eb6 0e5f 2dea
+bf06 ff22 6262 e3fe e5cf ab70 4000 00e1
+747e d1fe 2c2f b31a 803b 0680 6dfe a225
+ee04 685e 0ba0 75f7 8b66 b20f 40b5 00a0
+e9da 57f3 70f8 7e3c 3c45 a190 b9d9 d9e5
+e4e4 d84a c442 5b61 ca57 7dfe 67c2 5fc0
+57fd 6cf9 7e3c fcf7 f5e0 bee2 2481 325d
+8147 04f8 e0c2 ccf4 4ca5 1ccf 9209 8462
+dce6 8f47 fcb7 0bff fc1d d322 c449 62b9
+582a 14e3 5112 718e 449a 8cf3 32a5 2289
+4292 29c5 25d2 ff64 e2df 2cfb 033e df35
+00b0 6a3e 017b 912d a85d 6303 f64b 2710
+5874 c0e2 f700 00f2 bb6f c1d4 2808 0380
+6883 e1cf 77ff ef3f fd47 a025 0080 6649
+9271 0000 5e44 242e 54ca b33f c708 0000
+44a0 812a b041 1bf4 c118 2cc0 061c c105
+dcc1 0bfc 6036 8442 24c4 c242 1042 0a64
+801c 7260 29ac 8242 2886 cdb0 1d2a 602f
+d440 1d34 c051 6886 9370 0e2e c255 b80e
+3d70 0ffa 6108 9ec1 28bc 8109 0441 c808
+1361 21da 8801 628a 5823 8e08 1799 85f8
+21c1 4804 128b 2420 c988 1451 224b 9135
+4831 528a 5420 5548 1df2 3d72 0239 875c
+46ba 913b c800 3282 fc86 bc47 3194 81b2
+513d d40c b543 b9a8 371a 8446 a20b d064
+7431 9a8f 16a0 9bd0 72b4 1a3d 8c36 a1e7
+d0ab 680f da8f 3e43 c730 c0e8 1807 33c4
+6c30 2ec6 c342 b138 2c09 9363 cbb1 22ac
+0cab c61a b056 ac03 bb89 f563 cfb1 7704
+1281 45c0 0936 0477 4220 611e 4148 584c
+584e d848 a820 1c24 3411 da09 3709 0384
+51c2 2722 93a8 4bb4 26ba 11f9 c418 6232
+3187 5848 2c23 d612 8f13 2f10 7b88 43c4
+3724 1289 4332 27b9 9002 49b1 a454 d212
+d246 d26e 5223 e92c a99b 3448 1a23 93c9
+da64 6bb2 0739 942c 202b c885 e49d e4c3
+e433 e41b e421 f25b 0a9d 6240 71a4 f853
+e228 52ca 6a4a 19e5 10e5 34e5 0665 9832
+4155 a39a 52dd a8a1 5411 358f 5a42 ada1
+b652 af51 87a8 1334 759a 39cd 8316 494b
+a5ad a295 d31a 6817 68f7 69af e874 ba11
+dd95 1e4e 97d0 57d2 cbe9 47e8 97e8 03f4
+770c 0d86 1583 c788 6728 199b 1807 1867
+1977 18af 984c a619 d38b 19c7 5430 3731
+eb98 e799 0f99 6f55 582a b62a 7c15 91ca
+0a95 4a95 2695 1b2a 2f54 a9aa a6aa deaa
+0b55 f355 cb54 8fa9 5e53 7dae 4655 3353
+e3a9 09d4 96ab 55aa 9d50 eb53 1b53 67a9
+3ba8 87aa 67a8 6f54 3fa4 7e59 fd89 0659
+c34c c34f 43a4 51a0 b15f e3bc c620 0b63
+19b3 782c 216b 0dab 8675 8135 c426 b1cd
+d97c 762a bb98 fd1d bb8b 3daa a9a1 3943
+334a 3357 b352 f394 663f 07e3 9871 f89c
+744e 09e7 28a7 97f3 7e8a de14 ef29 e229
+1ba6 344c b931 655c 6baa 9697 9658 ab48
+ab51 ab47 ebbd 36ae eda7 9da6 bd45 bb59
+fb81 0e41 c74a 275c 2747 678f ce05 9de7
+53d9 53dd a70a a716 4d3d 3af5 ae2e aa6b
+a51b a1bb 4477 bf6e a7ee 989e be5e 809e
+4c6f a7de 79bd e7fa 1c7d 2ffd 54fd 6dfa
+a7f5 470c 5806 b30c 2406 db0c ce18 3cc5
+3571 6f3c 1d2f c7db f151 435d c340 43a5
+6195 6197 e184 91b9 d13c a3d5 468d 460f
+8c69 c65c e324 e36d c66d c6a3 2606 2621
+264b 4dea 4dee 9a52 4db9 a629 a63b 4c3b
+4cc7 cdcc cda2 cdd6 9935 9b3d 31d7 32e7
+9be7 9bd7 9bdf b760 5a78 5a2c b6a8 b6b8
+6549 b2e4 5aa6 59ee b6bc 6e85 5a39 59a5
+5855 5a5d b346 ad9d ad25 d6bb adbb a711
+a7b9 4e93 4eab 9ed6 67c3 b0f1 b6c9 b6a9
+b719 b0e5 d806 dbae b66d b67d 6167 6217
+67b7 c5ae c3ee 93bd 937d ba7d 8dfd 3d07
+0d87 d90e ab1d 5a1d 7e73 b472 143a 563a
+de9a ce9c ee3f 7dc5 f496 e92f 6758 cf10
+cfd8 33e3 b613 cb29 c469 9d53 9bd3 4767
+1767 b973 83f3 888b 894b 82cb 2e97 3e2e
+9b1b c6dd c8bd e44a 74f5 715d e17a d2f5
+9d9b b39b c2ed a8db afee 36ee 69ee 87dc
+9fcc 349f 299e 5933 73d0 c3c8 43e0 51e5
+d13f 0b9f 9530 6bdf ac7e 4f43 4f81 67b5
+e723 2f63 2f91 57ad d7b0 b7a5 77aa f761
+ef17 3ef6 3e72 9fe3 3ee3 3c37 de32 de59
+5fcc 37c0 b7c8 b7cb 4fc3 6f9e 5f85 df43
+7f23 ff64 ff7a ffd1 00a7 8025 0167 0389
+8141 815b 02fb f87a 7c21 bf8e 3f3a db65
+f6b2 d9ed 418c a0b9 4115 418f 82ad 82e5
+c1ad 2168 c8ec 90ad 21f7 e798 ce91 ce69
+0e85 507e e8d6 d007 61e6 618b c37e 0c27
+8587 8557 863f 8e70 8858 1ad1 3197 3577
+d1dc 4373 df44 fa44 9644 de9b 6731 4f39
+af2d 4a35 2a3e aa2e 6a3c da37 ba34 ba3f
+c62e 6659 ccd5 589d 5849 6c4b 1c39 2e2a
+ae36 6e6c bedf fced f387 e29d e20b e37b
+1798 2fc8 5d70 79a1 cec2 f485 a716 a92e
+122c 3a96 404c 884e 3894 f041 102a a816
+8c25 f213 7725 8e0a 79c2 1dc2 6722 2fd1
+36d1 88d8 435c 2a1e 4ef2 482a 4d7a 92ec
+91bc 3579 24c5 33a5 2ce5 b984 27a9 90bc
+4c0d 4cdd 9b3a 9e16 9a76 206d 323d 3abd
+3183 9291 9071 42aa 214d 93b6 67ea 67e6
+6676 cbac 6585 b2fe c56e 8bb7 2f1e 9507
+c96b b390 ac05 592d 0ab6 42a6 e854 5a28
+d72a 07b2 6765 5766 bfcd 89ca 3996 ab9e
+2bcd edcc b3ca db90 379c ef9f ffed 12c2
+12e1 92b6 a586 4b57 2d1d 58e6 bdac 6a39
+b23c 7179 db0a e315 052b 8656 06ac 3cb8
+8ab6 2a6d d54f abed 5797 ae7e bd26 7a4d
+6b81 5ec1 ca82 c1b5 016b eb0b 550a e585
+7deb dcd7 ed5d 4f58 2f59 dfb5 61fa 869d
+1b3e 1589 8aae 14db 1797 157f d828 dc78
+e51b 876f cabf 99dc 94b4 a9ab c4b9 64cf
+66d2 66e9 e6de 2d9e 5b0e 96aa 97e6 970e
+6e0d d9da b40d df56 b4ed f5f6 45db 2f97
+cd28 dbbb 83b6 43b9 a3bf 3cb8 bc65 a7c9
+cecd 3b3f 54a4 54f4 54fa 5436 eed2 ddb5
+61d7 f86e d1ee 1b7b bcf6 34ec d5db 5bbc
+f7fd 3ec9 bedb 5501 554d d566 d565 fb49
+fbb3 f73f ae89 aae9 f896 fb6d 5dad 4e6d
+71ed c703 d203 fd07 230e b6d7 b9d4 d51d
+d23d 5452 8fd6 2beb 470e c71f befe 9def
+772d 0d36 0d55 8d9c c6e2 2370 4479 e4e9
+f709 dff7 1e0d 3ada 768c 7bac e107 d31f
+761d 671d 2f6a 429a f29a 469b 539a fb5b
+625b ba4f cc3e d1d6 eade 7afc 47db 1f0f
+9c34 3c59 794a f354 c969 dae9 82d3 9367
+f2cf 8c9d 959d 7d7e 2ef9 dc60 dba2 b67b
+e763 cedf 6a0f 6fef ba10 74e1 d245 ff8b
+e73b bc3b ce5c f2b8 74f2 b2db e513 57b8
+579a af3a 5f6d ea74 ea3c fe93 d34f c7bb
+9cbb 9aae b95c 6bb9 ee7a bdb5 7b66 f7e9
+1b9e 37ce ddf4 bd79 f116 ffd6 d59e 393d
+ddbd f37a 6ff7 c5f7 f5df 16dd 7e72 27fd
+cecb bbd9 7727 eead bc4f bc5f f440 ed41
+d943 dd87 d53f 5bfe dcd8 efdc 7f6a c077
+a0f3 d1dc 47f7 0685 83cf fe91 f58f 0f43
+058f 998f cb86 0d86 eb9e 383e 3939 e23f
+72fd e9fc a743 cf64 cf26 9e17 fea2 fecb
+ae17 162f 7ef8 d5eb d7ce d198 d1a1 97f2
+9793 bf6d 7ca5 fdea c0eb 19af dbc6 c2c6
+1ebe c978 3331 5ef4 56fb edc1 77dc 771d
+efa3 df0f 4fe4 7c20 7f28 ff68 f9b1 f553
+d0a7 fb93 1993 93ff 0403 98f3 fc63 332d
+db00 0000 2063 4852 4d00 007a 2500 0080
+8300 00f9 ff00 0080 e900 0075 3000 00ea
+6000 003a 9800 0017 6f92 5fc5 4600 00a3
+1249 4441 5478 daec fd77 bc6d 5579 2e8e
+bfef 3bc6 9cab ec72 f6a9 7490 2e02 224d
+a488 34c1 022a 16ac 5862 8989 37a6 99dc
+98e4 a6de dc9b 9bdc dc34 6334 89bd c4c4
+8e88 200a 0a82 74a5 4847 3a9c c3a9 bbad
+32e7 18ef fbfd 63cc 35f6 5863 ccb5 cfd1
+98b0 fdfd d6f8 18b2 cfde abcc 55e6 33df
+f1bc cffb 3c78 c619 6728 a500 c05a 8b83
+c5cc 8828 22fe bf00 a094 1211 1171 b777
+cbfd 8999 4544 6b6d ad25 2277 b32c cbdc
+9f88 0800 8c31 00e0 7ef6 8fcf ccfe 41ac
+b54a 2922 f2b7 7437 0300 1171 3773 b771
+8fe6 0fd8 dd8c 88dc 6fdc 8ddd 3fdd c1b8
+bf1a 6388 c8df c55a 9b65 9988 1445 e17e
+ef0f c6fd e0ee e85e 9a7b 5277 c0cc acb5
+763f 8487 e70f d8df dd3d 9abb 1711 1151
+5996 fe1d 736f a07f 93c3 dbfb 1bf8 7fba
+d7ee ef52 fb83 7f13 fc6f fc0d a223 f1f7
+72cf eedf c3e8 8efe 61c3 430d ef18 1d46
+b4fc c147 0799 de6b d423 8477 f14f eddf
+2eff 50d1 5d6a 7fef ff74 dd45 7f08 e335
+5e4f f7d2 fe0b ad94 f270 109e 9cee 4bef
+ce6a 77fe 5b6b b5d6 2180 3ac8 73d0 e66e
+ef61 da23 9703 410f 8eee 91dd 938a 0811
+f9bb 3808 8bc0 2e04 cd10 98fc e9ed 81c9
+9fa8 fe55 8430 ea9e d4bd c6b2 2cc3 17eb
+9ed7 6390 fb41 6bed ae04 feaa e331 dd3d
+8e7b 4ffc 937a 1009 01c2 23b8 7f81 feaf
+fe37 fe67 7f21 89d0 d95f b422 740b 61d4
+5a1b a158 04e8 212a 8550 9b82 66f4 20fe
+98d3 e7ad 85cb f44d 48bf 51b5 771f 7584
+d12d fd23 446f c828 dc1f aff1 5aa1 c8eb
+feed 6b22 0f2e be82 33c6 f86a d7c3 93c3
+3b07 9afe 9c71 f7f5 f5a6 474f 77b6 b882
+d157 a0ee e9c2 f2cd fd6c 8cf1 8f19 56ca
+0ec2 1cb8 2ba5 5c15 1c42 9bbf 99bf 60f8
+57eb 6b5b ffec 0e53 4244 88ea 7d7f 83f0
+f57a c075 85b3 fb8d 3126 cb32 7783 1498
+4204 f4af d1bd 15ee 71c2 e38c 6a37 ff43
+f836 4600 9796 84cb e351 f4ea 6aa1 337c
+9608 fe76 8a6b d166 a516 cd7f baaf 6cfa
+9686 8757 5bf0 865b b7f1 1aaf 1581 bc0e
+4f1d c2fa 13d8 1786 fe3b edd0 cd6f ab43
+9ec1 1798 ee41 c242 5829 5596 a5c3 6557
+261b 633c a43a 06c0 95b7 0e49 3df2 fae5
+6ee6 37e0 0eb8 adb5 51e5 eb8e d055 7cfe
+f6e1 fe3a 7c46 ffea dc43 7952 222a 99fd
+c1f8 82d4 ffe0 9ecb bdd8 b22c b5d6 e171
+fa52 dd5f b7fc 3b16 f218 1ef2 fc7d c3cb
+4c44 0844 6ffb 329c 83af b2fd 0fb5 a568
+04e8 2130 452f 6414 fc45 c0e7 1f21 ba96
+871f 4778 c765 4aec 656a e114 6d6b 0be1
+e8f2 b00c 3b31 5ee3 f5f4 20af 430d 8747
+211c f84a d06f f37d 15ec b7b4 0e4f 3d5d
+eb37 ddee 5b5e 96a5 637b 43c2 347c 28f7
+8c5a 6bff 98e1 6d3c dcfb 22da ffd5 fdd3
+97db 610d ee0f dba3 8f3f eb3c d7e1 5659
+968e 750d a915 ff57 bfd9 f777 7747 185e
+63b2 2ccb b2cc 1d95 bfde 785c f0b4 6ff4
+801e 8c42 3a78 f96d 724a 62f8 ad49 4ac8
+8e62 3fd3 c7f1 b03b aad6 f6cc cf4f f1c5
+0a1f c47f 3a61 55fe b3fd 1e87 af3a 7d8d
+a3de 96f1 1aaf a70d 79c3 2a2c fc8e 3a90
+f2f4 abab e01c e710 eebb c39a 3724 583d
+25ea 30dd 5597 beed e640 30cf 7387 68ae
+780c 81cf 9fed e136 dcd3 14be 61e5 ebb5
+b0a8 f1b4 afe7 617d eb29 baa5 276d 7d7b
+d083 acc7 680f eb1e a36b 2bee 8804 08eb
+eb14 683c 5cfa 2b59 74d1 4a39 590f b521
+035e 4bb9 462d be10 9123 fc8d ead6 b026
+0dff 145d c36a 5988 14da a25a 38fc 76a5
+d5f7 ae00 f1a8 8e5c c824 a4a5 772d 228f
+d778 3dfd c8eb cab7 f064 0e4b b3f4 1c0e
+8b56 2f18 884e 5777 47ad b57f 040f a0d6
+5a63 8cfb 93ef 5c85 8f5c 7bfe 8488 e0fa
+7bd1 291d a146 5459 4728 0941 4731 ec6b
+f983 f18f 1f6e 8da3 e658 b477 f6a5 a8bf
+f038 ac0c 2be2 08fb 22c8 8e64 12ee bdf2
+3c6c 7861 83e1 ce95 3f86 b452 5ea6 428c
+f03d a21a d212 3522 a376 ba79 1f85 c83b
+6515 7e0a dab7 f660 c21e ecf8 3c1f af15
+87bc 4551 44db f390 67f4 05af 6324 42c5
+4208 1311 9dea cb55 df6e f220 e81f 5f29
+e5ca 6757 a379 f8f6 6014 fe26 94a0 f907
+f125 aa57 17f8 6d7e c478 fada 3352 0894
+65c9 cccd 66d3 d7ce be66 f442 0eff 68fe
+b5a7 6566 5880 fba2 d83d 42a8 1849 69d6
+90cb 76af 3abc 1e84 1291 5004 1221 66a8
+878b 0ac3 085e 9787 e6e8 e214 0271 0a6d
+ffd9 7096 1e70 7a3d 1845 92fc 67e0 fb78
+8dd7 cf18 793d 8d1b 9542 9ea1 f3a7 9f97
+1084 755f 48e0 7ac5 98db e947 5b42 57ea
+7a6d ac87 5d8f 711e 7f21 9010 846c 6358
+9785 bb60 4834 a791 0039 14c9 86da 61b7
+2260 4dd1 3f84 484f 2e47 4718 d692 a12e
+383c ce50 350c 41eb 3265 2dc2 4bda 2869
+6d88 f551 195e dbcb aa65 3cd2 0d7b f8cf
+680f 115e 4252 d44e 498f e8f1 d3df d742
+647a 8354 9990 bed8 f479 6b5b 91e3 fa77
+bc56 c8a2 e834 8ea6 271c 20fa f697 2fc7
+a2af 72c8 cffa 02cd ffd3 8188 d336 846d
+7757 b73a fec1 57a3 3458 1088 c97c ed1c
+118e 0ee5 3d4a 46e7 a43b 480f f1ee 78fc
+d007 00e4 791e cae6 4259 6e28 2f0b c9d3
+5090 505b 2d3a e546 a4a8 abdd d4fb 83f1
+579a 9028 77d7 39ff fb10 da52 1d48 6d41
+9d1e aaa7 2cd2 8d79 2a84 88d0 36a2 867f
+5242 e03f 4e38 d456 f4ff 6535 f878 8dd7
+cfb8 e68d 76eb 21a8 79d9 8047 0a5f b885
+5561 340a e1b4 0a21 3a7b 5ac0 6b1e c22a
+3bad a4fc 7dc3 5b7a 06c3 73a0 5e1d 1c92
+7d61 35ea 01c5 c39c 3fb0 88bf 0eaf 3430
+d04b f807 f497 9390 cdf0 5705 df6d 0bcb
+db74 6f9e f2aa a108 2fdc d487 f812 521c
+fec8 fd7b 3e0a 9560 b8e3 1752 49cb 805a
+04be fe73 4937 1669 876d 1707 3460 d746
+2776 5a0e 870a 9cf0 abb5 0c88 8744 cd78
+8dd7 4aa9 79a3 d3db 0f68 4130 7de0 4f39
+2f7b 087b 2f4e a8eb d0c4 cd86 0140 9665
+9152 353c 515d 35ea 0406 1e7d bc02 c143
+7cc4 5786 fd28 7f63 0fe2 e1a6 3e54 3584
+281f 920f 4e1c 168a d8fc 6c71 c8d8 8eda
+ae86 5c8d 670f bcf6 392a c0c3 8b8d a398
+fd4b 8878 edf4 d120 99fe 0a0f 206d 6785
+74d0 3242 daf0 c290 32d7 7ef3 f19f 449b
+ee0a ffb0 53b0 4e29 85e5 af2e e373 7ebc
+5644 cd9b 3206 5e57 1bce 77f9 89e1 90ee
+f45f 7437 be15 6e9f dde3 b892 cd9d c00e
+9dc3 1320 e228 a34e 4ed8 e68a 267a 2331
+462d 5247 8f13 890a c2e5 f981 b016 8ee4
+cc61 83cb cb15 460d ce86 42bd 50c2 15ea
+7cfd e5c1 97e1 21ad 9c96 b4b5 060e b0ac
+84a0 96fb 5e06 8f46 6d44 5211 58c8 c3a4
+75ee a89e 5ead 4e79 791c 4fcd 4322 be3e
+7df0 65e4 cce3 355e 2ba8 e60d e7a9 4219
+5324 b7f2 4817 b5d7 1c0a 783c f2ff 0cf7
+bcae 84f4 1bf3 a838 8d6a c6f0 7943 9a38
+1aca 0ab1 29b5 41f0 9707 8f71 7ef3 5edb
+8cf2 e7ad bb81 3f30 ffb6 447b de48 0112
+11d0 2181 1032 2da1 7784 7faf 7c81 1995
+aefe 2e5e bf1c 5d57 fe83 1093 3a27 449f
+f832 6572 7800 bb28 db5a 7e4a 6df9 0749
+8fa1 b612 df95 173b 5ee3 b552 9037 42c9
+704b ee09 cda8 33e3 c8dc b061 55cb 0046
+bf0c a70f c2ae 5d88 56ae ba0c d130 8272
+771b c70f 847c ab3f 48f7 4344 3bb8 aad6
+3d69 4467 479d a810 7f61 a0ee 4827 653d
+519b 8217 0084 9b83 b4ae f407 bcf4 e015
+adb1 44f8 8425 6778 518c 88e9 5459 55db
+708b d4be 11b9 948a 0176 1146 a377 b2f6
+3a14 e2fb 32b3 70d1 844b 2de6 a654 4ced
+8521 3500 1923 ef78 ad50 9ed7 a39b 9f91
+85a0 c316 d2ac 9175 8053 2c38 10f1 7b76
+af9f 75b8 5996 6504 6dde ecc6 a3a4 3f1a
+0fc7 513d e51e 1c06 1a61 8fa4 ee4f bea6
+f695 32d4 098f c289 8ff0 f586 f669 fe32
+6007 2b02 9710 4c6b bdc4 dcab 0e3d c342
+65de e0d8 1804 94d2 828c 04c8 c022 22d6
+5dcf c272 3234 e889 e8dd 513c 69c4 a544
+3c52 7895 0a35 2150 a770 581e b642 c669
+9491 d8a8 df84 438f e16f 5227 b665 5894
+5da4 926b 2f48 e335 5e4f 33cf ebcf a2f0
+64f6 c468 241a 8560 3637 9d7a f21a 0987
+209e 58f0 8eb1 a344 69a1 3142 646e 1b15
+e391 ff64 c44b a65e ba30 10cc 3a9e 3a34
+ed0d 85c9 a1f6 2bb2 248e 2e06 91ac 3832
+330b df34 18e1 d0e8 f609 0a80 c132 1831
+20a5 313a cb44 5b62 f7d8 fe6d 891e 391d
+de85 3aa3 9c10 f143 2b9f c80a c7b3 1fa9
+67db f2fb fdf0 d2e5 2662 9629 3c97 7984
+e837 d115 a216 6a6b df81 5aee b8d6 6172
+5cf9 8ed7 4aa9 79dd f8af 9b71 703b 6587
+9b7e a7ef 9981 08ef 3c0b 1912 02be 67e5
+fc68 5231 6ca8 6315 11af 8270 90ed 0be1
+d452 2034 534f eb50 bf42 3e3a 946a d56e
+f943 dbdf d0ee 3d02 2fef e70b 8196 ceb7
+e622 095a 2a24 f047 32b8 2f12 292b 96a5
+0483 65af 7fc2 f30e 6e68 40cc 9021 eadd
+79b9 052c 6b89 eb7f 1fb2 3711 891c d5ec
+5eba 503b 44b3 eb9b f465 ec71 e13f a7b5
+9582 f8b8 9e1d af9f 3fe4 f58c 6d64 e0ed
+695c 18ee 7a7b 38f3 a814 e282 9f0c f670
+e30b ea54 961f 6ad7 4209 7008 61e1 fe3a
+14ea 8647 e5d9 db48 801c fa58 d60a 6653
+8fb1 549f eb84 719e 9c0d 272f 22d1 5538
+6a11 122c 83b7 d469 efac b5ac dd63 82ea
+75ba eb56 eb5f 7be7 2b4e 386a bfb9 ee2c
+2a22 a4f0 8308 e9dd f475 452e 36d1 75c8
+f315 2194 470c 6f54 0ca6 9c3e d479 9987
+edbe c835 2daa 3a53 d55d 7a90 bbc8 0cd4
+3a75 d45e 1e6a 9f68 4cf5 8ed7 ca42 5ebf
+cdf7 2469 78ae 863a 074f 5ffa b182 b0f9
+1ede 266a bb85 25b3 7b58 ef26 9e56 9aae
+5e76 8fe0 7e86 40f4 1af2 18e1 9138 42d9
+3bff 862c 877f 8a50 1711 b207 b595 5a48
+8646 0a8d f0b5 f801 bcf0 f143 6be3 0005
+5084 1185 d916 8561 c15e bfec 2cce beee
+552f 5c3f c16f 7cf5 19ab 57e9 c21a 2044
+4416 0b41 111a 5e0e 2151 7dd5 96a8 9125
+7c34 c616 1a60 7a0d 4654 35d7 0a2d 5210
+dce9 fc42 ad0c 7999 231f b3b7 e3f5 ff17
+c81b 4aa6 c21a 219c d18a eabb 34d4 2064
+4ea3 c156 3f37 ecb4 ab21 711c 262c 84be
+62ee 4122 6957 58fa 8547 120e aa45 a771
+94b5 13cd 19fb 7f46 6ab6 d06c 2cb4 1ef6
+c482 e737 43cb b490 6c09 8bd3 60a6 9944
+88d9 8a30 8bed 959d addb 1f3f ebcc 63ce
+3beb c4ce 62ef e07d 56bf e7c2 f3fa 9db9
+beb5 962d 0203 0a0f 13b8 e184 77ad e024
+d212 a4af 2b52 e645 963d 2164 a7c3 1ae9
+6c71 ed6c cb32 4c6e 7ab3 54be 96aa 41a2
+a23b 02fd 5122 e571 793b 5e3f 0735 6f54
+1945 df7b 0731 d1b9 e46b 5bbf a50d 5db4
+438f 185f 4c85 77f7 d30d 8e0b 0ed5 54a1
+580d 46e4 51a6 362e d160 5bc8 8484 67b5
+bf06 d442 ccf2 1599 bf18 b862 dcfb 0e3b
+d7e0 1023 2264 0c0e 5844 8819 7bbd 8527
+9f78 f084 671f fc9b ef79 ad98 5901 2ae6
+e7cf 3deb d96f 78cd 699d d91d d608 30a1
+6510 e1d1 2ab1 08e6 427a 27c5 a051 5e65
+a99c 20dd d4bb d7bb 0c4b b0d3 b72e 8551
+d899 7fcd 7f06 7a2e af6c 1baf f1fa af5c
+6aff fdf7 87e1 e1ae 90a4 0bfb 54d1 3451
+98ce 9056 5bd1 3872 387a 10a9 be52 1d71
+3477 104e 7985 2169 98ec c723 f95a adbf
+5a94 f219 dd32 2cf4 2019 ebf2 84b5 7f21
+2195 1126 7586 7ccb e06d 292d 97a6 946e
+b7b7 71d3 e3a7 3df7 f0ff f5bb bfb8 668a
+6c51 1201 335b 2e8e 3bfa b07e af77 c3cd
+3f14 9567 2a47 4418 2676 6058 3891 8ec9
+4132 a9bc 7cc0 659a 7c1c e163 38fc bdfc
+045a ad1f f928 995a ba3b 81ba a0b6 e553
+3676 ddf9 37dc a5bd f30d a78f 4ffb f17a
+da97 7683 bf30 1cc6 e577 e5a1 4ab7 566a
+16ee ac23 73c8 c8d6 0486 6d27 2313 7118
+6e82 452e 3930 68d3 b902 330d d70a b1d8
+37dc 427e 394c 8087 c0e1 d7db b487 0adc
+28d2 d86b d1a2 23f4 ba8e e84a b034 d98c
+24c2 080c 2082 640d 6cdb bab5 343b defe
+9697 bce7 4de7 4eea a2e8 1782 8200 a532
+9a49 e6b6 befb 8da7 ad5f 33f5 8f9f bc78
+be53 b65b 538a 4884 0540 1010 dc91 0304
+191f 9078 c1d4 fae9 40dd c46d 5a60 a662
+2c27 7d71 eaba d434 1d86 c527 bb62 e35b
+9bd9 be2b 183a 2610 c6eb ffa7 90d7 47ac
+875d fb68 570e c1bc 7c18 3409 0061 d27b
+e427 1bea c0c2 ed6d 148c e68b cdb4 ede3
+1eaa 2c4b df91 f348 1756 9a5e d590 8a1f
+c23e bebf 90f8 4238 7c04 1faf 5914 4558
+d546 c20f 2f8c f321 cae1 2dfd 7b32 4022
+4601 116b 1816 7bfd 85f9 ad87 1db4 e157
+def5 ae93 8e3b b8ec 2e16 9605 c5bd 1ac5
+1a09 ac88 9d5f 78ed 8b9e 7bd8 c1fb fced
+c7be 7afb 5d8f 4f4e aecb 48a3 5820 05c8
+2216 4481 2c31 2ab5 a46a f4c2 239e 34bc
+4dad e92d 0c77 5623 a628 72b2 8fd2 e921
+49f0 4c19 86d4 5b79 5461 3eca 7528 da63
+8dba 9c44 8734 f6e7 1daf 95c5 3678 2915
+04c1 0d7e a71f a60e 8728 e6b9 c550 ac5a
+1b6a 1b56 bba9 eb42 a811 76a9 e9be 2fe7
+e9da 907c 88b0 7b54 aa98 7398 4c8b e230
+afc8 8f41 435d 9245 e8b3 13d9 f546 95a6
+3f24 7ff0 88e8 841a c076 76b1 37bb 63fb
+5eeb 277e f91d 2ffb ad5f 7bfd 41fb cc94
+dd05 0160 b100 5539 5bbd 1000 202c fa8b
+bbad 997c d1e9 276f d86d e6e1 c71e 796a
+eb76 450d a779 2022 1603 e0fa 753b b761
+1c95 433c ea2e a3f8 84c8 0033 1457 a40e
+e530 dae0 3c7d e4da fa77 99c2 f9a7 f3e4
+0d6f f9ce 379c 363e edc7 ebe9 47de 7df6
+d927 6cce 8428 03c3 5ee9 deae 3bbc 7f2a
+788a ce9f 2812 3862 5143 257f 049d e158
+5a44 4ad6 1e67 3843 e1f3 3753 2daa 2f78
+a384 3127 5408 0d30 7dc1 ebdf 9f10 6a23
+8b35 f7a2 ddd4 b12b 7bad b1f3 ddce f6f9
+6dbb ad9f 78db eb5f fcbb bf71 e149 c71d
+22fd beed 1b04 0014 0001 0090 60c3 2e22
+a490 48ac d16c 8f3a 64ff d34e 396a 7a55
+f6f0 e38f 6ddc be85 94ce 3023 2b02 22c3
+33c1 b5da 8394 4358 3e2c bd96 7008 29ec
+8849 af05 7748 9cd5 5215 44ca 532f 9353
+b953 739c 51c9 f6d1 a5c5 7f70 ef78 fd18
+79c7 6b05 20ef 7efb ede7 755a 5e35 e581
+d2cf b685 556d 74b6 d486 bc46 222d 2fad
+0ddd 2323 9582 3f8d b5d6 9e16 881a 6230
+2c45 0a77 91e1 d995 56c1 517b 7054 3f27
+4ca6 f0cd bdd4 b671 f04f 7f4d 72ec 368b
+000b 97c6 ccee 98dd b675 eb5e bbaf 7ac7
+9b5f f47b bff1 b6d3 4e3a 4241 bfec f7c4
+0a20 00b0 0856 b82b e06a 5e22 0266 0200
+c804 3480 ea96 9d16 d1b1 871f 72ea 29c7
+ae5b d57e e291 c79e d8b4 99b5 d24a 23a2
+b030 3302 8213 c00d 701c ea12 716a 1179
+178b 4418 9e9e a835 4aaf bd6f 04c7 a3aa
+da65 8adc 5d91 ebfe a442 8b31 f28e d78a
+e079 a36e 92ef 5085 1c42 d846 abed 6b45
+dd95 b06f 0641 d44d d8ef 8220 11c7 f7e5
+fc30 85af 4623 1f1f 9fe5 1ec6 0ea5 aca5
+52aa 288a 74b6 ca03 6b2a 2cf5 afc5 35af
+3ccd 12e5 7b06 5c07 00a0 0820 6a01 6028
+58d8 58d9 3abb a3d7 5938 ec80 3ddf 74c1
+6b5f 74e6 f16b 679a dd4e 6771 6e07 2008
+9090 0551 2840 688d 0088 45d6 8400 2404
+9aa9 04ce 0010 4004 0104 0b31 c5c2 b649
+056f 78c9 0967 9f74 d425 dfb9 e5e2 2bae
+7bec b1a7 b2d6 aa2c 6f29 1004 1164 000b
+a040 308d 2f1a 4508 d4ba acc1 0807 f1c8
+f021 fca1 360a 2fa5 1460 b43f 2f8c 0e85
+abb5 be5b 865d 19f5 d7d4 b06d bcc6 eb69
+46de 7453 e64a 543f c21b 5a52 8563 170e
+377d 06bb 0b77 a8f5 faf3 527c a702 4e75
+5130 1c75 130d b67a c330 18d8 dfd4 bad9
+ba44 8cb4 3c0f db6e 694f 0c02 459a fbc1
+77f3 42af 9f34 655d 29cd 0ccc 8c00 82cc
+16e6 762c 2c2e 6e3f f4e0 bd2f 7ce3 5bcf
+39f3 98d5 1359 afd3 5d5c 9893 8a5b 7045
+2e02 80a0 3009 990c 4514 41de 54bd 3e18
+1620 8540 08ee e207 1e82 d99a c585 ed53
+9ade 7cee f35e 72c6 d157 7dff 8e2f 5d72
+d5bd 0f3f de6c af6b 3633 0222 d028 c8c2
+2c9c 16b6 e165 ac76 0f0e a3db 5c3b 9d13
+4b45 14a1 0951 98a0 0c75 bab7 5d79 d8ff
+c81a b7d4 c66b 85b2 0d7b efbd 77ba d7f3
+6966 b515 4d58 6946 7e0e 9e5d 0d27 8cfd
+8043 94fb 9096 4591 6e09 46fb 0446 c1c0
+b0ac d035 3c99 232f 9b5a 0a22 bc0c a402
+5577 6562 765c 075b 36f3 7373 8bf3 db9f
+75f0 5eef 7dcf eb7f fb37 df74 dcb3 0f40
+6bfa bd2e 0a00 2811 0141 0174 3d34 0444
+0402 44e6 5643 2f74 f9df be70 e5cc 9aa9
+dd76 9b31 7dac a463 0ea1 7150 5c0b 1090
+1097 c57c 0bcd b30e d9e7 f453 8edb 7bf7
+f54f 3ef9 f8a6 4d5b 15e6 9a72 0103 18a7
+5812 c51a db48 76bd bc50 37f5 994c df90
+9423 0e13 4efd cfe9 c04b 0ab5 9109 4618
+24ba 53df f45d c171 f792 dff5 c6b1 9e77
+bc56 06cf 1b76 a29c e9f8 f25e 8811 0286
+aeaf a14c c217 59a1 954c edc8 6938 650b
+c3d9 624e 7be0 ead9 2878 d85d 1ec2 a847
+58d6 b43b 6af5 c070 8c50 4898 4473 b761
+8d3f 7867 5c96 5a7f 7e61 b6d3 9d7b d661
+7bff fa7b dff4 9bbf f6b6 e71e 7d18 94fd
+5eb7 1041 4141 1010 7674 3060 8501 ee47
+adb0 dd6e fff8 b1d9 f7ff e947 3ef0 c96f
+dc72 d3dd fbef bbd7 c107 ed0b 08c2 ec7c
+7304 5c17 ce61 2420 2008 940c 45bf a7a5
+78f6 e107 9d7e ea09 7bec 36b3 69e3 939b
+366f 3380 5a67 5855 d64b 9fcf a0ce 5ec2
+a088 afdf 456a f527 7232 4b33 3b46 31ec
+69a8 6574 a9f8 893a 6ccb 2ff7 418f b50d
+e3b5 2290 f719 cf78 060c 77a5 3c9d 1aa9
+88a2 a979 07b5 6eae d413 1491 8764 74ba
+46e7 7c38 f405 81f2 2c04 c4a8 5317 dae6
+46b6 e521 15e0 0f23 2ac0 61b4 516c 7486
+bbe2 3d24 8589 0804 05ac b1b6 5ff0 b6ed
+db16 16b6 1dfb 9c03 7ffb 37de f19b ef7d
+c791 87ed cfa6 ecf5 0b60 8384 288c 2203
+1cd4 033c d482 4cc8 53ad 2951 cdcf 7de9
+caff fe47 1fbe f98e 87f3 76f3 d18d dbaf
+beea fab9 dee2 a1cf 3c64 cdaa 2931 8500
+b094 c482 0000 1661 7031 4044 4240 2cfa
+1d82 fe91 873e e394 538e 5dbb 7e7a d393
+4f6c dabc ad04 453a 5360 15d0 a0ca 6600
+1800 ff28 5506 a4fd d2e5 0d71 4601 7478
+798e 4a5d 480c d26a 913d 74f2 5c66 86ed
+a766 1ec6 c83b 5e2b 856d 08fb fea1 334b
+aabd f73f d48a e77d 4a26 0c27 06a5 dd92
+5096 ebee ee10 3c1c 58f0 9c6c 8805 91c8
+2c94 6184 5708 4fe0 86e5 7324 474b 0b61
+efd6 160e 8010 1122 546e bcc8 fd7e 7fcb
+96ad 0b0b db4e 38fe 90df 7fff bb7f fdbd
+6f3b ece0 03d9 987e bfe3 1e06 c03a bd81
+0023 2810 0500 80cc 6001 a495 67cd d6aa
+eb7f f8e0 7fff a30f fcd3 27be d697 6c62
+ba9d 675a e759 b75b 5e7b c3dd d75c 7b4b
+ab35 79c8 c1cf 68b5 b529 4a60 1112 06c1
+aa80 4542 4200 0072 e667 b6bf d884 e288
+83f7 79fe c947 6dd8 30b9 f189 2736 6fde
+2a42 3acb 052d a1a0 2104 12e0 da79 8a10
+9522 a148 4a50 d456 a651 e199 d6d1 a9f3
+595a b146 011f 9068 c57e 2643 1063 e41d
+af95 b3f0 9453 4e49 4f89 d085 2bd4 b146
+2ace b03e 7515 6218 09ec b7e7 7ecc c9d3
+c7fe 31fd 2347 ee0d d179 5b9b d508 418e
+6f18 4494 c6e2 7ace 3a44 de94 a6a8 8416
+4436 a8d4 88d0 9812 008c 31b3 b373 28e6
+b9c7 1ff1 c637 bdec f453 8f6d 6479 6fb1
+6bcb 1249 8b94 9550 8cfb 20c2 6cc5 9608
+286c 044a 10d0 9a48 e9db ee78 f8a3 9ffd
+c697 2fbd 72b1 63a7 db6b 1596 6bd6 cc74
+0aee 967d 6d8b b91d 45d1 ef6a 55bc e0e4
+c3de fac6 f39e f79c 0332 30fd 7e61 4a61
+1000 6061 9020 aa52 4408 d05a 288c a24c
+9acd d95e f9dd 6b6f bdf8 f29b 1f7a 7c21
+6f34 1b8d 1c06 8897 5ad5 446f 75ed 2461
+54de 46f9 2050 37e8 e867 fc52 0e27 6de8
+a5df a868 fe70 a72b 1da1 5ebe 4ebf e1e2
+3f1e 9ff6 e3f5 f423 efc9 279f 1cd5 41a1
+4141 588d 8605 6678 ba46 8e0a ee36 6e84
+2c0c a974 9818 16a4 7e5f 1f76 f3bc f943
+4ac5 fa9b 8512 0837 beec 8e33 b4c5 092b
+7718 1148 1e46 0b87 ad21 3f9b cbcc 2cc6
+94e5 fcc2 7c23 cf4f 39f9 9837 5ff8 ca93
+9efb 1c45 d25f ec30 5b01 2b96 01b5 48e1
+9057 b80f 0222 56ac 2560 805e 9ee7 04cd
+1fde f6c0 c73e 77c9 172e faee b61d 8bad
+7643 111e b8ef 6e6f 79e3 39bb addf e7bf
+ffd9 878a a2f3 ce37 bdb8 df29 3ff5 afdf
+786a fb3c b36d e770 d629 47be e935 2f3c
+fe39 0766 20fd a260 11e6 256d 7505 64c2
+16ac b156 89e6 b2af 1436 2656 6d59 94ab
+aebf fdd2 cbaf 7ff0 d139 6a36 f35c 8b01
+57b9 87af 3d75 298b fe99 0e38 a4c6 49e1
+b530 b4e3 08c7 17a3 69e6 f083 083f a09d
+fa4c fe44 c89b 7a80 b81f aebb e80f c7a7
+fd78 3ded 4b47 5a5d 0f91 1eda 5cfd 5b0b
+6421 8af9 62d6 9bcb 8465 6fad d34a 64ad
+ebc7 79fd 2c43 6d1d 1406 34f8 933c d21a
+471b 614f d786 5667 00c0 6c97 d812 2424
+14cb 5698 0594 9065 bbd8 eb6c dbba 7572
+429f f3c2 e75f 78e1 05cf 3bfe 4802 5b74
+fba5 b10c 0204 c28e 5510 1105 6809 9101
+8005 9980 a4dd 6a59 dbba e1e6 3b3f f56f
+977d e9a2 2bb6 cf75 b2f6 74d6 54fb ec39
+73c1 cbcf 79e5 f927 1e76 c086 2bbe 7b6f
+afd3 61d3 db30 ad7f e1bd af3b f3cc e33f
+fac9 8bbe f1cd ebe7 17fa 177d fbf6 6f7f
+ef8e d34f 3af2 0daf 38fd b9c7 1d3c 91ab
+7eb7 d367 eb89 7540 8300 2880 804c 2c0a
+8554 b733 df44 79f9 e947 9ef1 dc23 be73
+fd5d 177d ebfb 0f3e ba39 cba7 f266 8bc0
+e6a4 0590 cb1e a0b2 4460 6d08 c169 291a
+35cd 22ac 84e1 78a1 dadd c932 d371 3018
+de09 d9f9 da14 28d8 59bc 5034 d80d c381
+a721 fb34 3ee7 c76b 4520 6f6d a26d 685b
+e387 d042 d7dd b0ca f075 62d8 9389 f2d6
+228f 0508 8267 c2ac a0f0 c40b cdc8 2111
+0f45 b16c 1107 1d8e c985 b999 7e24 2f1c
+4273 7733 d620 5739 c7c0 b66f 64f3 96a7
+a627 b357 bff2 8c0b dffc cae3 8e3e 42a1
+ea75 3b6c ad42 0218 0806 5c03 0c18 d0fd
+0f15 2842 cca6 1a25 c335 37de f1d1 8f7d
+e192 4baf d9be d0d7 4dad 1bf9 fefb ac7a
+f579 e75d f08a 33f7 dd63 7d51 cc75 e73b
+dd5e 5114 8598 b2e8 15fd eec2 b147 ee7d
+d4ff f9e5 f3cf 3bf5 e39f fcc6 d5d7 ddba
+d82d 2ebe f2b6 2bbf 77e7 a927 3ef3 c20b
+ce3c e198 43a7 b2bc b738 c762 1950 4409
+0800 3bbd 3457 c4ba 4586 defc 3665 ec8b
+4e39 f094 63f7 bff6 963b bf76 f98d 0f3d
+b14d 656d ce01 d03a ea17 0522 188b 1aa4
+b5e4 7eea aa13 5d89 d3d1 e19d 0ef5 a6ea
+94f4 963f 35cf bbcc 68f2 788d d7d3 86bc
+d16e 31fc 8a87 4e5d 1ebf 42ab 7227 f68a
+d466 5e4b 10c5 2284 34ae fbab 4fa9 f0db
+e7b0 ed06 752e 3611 b108 0059 96b9 1ca0
+f097 bed1 171e 5bc8 080f 7ee9 b6eb 16c5
+d57d 4484 20d2 eff6 41cb 3bde f1aa 0b5e
+79f6 339f 7980 5853 f6ba c65a 0612 41a9
+ac16 1cfe baf1 0741 b422 82a0 db13 9365
+c957 7cef c68f 7ffa cb97 5f7e 43b7 d76f
+4d4e afc9 9b7b 6e68 bfe6 1567 9fff 8ae7
+efb3 e7ba a2d7 2b3a 7316 206b 9191 c25a
+2355 1405 994e 51da de0b 4e38 e884 63de
+f3bd ebee faf4 bf7e f39a 1bee 2c41 7deb
+fb3f baee 967b 4e3e ee99 af7d e519 271e
+7368 33b3 7671 564a 8b94 010e 5e8e bb08
+5588 4a08 6c3a f3b9 e5b3 4f7c d629 c71d
+febd 1b7f 74c9 b76f b9ff d1ed 944f 341b
+2d0b 16c4 1269 485c 3552 3221 c2af 28a2
+34fa 7cd3 fdcd 284f c848 9752 5b90 4649
+28cb c36b 4449 8755 7314 9a37 5ee3 b552
+9037 dd8e 791a d47b 9285 3adf 883f 0dcd
+7442 8540 34e9 103e 260c 9b4c 3aa6 d8fb
+3dfa 6a37 12b4 8527 5bc8 4278 7638 0c03
+7644 709e e78e 770e c7e1 0000 9140 b8e2
+b249 753a 1d00 6834 f2b9 856d 279e f0ac
+3ffe fddf 90d2 743a 1d91 42a3 aa7b f708
+4010 0490 0955 b3d1 ec75 cb8b 2fbb ea63
+9ffa d255 dfbb b957 caf4 d4da f6aa d5fd
+d2ac 6af1 07ff fefd cf7d ce61 9dd9 1dfd
+c54e 09a2 9402 3628 084c 2e79 0204 0059
+b000 80b2 6b34 e259 a73c fbb4 138f bafc
+aadb fee7 fffd f8ec 5ca3 b07c e9b5 775d
+75c3 1d27 1ef7 ac57 9f7f da89 c7ec 3f91
+43bf 5f8a 0422 3022 70f9 1184 8c42 4a5b
+a64e 6751 119c 73f2 b34e 3af6 59df b9fe
+ae8b afb8 e1e1 27b7 ea46 ab95 e7c0 90e2
+e94e 6564 5182 94ef af86 c14b 918d 4ead
+1678 9972 38d4 80ff c783 24c2 6dd9 f89c
+1faf 1581 bc91 c514 d44d 22f9 8689 c738
+c705 873e e861 3e98 0741 ff75 f763 6fe1
+de3f ecc3 4486 380e 85bd a833 b4e5 4d2d
+1722 8631 4a78 0c0f 466b 0d42 2c8c e84c
+1a01 2003 9685 85b9 d9d9 6d7b efb9 7662
+66cd c64d db3a bd5e c66c bb73 a555 8e45
+1500 0605 c2c0 2ca4 1091 ab69 34d2 0859
+bb35 b7b0 f095 8bbe fdcf 1ffb c277 aeb9
+4565 ad99 99b5 935a 29a5 08b0 dfed 6648
+aba6 1add fe62 c10c 481a 1890 0401 4901
+2816 4606 0620 4206 0474 7f94 b2e8 1094
+679f fe9c 8f7e 7ab7 c5ce 9379 031b b92e
+7ac5 37bf 77e7 77ae ffd1 29c7 1dfa 8657
+9cfe bc63 0e6a 35a8 d7ed 0882 c2ea f52b
+3102 6289 0011 a91a c8e8 2d2e 22db 734e
+3ce4 e463 0ff9 de2d f75c f2dd db1e 7a6c
+5b2b 9bc8 b35c 842d 2001 3b17 1e37 f916
+e2e4 3265 66f8 b9fb 399a c8d2 2ccd 9ef0
+e81c 3ae5 a75e 68cb 90ce b5d5 6e94 7212
+55e5 63b6 61bc 561c f2a6 2ace 5a53 85c8
+2437 daf8 4741 b93e 29d2 9f66 0e7f fdd9
+e8d5 0e61 8e7a 746e fb64 5f08 668b fd2d
+fd35 c09f 6fa1 2f04 0cc7 880d 1a71 1691
+98c5 942c 2845 6f71 76c7 d63d f75a fbf6
+b7bc e575 6f78 f947 3ff1 ef1f fad0 e7cb
+d2da d20a 5840 4110 11d7 c712 0406 6000
+0420 02ab 28cb 2767 16e7 e7bf fca5 6f7d
+e89f 3efb bdeb 6e47 52ab 57af 6fb6 5a79
+9e57 4d27 6341 8c35 8a4b 50a8 8010 9c3d
+0e0a 3a04 17cb 6c95 9bb5 4054 4a83 2000
+2382 b0a0 60bf e892 c266 ab41 8899 d29a
+48e7 d4ed d96f 5f73 ff35 d7df 77ca f187
+5ef8 dad3 4e38 fae0 5cab 6271 de8a 4110
+814c c0a5 1713 22a3 80b8 2b9c 70b1 b863
+42d1 b927 1f72 faf3 8eba faa6 7b2e bdea
+d647 9f9c 55a8 d832 2935 d8d6 9048 78a9
+53b5 6017 e2a0 677b 6ab3 2c21 710d 8e76
+3051 cf60 f906 da4f 47f5 8e13 d8c6 6bc5
+216f c821 b8fd beaf 6dc3 c9b4 308d d857
+bbde be16 86f5 4351 1fdc 6bc5 521b 5caf
+4ff0 0666 5e67 1616 2fce efc6 33c2 fe8c
+f568 eee6 3822 e621 f270 6076 4e34 608c
+999f 9beb 7677 1c78 d05e bff4 ee77 bdec
+bc17 edb9 db3a c84c d9ef 9812 d8ba a0e2
+ea79 aa5e 1ca0 003b 8f47 006c 4d4c 2e2e
+1417 7df1 920f 7ff4 13d7 5f73 8715 3db3
+6ecd 44de ceb4 56b9 d25a 2b52 8050 4821
+0317 4744 2254 826e 9eb8 1a11 1e14 9415
+7b4c a440 218b c56a f857 5c10 90d6 5a2b
+c59a 4951 6e75 4373 bf91 778a feb7 afbf
+fbc6 5bef 79fe 0987 bffe 5567 1e73 c4be
+0d2a edc2 2210 5a24 e551 9210 4400 8118
+acce 0b22 d399 9b6a d973 9e7b d044 33ff
+97cf 7d73 fb7c a154 e6de 6ca5 1422 200e
+396c 4482 c274 ff51 3b6c 9606 2127 232a
+1829 2b96 a10b 76d1 091e 8605 82ff 71d4
+1eaf f1fa 4f41 de65 7ca9 2373 d530 63d8
+8b67 bdfa 3534 5808 1f27 4c30 f305 699a
+6b1b ea22 a2f8 48ef ed0b c198 7250 c3a2
+b536 cbb2 b45e f673 1c4a a9b2 2c1d 1162
+8c5d 58dc 3e3b b76d ff67 ec75 e16b dff0
+b297 9fb5 61b7 b5a6 d7eb ce6d 6d4d b501
+c84a e17a fee2 9d6b 96de 1104 81bc d1ec
+f5fa 9ffb dcd7 3ff2 b17f bfe9 e63b 4837
+56ad dba0 33ca 9552 3a23 d20e 50c9 b59b
+868c 7d11 c0b5 e604 5010 dc44 3280 33c5
+71f4 8510 0220 ba32 9b10 6c85 cb00 deb8
+d272 a655 9167 a81a dae4 59bf 5f7c fdaa
+3bbe 7bfd edcf 3bf6 59af 3fff ac63 0edb
+5b61 416c 5dc2 1b23 8a00 2010 220b 2097
+cdbc 5df0 f437 afb9 fb92 2b6e baef c959
+8106 0375 fb3d 02e3 0899 469e 132a 7717
+0010 016b 3945 c588 c68d baa3 21c8 a67e
+92d1 45ba 369c 7854 cdbb 2bee bdcb 3fda
+788d d7d3 8fbc 61e6 0204 730a 91cd 4d18
+28e9 c310 bd7e cbb9 2844 1205 cf11 8705
+7218 df1b 6689 873a 0708 5ad2 111c 6bad
+7d3d 1b36 73c2 384e 6fe0 1bca 21dc 2358
+6be7 16e7 f6dc 7dfa 777e ebed 2f3a f3e4
+b5ab 277a 9d85 cef6 cd44 0aaa e7cd 0040
+d832 0859 0b28 20e4 8c1d 0180 59e7 4dfd
+a3bb 7ffc 6bbf f9c7 dfbf eeb6 567b 6ad5
+ea0d 799e a306 a5b4 468d 0a58 5891 0240
+11b4 0ccc 504d 58b8 4346 2524 228c 2c08
+8444 5269 1144 0015 e644 c202 5001 32a3
+d528 8882 088a c849 0049 01b0 d299 0819
+b664 33bd 4039 75bb c5e5 57df 79c7 6df7
+fec3 5ffe da33 0fde c0bd 0eba 8b9c 0801
+b080 1083 d856 73e2 de47 673f f8c9 6fdc
+74c7 13a0 5a5a 434b f7f7 dc30 b5e7 ee6b
+67a6 5a42 f9f6 f9ce c6a7 b6ed d8b6 5822
+e53a d7d4 4014 042b a298 acaa 2c89 3114
+2086 90ea e4d8 d1c5 3bcd e84b b11b 9239
+9788 804a a778 96af 7f7f ba1b 8cd7 78fd
+d7d5 bce9 9732 35be f1d1 c261 2a5a 1899
+1e8e 5d44 62fb 90db 8dcc 777c 6ebc 2b99
+cbb2 7465 9d77 aa8c 228a a3b3 3adc 0587
+7d36 cf48 78d4 768f d6ef f567 b76d 79f7
+852f 7ae3 9bce 2fb7 3cd5 99df ee0e 4ad8
+0a23 0823 6005 7b02 280c 00c2 ee71 5cf9
+4bba d1bc e1a6 1f5e f9bd 1fec b5c7 9ecd
+665b 6ba5 b452 a496 0042 c897 b720 4ea7
+867e 8417 dcdb 0288 4820 0840 953a cd51
+1848 88ca 012d 38e4 1585 2c08 d5f6 dfbf
+0f5a 6be7 5ca6 0048 3781 904b 62b0 a79e
+fcec 030e d8c3 9a02 89d0 51d4 4284 5690
+90a9 3531 f98d efdd fd97 1ffc dae6 ed3d
+9dd3 8649 39f5 a423 ce3c f5f0 03f7 5ad3
+5298 2158 0123 b8d0 e9df f3f0 e66f 5f7b
+f7ad b7ff b88f a56a e404 1604 d092 507d
+57c0 eb5e a268 a8d0 0e69 541d 5aeb 11bc
+2b62 b231 8d30 5e3f c7c8 1b72 0261 2f2b
+1c12 73bf 0cb3 79c2 7898 28e5 210c e5f5
+1db9 90d5 f5cf edb9 6047 d1a6 d115 fe32
+106d 66bd f201 82d1 0948 ec60 a224 316b
+adb5 5cf4 cbb2 372b f35b 0a63 912a 1784
+8a54 102b 625d 7369 8017 9504 82c0 fd47
+4024 d3f9 6eeb 37b4 db93 799e 852f 2ad4
+265b cb08 64ad 2dcb 9299 4586 a274 5c15
+a850 13a9 cab4 575c db8e 2a5f 1c67 11e9
+dc25 3d11 3cd8 250c b921 a388 55b9 cd35
+f436 ecbe ea75 af39 a3a1 faa6 0000 2404
+eb84 0a92 01da f6d4 e4d7 bf79 fb1f fcbf
+cff7 0c36 323e e9b8 fdde f1c6 171d 79d0
+9e6c 177b 0b1d db83 8e58 0411 6bda c0cf
+3d6c ed71 47be e496 1f3d fe91 cf5c b671
+47bf d56e 0195 c44a 9880 20ca 4c0a b726
+e9fc 2e24 72ec 48d9 1df6 be22 d7ba 5a65
+31fc 2493 6ce3 355e 2bb7 c3e6 4e63 4fd1
+8681 4010 d81a 8470 2c22 4e21 eb8a dcda
+50de 70fc 2c85 6c9f 3c04 c3a2 a250 005f
+6b95 1d12 d061 5e46 aa7e 0b0d d81c 1962
+d816 a529 7b25 b0b5 52b8 fad4 8d54 b008
+8871 070b 9525 a387 3c91 8a8b b520 8614
+e479 a3d9 6c2a 45e1 0880 1f33 a90a 792b
+68fc e807 b956 da00 4410 8010 0551 b939
+880a 381c f0e2 8023 aeb0 9821 f1eb 1261
+00d4 5a59 8bc4 8860 098b f35e 7cd2 a1fb
+ef01 e53c a2a3 7706 2d3a a526 1aed 1b6e
+7ffc 4fff e10b a585 c926 bffe 6527 bdf5
+82b3 9ada 2cce cf22 a215 02c5 9a15 b8c9
+6796 b25b 0a6e 3cee 99ab f7f8 f5d7 fcd5
+07bf fce0 139d d6aa 56c5 450f 1bd8 8ff2
+d58d 7ee3 1de5 231b a670 7031 1245 ecb4
+edf6 13ad 3110 8fd7 8a5a 4bd8 1a65 6d39
+2cf6 ba5d 5fdc 797a 2195 0179 36d6 cbce
+42ee d557 bede 8fc6 3f0e 24e6 67e1 a46f
+e815 ebee 5b96 a567 96dd 637a 6e17 82a6
+7964 1083 88c2 0cc2 d65a b006 d970 b584
+9981 adb3 03ab 4463 0e8d c189 ab40 8405
+18a4 7097 00a5 48eb a5c1 0d22 4224 1170
+1d35 acc0 5494 2222 858a 06dd 2a44 2044
+8540 80c0 83df 5414 3320 a062 2220 3500
+0914 4420 02d7 8c5b d296 8875 ee12 822c
+6c58 badd ce21 fbef feea f34e 4336 4839
+2922 b084 8004 a058 e7b4 6947 f1bf feee
+0b8b 7d9a 99d4 6f7e d5f3 dff9 96b3 9aba
+cbb6 2f24 80a2 0014 2840 0252 4c5a 9406
+5204 d9e2 ecf6 f513 fd5f ffc5 f3d6 add6
+a65f 3256 0c46 e5d5 331c f933 3836 0eab
+dde8 b383 201a 0a86 4508 b53a 04af fc5d
+7208 1afc 7ed4 9071 2d5e efba 7bfa 788d
+d77f 11f2 467d 8fe8 cb1d a261 988c e98b
+4d9f 4de9 ef12 36ca fc83 bbdb 878d b8b0
+14f2 2724 0c0c 2a83 f487 aa2f 17f6 6a7c
+359d 6a21 a04e 3aca 1e62 4580 d022 1866
+cb3e f1c1 8a30 0803 6315 ff30 182d 7646
+8cde 9411 9841 8005 3c6c f864 2044 7287
+a675 8648 0e9a d04d 270f 740b e01e 1910
+9d8a 0187 6c13 1050 9004 9c2c 02dd e503
+892a 1c1f 840a ab4a 75eb ae07 c86c fb45
+07a5 fb9a 979f b1df deeb 1845 5053 2559
+2104 2634 adc6 cc87 3ff1 cd7b 1eda 34dd
+562f 7bd1 09bf f0a6 b3c9 f650 340a 9100
+5589 f5c0 e228 2044 e701 04a0 54c6 85d9
+6b46 ffd2 5b5e a2a1 2062 2421 c22a 773e
+f808 fc35 d8d3 f4d1 7534 bc16 4630 1db2
+4fb5 601a 0d62 d442 6d24 3b1b 57b8 e3b5
+d291 378d e00d eb8b 34b9 20fc 53e4 3bee
+adce bc5a c857 2be1 d47c 5893 fad3 cfdd
+32bc 71f8 a45e 5095 86fd 442d b530 8b08
+123b f601 105b 662b c262 ad58 2b6c 852d
+bb01 2ee1 01da 0e65 d72f 81f8 a0e0 f3c4
+6ed4 0064 6611 504a 69ad 95d2 5543 0d86
+b7e1 5855 bf44 e479 8d25 601a 2e15 2b22
+381e 0303 6b6d 5196 6509 bd85 b9e3 9e7d
+c08b 5ff8 bcb2 ec2a 9da1 2220 64ca 5167
+04b6 d598 bcfa fbf7 7ded b29b b346 fb88
+4376 7bfb 852f ca33 00c9 9114 5629 6d1e
+f890 aaf1 350c def9 cc74 178f 3b6c f713
+8e3b bcdb ed55 83ce 20fe 857b f577 c4e3
+2f23 3f88 be12 a981 7ada dd8d 5608 ca51
+6d1b d5b9 e36a 77bc 5628 f286 7aac 147f
+a3ce 49ad a03d f521 0bc3 78fc 0916 4e4f
+f83a d40b cefc 49e8 6728 6058 811f 5284
+61f2 5b54 b347 1577 d4ff 09cf f00a 48b9
+fa1f 80a4 3d77 87d3 e212 1dfc 5fa5 ba64
+f919 e840 9aaa 9452 4418 e24b 72e6 3b3a
+37a5 4469 09f1 02f8 f36f e9d2 3bc0 4b06
+e48b dd85 66ce 17be f6bc d553 0d00 4642
+d20a 1529 8da4 2c20 ccf6 f2bf fdd8 5717
+8a62 4d4b def4 aa33 765b d316 430a 8894
+200d 4a63 2204 5084 cd46 d66e 355a cd5c
+6b35 e8f6 01e8 bc2c 16cf 39f5 a886 82d0
+611d 82b1 c654 c050 bb6d 4ae9 a9f4 bb54
+5bb7 d68a c9a2 6e6d 9a13 585b 1a8f cff9
+f15a 111d b6c8 ae21 8a9f 0895 f0be a809
+cd16 6c60 f01a 0a8c c202 1686 3bda b531
+13be fd02 75d3 a591 3f6f aac9 afb5 ee0d
+6731 bc18 d913 1015 bd30 9035 8000 8871
+5a07 a8e6 8505 6040 1530 80db 8133 a330
+88eb 3116 5a67 2e0d 9308 437b 3666 43a4
+2c8a 6b97 551a 0544 7003 6508 2084 a8a5
+425b 0410 d75a 23c7 ed22 8170 7568 8408
+e81f 1f00 4829 1134 b65f 14c5 c2fc eccb
+ce3c eaa4 e30e b565 8748 b11b 4f46 5225
+2394 8df6 d417 be72 d30f ef7c 5069 7df4
+e1fb 9c74 fce1 6577 5103 1885 4419 1323
+5942 1425 bad9 98ef c23d f73c b565 fb0e
+9de9 7df7 9cd9 7d6d 1bd0 5a01 1429 8bf9
+03f7 5ab3 61fd aac7 362f 36b3 0c91 9c32
+ce0b b4c3 b9f0 5130 1a7d 136a 3137 fa70
+6b0d 9246 5dec 774a e98e 5568 e3b5 8290
+37ca a08c 4a8c 68b0 38a4 0b52 1501 0ccf
+95f9 ae9d 371e f38d ecc8 bcd1 9b46 4633
+c795 fff7 b010 b8f6 7c4e e5a2 a193 7760
+0e29 e878 57b6 20cc a0aa 5135 1100 1636
+2095 cecc 1d99 8095 6ac6 cc01 a400 5b04
+1ed8 f28a b54c e45e 9a1d 0454 42a5 1513
+46a2 6a8e 022a 81ef d291 0320 2800 0a79
+5e9f 1ac1 e2c4 be04 20c0 8008 ee82 3510
+6fa0 58b0 6c7b fd85 3553 faf5 af3a aba1
+cb7e c188 9e28 15a1 3ccb f4a6 6de6 b39f
+bf52 eb46 43c9 192f 38a6 9983 ed91 4511
+4040 854a b410 89d8 7cfa 92ab eef8 dc57
+af79 f491 ad5d 5332 ca86 99c9 334e 38f8
+552f 3d75 8fb5 1345 bf8b 1633 e4bd f75a
+7bff e35b 72ad 08dd 68c9 925c 37b2 641c
+556f 867d da68 2392 4264 e876 bffc 9738
+d217 d6c2 facf 2acc 6dbc c6eb 6783 bc30
+6cce 1b0d 4178 f082 40e4 1ba2 61a4 7088
+52dc fd7f a374 1677 03c7 087b 8fc1 88c2
+8b36 8f11 eca6 9eb0 d179 eee7 e202 7ad7
+29b5 b0a2 2a45 1ced 0120 20d6 55c3 215e
+58b6 0255 f62f bac4 4974 2316 e088 4ed7
+e982 aa6b e669 6bd7 6dc3 b22c ab07 5c52
+920d f7d3 86a0 2162 1ea0 1a15 0304 171e
+8c4b bb7b 6bba 25db 7edf f416 3ae7 9f7f
+e2b1 473f a3e8 f609 7241 b3b4 fbd6 aad9
+5ef5 f98f 7ff5 a1c7 7768 457b edde 3eee
+e803 4cd9 25d2 c006 5190 8480 0031 6f4f
+7ff2 7357 7fe0 a397 90ce f346 bb91 dbb2
+b49b b79a 4f7f ede6 3bef 7bf8 b7df fdea
+fdf6 9c2e 7a8a 18f6 dcb0 ca5a 03e8 8af6
+a1cb 73b8 e389 7e0f c376 0a51 0ad1 326d
+b114 9497 cf8d 8fea e534 6768 8cbc e3b5
+8278 de25 a019 3831 a6fd b4e8 cb1d 563a
+be87 16da a587 6d2e 07af 2133 eb7e 1912
+08a1 aa37 9cf4 0dcd 21fd 7dd3 c136 5f89
+a727 6a38 c451 e102 547d 3200 0160 1653
+b1b8 15cd 1070 17ce deab 6aaa b943 b32c
+1640 002c 4b85 e383 0e19 f876 933b c281
+e895 68f8 9a34 d4f9 7180 5b61 52e0 b28b
+5409 2cd0 07b6 fb9d 3212 8260 b9d8 5bdc
+7dfd e41b 5ff3 224d 201a 4523 921a f0ea
+d8cc 9b3f 7e74 f64b 175f 3339 336d a578
+e641 fbec b97e 0644 4009 2290 aa9e a539
+3973 f33d 9b3e fe6f 574e ad59 37b3 76a6
+d5ce 9b8d c654 7b6a 6aaa d99a 68dd fec0
+d60f 7cf2 b21d 9d9e 9020 f154 abed b40f
+ee90 fdbb ea3b 8dd1 7edf f545 7df8 484a
+17f8 eb6e 6d21 ec2f c0be bf1a 55b8 1147
+31ea 4b9b 8622 8fd7 783d fdc8 ebbe f7de
+e50b 021d 8fc3 3e0f 9dde 6b31 2d48 21e9
+5987 a662 a15e 224d a5f5 0d37 af54 0bf5
+b94b 4994 81ce 2c6a be85 7577 641a 0b81
+ec81 8898 ad80 f352 b0c2 2c6c 07ae 0ace
+47d1 8208 8853 8e31 3bb5 19b3 93e9 8258
+10eb a62d 0091 d95a 6b44 9614 c4a1 f4ad
+0250 a510 c10a 0ff1 0cf5 1d20 c700 f8ff
+1120 552c 0782 0bee 1100 ebc4 c796 fabd
+528a ee05 af3e e3b0 c3f6 35a5 a022 204b
+0840 2e2f 03b3 bcf1 897f fdc6 e6f9 5214
+11e1 6107 efdb 6c34 1195 8038 a023 4222
+666a 7cf6 cb57 61de 9c9a c81b 5a35 33d5
+cef3 56b3 a1db 8d46 aba9 f3f6 0db7 3e74
+d995 77e4 79db 5d19 2a1e 1c28 9a5b 4b37
+28fe 4a9c aac5 d301 99e5 fd73 53c2 21bc
+e2d6 aeb4 9b0a 3fbb a18c f11a af9f 01f2
+3a78 2d8a 22fd b2fa ed21 0452 b048 a1b9
+d4b9 1a86 ecda 0a25 daf7 4596 8fe1 c91c
+7948 8655 7638 d01c da32 444c 6218 21ec
+f5c8 6e1a 4d04 982d 544d 36ae 040c 6c98
+0d54 b52f 3358 0603 c0c2 15f8 3a34 06b6
+2004 884b 02b3 61ea c357 6702 501d 8073
+1e1b d0bb 8028 41d1 8b30 500e 230a 5651
+4302 2442 004a 7cff 1381 1421 a161 d3b3
+ddde 62ef 8883 f679 ddab 5e6c ad01 d20a
+320d 0a49 1011 c4b6 5bad 5bef 7efc e2cb
+6f69 4d4d 185b b455 beff 3376 4722 510a
+4101 1222 0920 697c f489 cd77 def5 f0c4
+542b d34d a573 9535 54a3 4119 3433 9d91
+d20a 0dd0 f76e bcab dfb5 8d7c 62be d323
+c4a5 2bd1 f0ac 8407 5faf 364b a3e3 3d75
+1b7e 4c21 7c87 6c55 a85d 09ef 9ec2 773a
+f616 ed30 60ac 6a18 af15 cb36 4092 0a1c
+1626 9e04 88a6 1b22 1567 04dc b542 a2c8
+dd3c fcc1 d7b6 9e6a 081b 6b69 6871 6d75
+93ee 34a3 131b 0064 49ba cbe2 b4bd 224e
+ad35 548e b144 7593 2faa 14a9 2ccb 820b
+c952 2156 1129 e143 0d24 c021 d13b aa59
+3480 e470 3f01 7e4f 608d edf4 0b44 fba6
+37bc 64bf 3dd6 18c3 a834 9242 a509 9502
+4d08 a21a fff2 a9af 7718 b436 8acb 460e
+bbed b6ce a119 bac9 3622 4054 59fe f063
+1b3b bd22 d359 b8a9 773f 6659 96e7 7996
+a9cd 9be7 b66e ef61 237f e889 4d59 9e39
+1548 f825 09e5 d829 14d6 eabd 527b a608
+3723 d60b 865d 9020 89e3 4b1b 6ee9 bb3a
+3edb c76b c521 af9f 0a83 612d 6d3a 8690
+5610 11ea f92a d87b 4842 60b0 e0a9 db70
+9b19 f2b9 433c 4820 fe85 c148 0504 463c
+697f 6654 f0d7 9242 b9ea 9eb9 c189 6aa4
+8285 7920 da1d d8f2 0e1a 715e eee0 421d
+2a74 4616 76cf 3090 9469 c7d8 4090 35b7
+f43e b0d3 4b0c 35a6 b062 1282 c623 543c
+0078 0f87 c15d dcf1 9465 692d 97dd ee73
+8e78 c68b 5ff4 fcd2 5852 1920 89fb 9f22
+543c 3931 fdad 2b6f bbe2 ea9b a627 1b64
+1918 750e cd96 0621 4242 42d2 448a 5021
+e97c c77c cf30 2292 70bc 5bf7 58dc 2fcb
+4ebf bfd0 83bb ef7f 4265 1956 9e6a 03bd
+4700 6afe f3f2 a2ec 947c 87e1 a08a a858
+4e39 d970 ee26 4cc5 4ed1 b9b6 f25d 46e8
+365e e3f5 3423 6fe4 a918 ce9b 4575 87df
+bf47 33a0 34bc a2e1 8ba8 25e2 0564 1ef4
+4329 6e4a d17a dd68 386f 9a86 6b85 1610
+9078 0254 a79c 5466 3828 e860 1784 4518
+c4a2 581c 14bd 8e1d 7044 7005 d1ae e4b7
+0ea2 5d95 c765 6998 9d65 f892 499b 9ba4
+183c 93d3 4e00 080d f3bb 4ea8 eb2a 655f
+007b 2b76 2224 4285 039f 1de7 5b09 22b6
+2cbb dd0e 71ff 2d6f 3c6f cdaa 6629 2550
+0031 4894 c142 811f fcc8 9790 2635 34d1
+e66c 0155 3516 37a8 fa09 892a bd32 6a44
+6276 82e2 25ac 7734 b0ce b4d2 5a84 5543
+5f77 d3dd 9bb7 2e64 2a23 a461 5fa1 d832
+d4f3 f8fe 3219 22ac d70e 469c 52da dd8d
+b095 02e7 8a5a be38 b2ac db95 5a78 bcc6
+ebe9 5a3a 3460 f42e aba1 f036 9ae2 8df6
+ddbe 60a9 9510 850e 0fbe 4516 49c1 c2c8
+99da d837 1818 eea4 8e82 9194 1846 58ae
+2c51 1c80 202e 2a42 980d b944 61c7 a288
+85a5 0747 6110 6bdd 8085 2502 1120 0461
+1001 0246 2147 bb22 12a1 2bf4 07b8 6099
+8d08 1021 320b 1866 764f ecca 6407 3802
+c0c0 0052 b1ae 6201 182b c1b1 884b 3476
+9198 4088 c222 a634 d694 7373 dbce 3cf5
+a873 ce3c a5e8 2f12 015b 2444 2606 0060
+68b7 663e fed5 efde 7edf a3eb d7ef e9ca
+6c06 3605 b125 a588 50b9 844d 6026 6002
+9c6a 37b5 76d6 100c e080 d2ba 0c64 2442
+2122 6a36 5a73 05fd eb97 bf9d 6719 310c
+8810 a92d 6053 4220 ea82 86b2 b348 91e6
+d3a7 a25e 5ced 5c5c f4c5 4b67 02a3 a261
+ccf3 8ed7 8a43 de68 0436 1a14 8e22 ada0
+6ece 22fa a1f6 0c8c 9a2d 614a 50a8 f10c
+238a fd5f 4310 f755 73d4 8e0b a3db 2018
+1d4e fada 1270 1d6c 6d25 ff92 80a6 f437
+ab86 2c9c eacc 7a33 5fd0 4a37 1a0d 6b98
+d956 ba04 ac5c c488 0091 a42a 9319 98a4
+30c0 4c5a 98cd c00b 8dc3 198a b834 732c
+8408 a265 c04c 379a 2ab3 a628 b3c6 fc62
+a795 c35b df78 6eb3 21bd 9e00 6608 2522
+1028 01c9 356c dedc fdc4 a72f 6e4e ad02
+42b0 d548 48af 5f74 7a7d 2796 20d2 2022
+c8ee 39d6 af9d ce35 3a5d 9c2c 5dea 9050
+1035 b305 e4a9 b553 175d f6fd 071f 9f6d
+4ecf 1056 3e42 be87 a9b5 ae4d 1281 e110
+20ff 2797 cce4 6828 171f 15ee a876 5187
+e0eb 83b4 a48d 84e1 6910 dcf8 9c1f af15
+c136 78a6 35c5 b510 8ea3 b686 dfda d77e
+cb43 0d59 ed3e 3142 e170 da38 942e 8414
+73da b90e c1d7 dbf4 c0b0 e838 141a 2f99
+352c 51cc 43dd 211e 668d 0793 170c 62c5
+96ce d2ac d241 0897 65e9 6037 3418 ca32
+1d96 f356 b0db 29d1 f65e fffa f3f6 d873
+f7a2 ecbb da76 8943 47a8 ed46 86da 8746
+53fd f2bb dea8 a12c 7afd a2db 39fd e4a3
+4f3f f998 b2e8 08aa caf1 0c08 4929 52ad
+a9b5 fffe d5ef dcff d8a6 76bb 8922 5e75
+db2f 8a4d 4f6d 4695 01a9 ca70 8234 9262
+53ee b5db daa9 c916 8ba9 0646 1089 5465
+9d83 4844 ad56 737e b1fc c18f 1ecb 2766
+68d8 f727 920c a6a8 17ba 6af8 d170 9f42
+ed68 eb48 7de8 bf42 eef6 a13a 25da c484
+fba7 68fc 3d94 c444 b83c ae7c c76b 0521
+6fa4 72f7 5567 e800 19f9 e77a edaa bf4d
+24c8 85a4 253d d4e6 1a16 dec2 4075 5f7b
+8e85 354b 24cf 8c80 2f04 6b7f 30c9 7321
+8830 1bb6 d6b9 3788 e310 a012 fa86 552f
+783d af53 9a39 c204 4498 0786 8f18 f22a
+45d1 37c6 b248 69ac b558 748b cec2 d677
+bcfd fc5f fdd5 b755 a319 8e21 15a7 1dae
+1a48 2eb8 c70d 2723 b033 6924 0010 12c0
+5e6f f1ec 334f f8dd dffe e55e 67eb f494
+7ac7 5b5f 33d1 6c08 1000 2230 9020 2910
+caf3 c6c3 8fcd feeb 17bf 35b9 6a6d 468a
+9644 7e54 16f2 d813 9b80 9c31 040d 6636
+4800 775b bf7a 9f3d 772f fafd 251f 78f1
+ee19 0000 79de 64db c89b d3a4 94a6 2ac3
+c363 abd6 3a7c 93c3 70a6 88db f5d3 8fc6
+18af 13f7 df22 ff79 7937 6777 690f 0728
+52ba 36dc 5d85 c396 e124 ceae b8fa 8ed7
+783d 0d6c 439a 30e8 4a92 68d7 1fd9 3b84
+f90b d156 2ee2 2522 dfeb 34ec c75b ad43
+227d 87e1 117e 5f0d 79ef 188f daa1 db4e
+54f9 46fc 8900 200b 7009 d654 99ee c602
+b842 d622 1bbf 4b16 b060 1d3b 0c62 59c8
+4d14 1b16 4641 6121 a598 2355 0632 03a0
+b50c 45b7 58d8 b1e9 cd6f 78c9 efbe ff3d
+0a0a 2ed9 d10c 5502 0632 4903 9048 69a5
+9412 562a a38a 6570 be10 0408 24a4 a0d1
+5ddc f1e6 d7bf e4be fbef deb4 e9b1 134f
+3c76 a137 0f48 0ad8 212f 2021 da46 73f2
+539f f9b7 27b7 2ccc acdd 0dc4 0055 bd37
+a534 907a e0c1 8d16 0409 4810 10d8 5d19
+4137 1b70 cc91 07de 7cfb 7d79 d654 244b
+8e91 8002 a050 0300 6483 fe9b 9bca 4b4a
+48ff 7985 bec9 9105 7e18 051d 4d96 4330
+8f1e 7ea3 a231 8d48 3e1c 3e5a 6aa8 544b
+358c 6bde f15a 713c 6f28 5408 fb5d 615a
+7bba 7987 4021 1fcd 14f8 c098 70e0 22f5
+52f1 2795 0f84 8741 fb3b 6239 bcce 293d
+8ba2 6348 6d22 02be a22a 3ddd ff06 7b7d
+0661 0657 fc06 87c7 e2cc 15a4 3a80 a1e2
+9a81 0994 f785 08d0 c132 832d cc8e 6d8f
+bce2 bc93 dfff 3bef 4664 6b00 5181 30a0
+bb98 1172 66d1 50ae b76c 9d43 2142 bd65
+dbac 9016 97f6 e6c6 d606 d13b 88d0 eb6e
+fff5 fff6 d6c5 c559 e4fe 2095 8740 8098
+49d9 aca9 eeb8 f3e1 2f7f edca e9e9 d54a
+0051 0b88 5242 4459 a6f3 3cbf ef81 47b7
+6deb ac9d ccd8 b088 73f9 1101 3165 e705
+271d f199 2f5c 0952 95f0 2136 458a c0b4
+7905 49ea 446d 7bc0 3fda b0a4 5a42 d3a5
+217e 3d09 878f 3cc9 fca6 2a12 ba84 c2f0
+3a8a 7fbc c66b 85f1 bcd1 64da 924f 41c0
+dc85 ff0c 735f a239 b450 55e6 fe64 8c71
+a019 89d5 bc51 436d 532e 156c 867c 6228
+070e 7b74 693e 8d9f f808 b988 eaa1 44ac
+65f7 606c 1dad 3bb8 a20c a464 9eff 750c
+efe0 1202 8404 c3d6 9a22 624c 5914 b6d7
+315b 363d 76c6 0b8e f993 3f78 5fbb 21b6
+2cc4 b115 4bd7 2d2b 625a 13ad abbe 7bfb
+dffc fd3f b527 5ba8 1b9f f9dc c5ff faef
+97b4 da13 4820 6804 4d35 4f21 2280 d6da
+764e 7b6d 5867 ca4a 0a56 59ab 0301 b1a8
+890f 7df4 4b3b 16ad d639 01d3 006a b4d6
+440a b57e ecc9 6df7 ddff 68a3 9123 a252
+a414 0102 205a c347 1cb2 e711 cfdc af6f
+7ae1 5c59 c8e1 8633 845e b01c 8d9f 8576
+917e b9e6 9bff 2125 8bbc ab7a 08b8 5144
+6628 66f0 8446 84e9 e9c1 a460 1d31 15e3
+355e 2b82 e74d a9b4 b0bc 8d26 7d53 757a
+a424 4be3 b052 808e 6aa8 b48c 4a47 9bc2
+44a2 34c8 207a a8d4 3dd2 8b55 2b1d 59a5
+11b6 ccd6 3a89 c250 ab5c 0693 6e0c c200
+62ac b5d6 f080 0b66 6bab 70e0 a1ad 379a
+b2dc f8e4 c3c7 1cb3 df9f fcf1 7ba7 26b2
+b25f 1010 807b 1070 86bf 2876 6222 bff1
+c63b 7ee9 97ff 60db f6c5 bc99 658d d6a6
+2d9d f7bd ff2f 2efb e635 add6 0c60 26a0
+aba3 75d9 9b04 2cbd 7e7f 11c8 070b 81b3
+966c b41a 575f 7bc7 d7bf 794d 6b7a 4a84
+0904 841d 622b a5b4 56a4 686e b17f f535
+3702 10b0 0060 2589 0322 6836 3338 e785
+c733 97a0 9007 a6c0 e110 70da f38c 3e7d
+1f1a e269 ab70 9f11 6ea4 42ae 296d 9d41
+a03f 0ba9 0c5f 4ad7 0d13 4204 b251 6871
+a433 1bb3 0de3 b552 9017 926c e030 5932
+943a 84a3 0a91 0d39 0c67 b5a5 dbd2 f4e4
+89bc 25c3 6d63 f880 91f4 22f4 330b 313a
+8c20 8a74 c421 dbeb e404 cc6c ad61 5b32
+1b10 2b6c c1d9 3830 2303 3923 74b1 2296
+b964 5b0a 5b66 c362 9cce 8158 8085 d1b2
+2d2b 3199 61b6 5294 a628 ca4d 4f3c 76e4
+33f7 fe7f 7ffe 3bbb af9d e877 3bc2 026c
+c0b2 3088 080a 0298 663b bbfd f687 def9
+9e3f 7d72 fbfc d4c4 ba5c b55a cde6 e4d4
+eacd dbfb bff9 fb7f 71f3 0fef 9c9e 9c06
+1ff8 8e02 c0c4 82a0 0015 a254 56eb 8442
+0004 dd3e fcfd 873e 5308 6950 79a6 c1e5
+5706 b976 8dbc 01a8 aebe eed6 2ddb 3b59
+ae06 9a07 8544 a0b1 e897 679d 72ec debb
+afef 961d c112 7868 d039 b450 0885 b4b5
+5b9c 34fb 32bc 0446 9f5a 7acb e871 96be
+a3c9 b445 7449 0e07 2c43 a38f 5176 bde3
+355e 2ba2 e6f5 5fdf b09f 3614 3e36 dc29
+8eba 5829 51e0 37f8 5198 45ad d175 9864
+11b2 bd9e 62f6 43c3 a352 64a2 933f 2aa0
+c2d3 cf9f 8315 db5b 9db2 5c57 3b83 3583
+e0e1 8a9a 18d0 144e 9430 b022 832a d21d
+8db1 4f6c 7cfc a083 36fc bfbf faad bdf6
+58d3 ef16 2266 3058 6101 0c0a 82e8 66ab
+f5c0 435b dff9 cb7f f2e4 a6f9 d56b d651
+a6b3 2c6b 34f2 76bb 353d 3df3 e347 77fc
+dafb fee7 030f 6e9a 68b4 8147 1568 8ee8
+2500 6a4f b42f bde4 faeb 6eb8 b335 3d03
+4095 5d39 5198 139a e7b9 d6ad fbee db78
+e3cd 3fca 9a59 f069 1029 6505 36ac 9f7e
+c90b 4fea 2d2c 8a10 a005 b011 a8d5 8e77
+c3b0 6277 54cb 3425 0da2 74ea a826 0d39
+87a8 9ef5 a89a 261c 8705 78f8 a4e3 337c
+bc56 34f2 c2b0 4627 3a19 d2b8 9d68 3fe8
+3bd4 219f 9bb6 4760 3850 2b6c dd84 9569
+28cf 8c12 5fc2 70b3 c885 276a ac79 7986
+d6da a5c4 8763 fc8e 5e00 808a 76a8 ae2c
+d6cf 1703 0057 eadd 4146 e740 f26b ed50
+2545 4446 d8d8 7261 76cb 7e7b b4ff f27f
+fdc6 330f dcbd ec2c 80b5 e202 daad b1d6
+0803 8bcd 5af2 f853 0bbf f4de 3f7f e0f1
+adeb d66f c834 6619 69ad b5d6 8d46 a33d
+d15e b57a d54d b7df ff6b bffd 47db 663b
+599e 0d0e 4696 f22a 1ce8 1222 ea46 d6da
+b128 fff4 b1af b627 5635 9452 4a2c 2f2d
+7f4d 524a 359b 8dc5 ae7c fdd2 ef97 b672
+fe75 7521 a042 d245 6ff6 bc73 9eb7 7ef5
+4459 8a10 10a8 f0aa 0623 f458 a186 cc73
+0ede bc22 1c34 8f28 a608 2843 f178 442e
+45e3 8eb5 6c43 f898 69da fc98 6718 af15
+8abc 693a 6f1a ba13 d267 2993 10d5 3bce
+f5dc db9f 87bd 9ab4 99e6 0031 34f6 f5d2
+ce68 506d 54be 7774 3cfe 1ae0 c79c 8678
+6ac7 8d44 59f0 d63a 3075 6d36 f79e 305b
+07bc 41dc 308b 84bf 4136 b62c 8d31 b66f
+ccb6 1d3b 66a6 b2bf fad3 5f3b e6f0 7dba
+f35d b000 6281 c519 a181 304b d968 c1d6
+d9fe 7f7b ef9f dd71 f723 ebf7 d833 d759
+43e7 9a2a 49ac 52aa 9167 4dad 5bed 5597
+7efb 07ef ff83 bfb6 8c4a 6715 9f9b d4bc
+84d8 6a4d 7df6 4b97 df71 ffc3 93d3 ed0c
+2423 0c9d 37c2 ab94 ca20 6b36 bff7 fd3b
+7e74 d7a3 cd56 3388 5f27 24b2 a6b7 ef1e
+5367 9f71 52a7 b308 a240 1491 0aad 3823
+d80d 7b6e 1131 150e 8b47 8e8e 6135 1a5e
+47fd 7e2b aa64 232a 7957 becd cb40 f378
+8dd7 8aab 796b 3984 48ba 1035 4660 c454
+5858 e938 fb18 af25 f29b 5f0f 9159 96f9
+86b5 47ea 50db e083 8423 8631 84cd c8b1
+2cca a471 0f95 65d9 125f 81cc c060 2d58
+2b96 c5b2 b0a0 7824 4001 1250 56c4 b013
+3e18 113b b0e8 6596 82a5 6000 6b51 98d9
+1806 5898 9b6f 52ef 0f7e f797 4e3c e9a8
+c585 0510 34d5 d884 0116 4111 e937 142d
+2cc0 7ffb cd3f fffe 2d77 efb6 db6e 3929
+a515 e90c 71a9 32cd b22c 6f34 265a 8df6
+c4d4 673e 7fe9 fffe 7fff a2f2 96a0 935c
+84cd 2885 08a4 64fb 5ce7 8b5f bd6c 727a
+0a51 2c91 1555 3be6 9069 22d2 59b3 b971
+ebfc 972e ba12 d584 a012 45a0 3412 200a
+a1b6 bd85 57be f405 aba7 9a62 0c53 c96c
+a3cc 9ea8 cc0f 3f17 7f8d 0c3f 8e90 628a
+b8a9 2828 2442 d848 7906 419e 74a4 f286
+61d7 0818 1639 448d bb31 f330 5e2b aec3
+56bb 770b e3d7 fc24 9237 34f1 9db4 b4dd
+e1a5 42be f24d 1d15 4273 c870 6a39 a53b
+dc5c 7faa 7ca8 3de0 b03c 7787 ed36 f2be
+faab ce52 1066 eb28 86a5 3add 55b2 4b8f
+e82d 7edc 0f76 c076 b371 f742 6680 d2da
+1d5b b7e4 b2f8 3f7e e7cd 679c f6ec 85d9
+8e58 aa9c 7f19 acb0 8112 b8af 913b 3df8
+95df f8bf 575e 79db da75 6b79 e007 e66a
+6977 11ca f3bc d168 e479 de6c 36db eda6
+d2d9 3ffc e3a7 ffe5 a39f cef3 8cc8 c090
+bd2f 0320 b34c 4eb6 8e3a fc08 5318 4402
+b44e 7d9c 323c 882a d78d 3ccb 549e 5f7a
+f9b5 f73e f044 a335 8192 bb92 1708 90c8
+9ae2 d003 d69e fdc2 1317 bb5d 1db0 0d61
+551b 5ef9 521b fb68 7837 bd78 4362 673e
+2a4e 2d62 1ea2 118c 6590 7479 e5c3 788d
+d7ca 45de 9081 0da7 183c 799a 8e15 d59a
+4245 59c2 a1f2 21dc 9986 bf8f fadd 2953
+1c4d 30bb 6a28 adaa 5c79 ebb0 c018 5314
+45f0 12c0 0de9 5a6f d05b 4983 5998 8d9b
+271e e8c3 86c9 0681 81e1 8275 2c0a 4369
+646e 6ece 74b7 fcd6 7b2f 38ef 45cf ebce
+2fb0 7535 b263 2598 6d95 dfd0 e3c6 fbfe
+e003 177f f386 f51b d66b ad32 dd74 65b8
+bb36 c092 a404 f23c 6f34 f23c cf27 2626
+3a7d f8f3 3fff a71b 6fbc a7d1 c8bd 25a3
+9b07 7154 ad95 dedb def4 cac9 7626 045a
+93a2 d874 b19a 3d01 505a 35f3 acd1 9a78
+64e3 dce7 bf7a 19e5 3990 a088 d304 a352
+a435 f717 5ef7 f233 a626 1ad6 0025 29a8
+55f9 9c65 9150 2c05 c428 a004 12ab 8d5a
+07b2 1028 2387 f5da 6069 1836 951e 757b
+4812 f0c6 e7fc 78ad 08e4 8d64 b661 555b
+3ba8 56cb 368c 125a 8661 e030 6cfa 179e
+5d21 bc3a d57d 2848 88b6 a57e b43f d208
+8725 95e7 2ea2 5a09 0045 3892 b825 c591
+337e 74a8 5cb9 e9b8 fedb d228 075b 53f4
+e7b6 6f5f 987d ea57 defd aa57 bdec d485
+ed73 6c2d a365 8030 c902 59b4 6eff d95f
+7de2 b35f be72 ed6e 6b1a 79d6 d2ad 3c8b
+1d7f 820e 1210 e93c cf95 d282 b8ef 7efb
+edb9 c79e a690 84ea 4511 e8f5 168f 3862
+dfb3 ce3c 7161 71c1 b9ac d7ca 3cdc 9328
+0579 3387 bcf9 e58b aeb8 fbde 071b cd5c
+4421 112a 0204 5499 35e6 f003 d6bc f0f4
+e776 fa5d c0a5 1a3b e59a c2e9 ed88 64f8
+8956 2860 8804 67b5 375e e6bb 17e1 6fd4
+181c f3bf e3b5 426b ded0 1c27 0ac8 0ae3
+2442 9201 8645 3c5e 7c16 a9d9 a384 c4d0
+c02c e4f5 4204 0c2b 6e8f f89e f1f0 c471
+4a1f 7b48 f546 c321 f5e1 8195 7d4a 0433
+b015 6b81 2d18 03b6 6430 02b6 f2d0 1988
+7c07 162c cc62 c192 1625 96e7 17bb f3b3
+9bdf f9a6 97bc e575 e776 163a 9659 b804
+3130 a877 8105 5840 1804 f73f e019 ab67
+da13 7953 a94c 40b1 8dbb 8244 a414 2112
+b212 014b 64c4 eebe b6f5 3bff fd5d fbee
+b3ba 2cbb 2840 8058 cd33 2383 11b4 2800
+b673 e11b ce9f 6836 dd05 23a5 3845 8448
+65aa 9165 8d86 5679 ae1f de38 fbb9 7ffb
+46ae 1ba4 101d 6bac 3224 852a 17db 3fff
+2527 67da 0a88 2ba0 432c 8be6 8321 d18a
+8d4a 68af d5de 429d c547 6d71 1a9a ee87
+5b1f ff35 4b8d fca3 ab69 ea16 325e e3b5
+2290 37b4 2009 c7de d392 3012 998d fa42
+4744 8443 64c7 f9a6 89c5 ee4f fe96 b51d
+1237 821c e687 8767 6c64 d51a 52c6 5e5c
+ec8a 5770 3e0c 96d9 5a9f e83e 7814 710c
+2f22 38a5 9954 d3cf a508 03b0 6221 b046
+6cb7 dfef ce6e 7be3 05a7 bffb 9de7 97dd
+8e29 4d85 cdd6 586b 988d b015 b00c d682
+e976 b7bd f582 33ff e07d 6f67 d347 6421
+b660 7c1d 1790 3382 84a2 5850 cac2 d8a2
+fbfa 0b5e 74da f38f ef2c 7611 3404 728c
+f0bd 2e8a deb1 cf39 f8ec 334f 5d9c effa
+e1e6 e823 2340 a534 29ad 956a e40d c4fc
+4b5f fdee 0fef b83f 6faa 25a4 2304 52bd
+429e 7dc4 339e 7bcc e10b f30b cec4 9db0
+720b 73b3 2a61 cfd3 7f5e 5027 014c 4980
+486b e80e 7554 b19c 66f7 8dfa 062f a375
+8938 8a31 d530 5e2b 0879 c36f 7f38 31e1
+550a 514c ac2f 6f21 70ba a9cd f1f6 b78c
+d840 1896 75b9 73cc 37e2 2315 6708 ca69
+ce9b 476a 1864 c5fb b67b 54bc 0fa0 199d
+5d03 339b 0181 e08e 6229 58de c5e4 54d6
+bdce fbdc 4d5d 5860 6281 a290 f9b9 8557
+bce8 b8f7 bde7 4232 7d63 ba08 06d8 8235
+c296 ad61 b64e c6cb cc6e 10a4 37bf edc2
+d7bc e8dd ef7c 7577 713b 8b01 acae 6d59
+96c1 b0f9 4361 6c51 98c5 ed5b 0f3f 68af
+77fd c26b 880b 1404 4016 2be0 661c ac1b
+73ae 5e23 e460 fb6f 7efd cb9b b98e 0c10
+c07b 6f56 b9f6 428a f24c 37da cd47 36ce
+7ffa df2f 419d f9a8 4d44 854a a1ca 08fb
+2f7b f129 c6f6 9c82 39d4 548c e24f a3c8
+a528 3622 8251 2f32 4947 7b97 e719 a281
+e074 12bd 3655 28fd d3f8 9c1f af15 54f3
+8e1a b2f4 1c42 24e8 098b 35ef b83a ea1b
+1f5a 4985 f30e a16a 22b2 130c b905 18cc
+6884 36af bee6 8d2e 0691 5fb0 bf8a 8418
+c14b ca5c 71ce 8fde 4027 3c78 5b11 bca6
+1a85 a84c 24b1 dbe9 9ef3 fcc3 def7 6b6f
+2431 d694 4ef8 e09e 4fac 1918 a8b3 88a0
+5890 9245 ac40 afb3 e92d 6f78 e105 af7a
+c9ec b61d 83cc b32a 64d3 13d9 d65a 10e8
+ce2f 64d8 7bf7 2fbc 728f 0d33 45af 4720
+88a5 008b b080 24a1 c558 743b cf79 f63e
+679e 75fc e2e2 82a7 831d 81e1 6f33 9079
+6479 9e67 0d8d 4d7d f1a5 d7de 7def 13cd
+66b3 aa46 8590 1034 f47b 8b27 1c73 c8be
+fbee 569a 9e33 ba40 a4b0 da8d 2032 ea85
+46cc 4308 c121 4b9b 7650 236b 8874 1f13
+fd35 d23f a4d5 ee18 64c7 6ba5 236f 280f
+4a33 0222 2637 9c4d 08d1 33a4 de46 4980
+c326 49d8 614b f7aa 21cb ec07 58c3 73de
+ff29 b2df 7696 dba1 0a6a a8f8 4204 4612
+74c3 5ec6 94d6 96c2 d6da d25a cbc2 3eb3
+5200 d05a b185 a380 910d 9786 c596 ddce
+b1cf dafd 7ffc f69b 9b19 9645 d7f9 3b88
+5847 2e80 05b4 0e24 01ac 1503 6089 1849
+808d ed77 b6bc e75d af38 ffbc d3e6 e776
+2012 b2b0 b52c c00c c658 6b0d 88b5 65af
+e82f 9c73 f6c9 e79c 7352 b733 c750 1829
+9869 a0ff 4286 a1ea d282 b168 b0df 7deb
+6b5e ae88 8bd2 123a f92f 1155 2d3b a5aa
+7422 0422 5284 ba95 4d3c b971 feab 175f
+adf3 3612 81ca 4103 8242 6661 d86d 6dfb
+d4e7 3ebb d3ed 03e5 bec4 c664 85f8 188d
+2946 056f e878 1767 9226 1dd4 d4db 21dc
+b5d4 7ae4 c7ec 4a10 c30a 757e fce3 355e
+2ba5 e60d cf9f 283f d843 64d8 f892 9ae0
+9c25 f542 2dcd 57eb 4d15 3a9a 8765 ac63
+15a3 58c3 10cd 7deb cce3 6f28 8d88 ea68
+efb9 e3ca 24b6 d651 b7a1 6383 d3ed 0e55
+4ebc 34b7 0652 55b5 fd5e f7d0 83f6 5bbb
+6aaa e8f5 0598 ad80 0803 5a01 04cb b6c8
+95d2 2062 fad6 1a71 a9ee d619 9e01 f78d
+14db 7efb 375e f7e2 b34f 985b 9815 0471
+1c85 0022 9665 5994 c5fc fcdc 81cf d8f0
+abbf fc86 2689 b56e 728e 59c4 5453 19a0
+5109 03b3 533b 200a 8960 bfdf 3dea c803
+5e70 eaf1 0bf3 f346 ac90 1160 63ac 8838
+02a6 1ae9 4620 52cd acd5 6c34 9552 dff8
+e6d5 4f6e daa1 7586 4854 a5cc 2302 1ad3
+3fed f9c7 e619 b0d8 5aaa 2114 1a86 7d82
+a11d c3f0 6878 ca2d 409d f438 edc8 d54e
+5b2c ff9d 4e41 b9f6 89c6 6bbc 9e7e 9e37
+d406 f996 57ed d737 42db 683e d8ff d74b
+7723 5e18 8683 da22 822f fc7d 1a33 1cf9
+f244 69c7 a9c4 b8f6 5eee 6fee 792a 8624
+189b 0659 b242 af86 8a2b 0a58 5884 0044
+6c51 f4ca a210 b60e 52d9 58b1 5649 09b6
+afb3 894b aeb8 f907 773c 98e5 9940 c960
+4498 c530 1b96 1201 a024 65e6 dfff 1b6f
+3ef5 c423 b7ef d86a b972 9a14 6163 edfc
+dc02 73ff ddef b8e0 d083 f62a ca12 9044
+9c9b bb41 4612 44e0 1db3 5b88 1090 aa18
+6306 6130 6244 16de fc86 73f3 9c8d 8890
+4b4c 56be 5fea fb60 842a 5399 ce74 de9c
+f8f1 831b afb9 f687 59a3 2522 08e4 a1b9
+2cfa 871d baf7 1e7b ac31 655f 0058 38fa
+c4c3 966c d427 4c07 db6a 43a1 4655 a0cb
+606e 78df f402 1f8d 6ca4 f6f9 d1ec f278
+8dd7 d38f bc91 591f 2486 df91 3d79 2474
+8f4e aa10 73a3 c227 2d9d 6078 3275 547f
+3c3d 6152 fd50 c40f a6f1 ef4b 67b2 80e7
+76cb b2b4 c6c8 c039 c7bb 9909 809b 7263
+b603 1edb 5a53 8a35 200c 605d 1026 382f
+756b a42c f37c faa2 6fde faab 7ff8 d1f7
+fde1 876f fbd1 c3ed f684 2b77 abcc 4c01
+4101 30b6 6f32 9efb 83df b8f0 f863 0edd
+b130 0b0a adb5 fd7e d1ef f5e7 e767 cf3d
+eb84 f3ce 3ea1 bbd0 b768 a51a 1ab6 cc06
+b96c b7a6 7e70 fba3 bffc eb7f d1e9 49a6
+3244 2502 2806 0100 54bf db3b e198 439f
+7fd2 519d c52e 5a0d 8ca1 c9ce 92ed 3d82
+2221 e2bc 9119 d657 5e75 8361 2122 1404
+1045 8a94 12e1 3533 ed43 0fda bfdf eb33
+2b04 4c29 85f0 8df5 9ba4 309b c76f 4a6a
+5b5b 1193 b0eb 3369 3fe9 5a46 7e33 5ee3
+b522 3a6c a358 b3c8 d324 443a 1e4e 4af7
+2a85 ba94 dfa1 118c b03a 86a0 791d f20f
+e108 7238 0e17 3aef a4be d711 311d f118
+02c2 3870 60b0 6cca d21a 67cf c0c6 9662
+2d30 3b5f 3060 61cb 62c5 183b 08c0 1ce4
+605a 23a6 6428 84c5 586b c5b2 41dd 6c5c
+f1fd bbfe e4ff 7e12 f2f6 fd4f 6cff ad3f
+f9d0 6d77 3cd6 ce5a c0c2 6251 4c15 a389
+56c4 94bd 6eb3 d1fd 93df 7bd7 f1cf 3e74
+6e61 1e95 182e 17e7 678f 3c78 8fdf fca5
+d723 1b61 0396 c030 090e ca70 2e04 ffee
+839f bbf4 8a3b bef9 adef 371b b965 1924
+18b9 504e c8b0 7ceb eb5e d650 4290 2bcc
+a2cc 0e44 a42a 8a02 1a59 9e69 8da4 7f70
+eb3d 1b37 3e95 2b0d 8842 048a 4029 d03a
+d774 f881 07b2 3100 3622 fdc3 0139 7f6d
+769c 8ff7 508e 9ced 6a01 1100 9671 415a
+7e34 237d ccc8 f361 9492 61cc f38e d7ca
+42de f404 086b e1b0 2d16 a16a 742e f922
+374d 514b 15f8 61af 3c4a 9b1f 75cb 50cf
+1b3e 66d8 fd83 4063 0fc1 e89d bf75 8514
+9681 01a4 d2f6 b2f3 471f 9ca1 3088 1eae
+9b74 1310 4b56 980d a308 73a3 4d37 defe
+c81f ffc5 270d aa75 33d3 ab67 d63c f4f8
+dcfb fec7 076e b9fd e156 2363 b602 4ac0
+5d6c 1040 1094 e9db 55ed f2cf fff4 970e
+3fe4 19b3 3b76 74e6 3beb 669a bffb 5b6f
+df77 9f0d fdb2 2f60 5006 8318 8020 d06a
+36bf 71c9 77bf 75c5 755a ab4f 7ef6 8bdb
+66e7 7526 3808 8e07 0101 e874 3acf 3be1
+8813 8f7f 76bf b728 68c3 ab51 f509 fa19
+3d52 5a6b a569 e3a6 2df7 dfff 509e 6780
+0840 0208 4840 1a04 9eb1 ef9e 8a60 1452
+a5f3 8d61 c11b c54f 4453 c8cb b3b7 cbd7
+a791 3cb1 f678 c6e5 ed78 fddc b00d 2986
+a684 6cda a948 472a d2b3 ae76 c428 ca7c
+4b6d 7fa3 a78e 92df 422f 9594 0c09 290e
+3fbb 3150 bf56 feb6 b69a 0c1e d008 550d
+1ea0 49a5 fa8d 95ce 9edc b660 4bea 8aed
+4d35 5a77 ddbf ed7f fcd9 67e7 4b5a 35d3
+6a37 1aad 6673 7a7a e6ae 47b6 bef7 f7fe
+fe07 773e d29e 6800 2896 1c44 b8f2 0516
+8564 bac5 fa19 fbd6 37bc 74c7 d6ed 73db
+674f 3ff5 9817 9c72 54af d721 0266 63b9
+6430 eec0 91d4 d61d bdbf ff87 4f53 36a9
+1bcd 9b7e 70f7 d72e fb6e ab91 5115 1def
+df58 9569 79f3 1b5f 0550 582e c3f2 33bc
+0e51 601b bfb8 58de 77df 63a4 1510 1212
+a242 5404 4a00 76db 7d46 0dcc 866a 3731
+90f8 25c1 b08b 98f3 ea8d 3eac 51bd b248
+0e1c ba50 a608 3b6a c713 bd52 180b 78c7
+6be5 b30d 3022 bb6c 9952 a2f6 4fb5 83c5
+6945 130e 6b44 9d90 c8d0 201a 320e 47f2
+6bcf def0 29a2 7b79 9e57 5810 70b0 5366
+b6b6 d275 0dec 0a04 c4d9 9939 f786 61b8
+71d0 6ba5 a496 6aff 7853 f7f7 fee2 b3db
+e6ed bad5 338d bc49 79a3 d16c 36f2 c6aa
+5533 0f3c b1fd b7ff e443 f7de b779 a2d9
+8481 938e ab99 052d 81b6 bd3e d88e b1b6
+5f74 a726 3501 5a76 4914 28ee 0884 85a5
+dd9e faf7 af5e 75c7 7d4f 4cad 9a68 6679
+61e8 639f feca d6cd f31a aae4 9eea dd43
+e977 3acf 3ff9 e8e3 8e3f a2db eb7b ed47
+188c 0400 8830 88a8 5496 f1d1 4737 d98a
+cc71 963b 442a 13e6 c9e9 669e 67d1 b5cd
+a379 e492 1309 1220 8c19 addb ef47 97e4
+5135 ecf2 4a86 da10 cc50 9393 5af6 8cd7
+78ad b89a b7d6 9aba 96f9 ad65 dc7c 9112
+c9b9 a293 30d5 8aa5 0f18 cd25 8756 9329
+2592 b6e6 a2eb c7d0 e4db 00a7 4a53 3a62
+92ad cb61 734f c168 dd23 3300 596b d88d
+0397 6620 16e6 528a c214 b62c cab2 6c80
+7a6a 07ff fe5f 7efc b1cd db56 af9d 524a
+11e6 4ec2 95e7 f944 abbd 7a66 e6be 07b7
+fefa efff fd1d f73d ae15 3911 5b75 4910
+612c 40c0 1a6b 9941 2158 665b 0030 0220
+1200 320a b3d1 a41e 7b7c db67 3f7f d9f4
+9ad5 794e 7943 678d f60f 6fbe efcb 5ffd
+1635 b22a 9473 e982 6233 e8bf f50d af04
+3025 5be6 4280 11f5 f0bb edf0 4e08 89d9
+2e2c 7644 8008 b142 548d a400 75bb d9d6
+9a40 20c2 d9a8 2d96 96b1 b55f a188 23ae
+dd3c d5ea c9a2 df44 4f5d 9b74 9902 f458
+d530 5e2b 1179 a12e a925 d56f 86e2 f974
+8ad4 15b0 5e4b 1bd1 7f51 cacb f2cc 9dbf
+8def 8fd7 7aa2 a7fb 503f b496 9283 35f8
+3eb0 c271 d203 e74a 0652 e5ee 08c3 c066
+5702 aaa1 640b 60b5 1824 253b bac5 1ffc
+e5c7 ef79 60cb dad5 abb3 4c91 5244 4820
+5a29 67f5 d86c e453 d333 b7df fbd4 fff8
+9f1f dab6 6331 8c26 63cb cc06 002c 5b42
+529a 1469 1123 e2c5 7c42 2002 2c5a 3ef6
+99af 3efa e4f6 66ab a5f3 a66e 34b3 86ee
+1bf8 e4e7 2ede b279 4153 e837 af41 74bf
+b378 f209 cf3e eac8 8317 1616 05b0 aa9e
+972e abde 64dd 2363 d5bd 0402 5008 4482
+2880 4ae9 4cab 7447 0289 c163 4a37 a546
+74e1 eda3 48cd 9d56 a3a9 877a f4d7 b082
+aea5 177c 88f2 f884 1faf 9582 bc21 5686
+3200 18d6 8145 1571 f4cf 94c9 8de6 cac2
+a9d3 5038 5c4b 1d86 089e 9ef0 e9a0 4728
+328d d291 4758 4dca c0aa ac52 2e1b 6b2a
+f663 a8d8 ae6c c782 e21d d12a 363d abfa
+05b7 fffc 035f b9f1 aec7 a7d7 ac52 99d2
+5a6b ad3c 3192 e7ce e85c 674d c85a ad07
+1f7d eaa9 6ddb a314 dec1 ff83 9066 710e
+12d5 910b 2168 06f8 e16d f714 9d72 71c7
+6277 6eb1 37df ed2d f62d cbf5 3f7c e8cb
+5fbb acd1 6a2e 5d3b 5918 c182 6d66 e64d
+179c 2b65 5f40 1192 22f0 8e16 4302 0040
+00c8 f2ac fa13 1120 a22b 7efd 005c e2ba
+9bee 57d2 3a34 bddc a61b ff68 142d d2c9
+8c02 fa51 9c43 1ab5 99b2 c963 ce61 bc56
+ced2 a3d8 5b08 a22d 6b3b 2111 3447 ee91
+a1f0 cbff 3532 2a83 61f1 437a 6278 088e
+5a6d 91cb 4434 7f1c da98 a57d 4277 3f16
+06ae c01b c0d5 966c ad85 c1ad 44c4 5883
+a49c bb8d e345 0d00 312b b298 4dff ed87
+2fb9 f2c6 fbd6 ae5d db54 8a50 0908 01fa
+681f 44d4 5a31 b732 6bb3 ac47 99e2 6183
+c480 2d19 4574 8205 5662 a854 a79e 78d4
+ccea 7579 9eb3 7059 96b6 b02c 8535 b879
+aebb d82b c8bf ed54 80a0 15ec cdcf 9ff5
+8263 9f7d e4fe b7df fde4 44ab 952b 228d
+e12e c1a7 d521 c2da b56b ab4f 5900 0510
+8090 94a2 a228 8aa2 40ca 22fc 5d46 789b
+7e31 a2ba 38fa 80c2 edc8 f26e 64cb 74cc
+a22e 422d 0b5c cb9e 8dd7 783d 9dc8 1b69
+63a3 a2a6 961d 8b22 0610 91ab 4d3a 8558
+ec2b d390 680b ed74 d359 7eff f8d6 5a97
+d216 e58d 8712 b7f4 b043 8e22 34ba 0c67
+2844 9001 59c0 999f 075d 376b ad95 0a9a
+4584 ad31 8816 5109 00b3 1536 4060 4067
+8dc9 8f7c e6aa af7f e796 556b d7e6 5a11
+2861 1204 0343 171b 22d2 3acf b2b6 a28e
+4626 11f0 119c 082c 0c22 2800 8832 08bb
+a87a 6f20 e80c 2ba5 0456 b694 fff6 8e0b
+8414 0003 30a0 cb7b 17ad 9a05 1b53 7658
+8048 090c a804 4041 6837 e14d af3b f737
+7fef 6f60 7282 45d8 5a90 eaaa 3340 7f12
+409d d17e fbed 0988 d598 0556 ea0f a568
+fbc2 7caf 5734 9acd 4a09 9de0 57ad 5373
+7499 acc5 c1da cb7c 7805 4d37 5e50 9717
+554b 7d2c 83b6 e39a 77bc 5610 f246 a741
+68b1 98d6 3221 1c2f 9d6c 6e34 0a80 4184
+9990 223e d7dd ddc5 b047 0f1b 7a3c 468f
+ec8c 6f52 9545 5aec 8440 1f6d 5a43 49af
+0304 0464 01cb 42c2 6e2e d63d 1882 b0b0
+0c4e f3ca debc 2a49 d149 ce14 aaac d9be
+fdee 8dff fef5 aba7 d6ac 6d64 1a95 7271
+6a80 e4f9 44f7 83b5 96c5 2002 012a 0290
+cafb cca5 9fb1 ebf6 b97a 1c82 92dc 0d9f
+3953 c7ca 071d 8aee 9c1d b024 4842 9421
+9051 3d1c 4403 f9f7 c065 245b 05dd 6ef7
+ec33 4e3a e2b0 afde fff0 566a 3448 060a
+e501 910d 00cc 767a ba79 e8a1 0796 d656
+b6c4 decb 51eb c737 6eee f7cb 66b3 1e3a
+5364 0cd1 2d0a 99ae e507 d215 766b 23b1
+f0f2 3cc3 f25c c4a8 c318 aff1 7a3a 79de
+886b 8b1a 5951 355a 9b1a 5039 22ba 9229
+f148 8dda dc61 3ca5 df3f 5638 358c 987e
+779c e616 fb8a db18 5396 a50b fe31 c6f8
+04a0 90b6 7644 7359 96ae 9e75 cda5 4a9a
+1bf2 ba03 f217 c059 2580 eb83 7909 2f88
+5836 04e5 d6ed 8baa d168 b572 e7ce 13b9
+b585 159f 521a 0649 97ce 0322 3c38 e771
+2e20 83c1 0d01 10e7 6e3e 78b1 8e18 75e5
+b0f3 e705 1042 9718 2c10 ca40 c251 1117
+3437 33dd 78d3 6bcf b3fd ae22 f441 1e41
+e508 62cb 430f dce7 e083 f7b7 c602 062f
+0104 957e e081 c7dd b41f 0456 bc61 5b6c
+10a5 a1d2 e6d5 289f dc51 b819 5e3b 21d1
+33d4 8ee1 44a2 c365 a6c9 6bb5 eae3 355e
+4f3f f286 8816 6694 d57e 5f6b bfd3 ded4
+4b06 2207 5fc5 8443 6561 8b29 1c33 0b29
+8574 1ac2 dbee c0b0 f198 6fe6 f893 df79
+9829 a5bc 867f 68c3 eb2b 32f1 cebb 9523
+4325 9c05 0775 e1b5 a77a 2263 8cb1 5658
+c814 ba01 59de 5094 29ad 5d5e ce28 0cf2
+91f7 834e dd12 b551 7517 ad67 4e5c dab1
+54b0 5f5d 0b08 0001 c5b2 012e 810d b085
+6a86 3968 72c2 d26c 5ef0 4971 6f61 eea5
+e7bc e0e0 83f6 eef7 4bc7 4324 9825 67bc
+e0c4 35ab 26aa e48a ea5d 4244 284a 7bc7
+edf7 2aad 8038 a41a e261 bee0 b388 78de
+109d 4751 c3a3 4ae6 51bc 4474 0cbb 82a4
+91ee 62cc 368c d7ca 425e 48c6 22c2 5a23
+b2c1 8d42 bf9d 1122 1be3 f0cb fdde a702
+873a 5f0f b27e d234 0c98 70a2 dd10 917d
+01eb 5d7a c3a2 3bac e3c2 709a 4850 3cdc
+9941 0010 cbee 7ffe 91ad b5a6 3462 5944
+1004 10dd 1c03 b39b 2dae 6ec2 960d 030a
+689d 1366 0a15 a1f2 3be2 300a d715 e3d6
+181e c0a2 9b51 1e60 ba11 b628 226c 988d
+f8e1 3ae7 d2ee df76 1016 b0ec 5dd1 5c1a
+b215 b681 ff3a 00a3 548c 050f d85e 0080
+d2d8 d5d3 cd0b 5e73 6eb7 bf60 a460 2ecb
+b22c ca2a d6b3 d7ef ad5f 3f75 ce39 a7b1
+0002 09b0 6025 3553 4a3d b565 c7dd 0f3c
+9c35 da28 38aa 8bb5 0c02 fea4 6566 54db
+2ed3 5d88 bea5 a3dc 7042 29c5 321e eae3
+355e 4f1b f246 a544 6457 16f2 6ee1 5050
+eca2 0288 9581 8084 162a 3098 bbf5 50ee
+626b 3d33 1082 7298 56e9 01d4 e166 947e
+18e2 b2ab b9ca 7269 5816 02d1 6830 efcb
+0122 8318 5b15 be03 5865 2b62 b92a ef40
+00d1 5d48 c402 1be7 4c66 984d 694a 3042
+808a 0805 11d0 730e 51e4 2d11 21a0 40e5
+6a03 4b3e bf55 9a3c 5b0b 62c1 b30d cccc
+2614 b1b9 37cf ddcf c51a 7365 d76b 052c
+b311 b108 06a1 0029 414a 103b 886b 0301
+01c2 c5c5 d997 9ef3 fc7d f6de 501a 8b48
+8080 8440 d2eb f78b fee2 d92f 3ce1 c867
+3fb3 dbef 23a1 2003 5800 06e4 bcd9 fcc1
+6df7 3cfa e426 8519 09ba ba3e f232 4fe7
+926b 3bb4 bb32 8a56 0b9a b577 59e6 a146
+1943 8f01 77bc 563a f28e 2a4f d299 314f
+4a40 328c 1f0e 5f84 fa87 5054 1466 c7fa
+bf0e 0c14 ac3f 8b7c 499b 26cf 47e9 b330
+2c4e 0a19 8c2c cb9c 8180 5b88 15b4 5ab6
+a531 b6aa 6797 307c e985 b00c a627 ac1d
+4cb8 f9cc b6b0 980a 3990 b058 5be2 7f01
+d099 db0c d3b2 43cd c0a5 d837 0e12 e140
+ac15 6602 0047 f556 84af 1170 ff35 c02c
+962b d2d7 99a8 bb36 9a30 0897 a6b7 fbfa
+89d7 9dff 92ce ec9c 000a b070 d9ef 178b
+f38b 6ba7 db17 bee1 7c84 12a4 00b1 c022
+1562 222a fdcd 6f5f c706 14a1 e340 fc10
+a0ff 70c3 5d45 24bb f644 5064 d911 2507
+ef94 ff8d 9eae f68e 5144 f1f8 7c1e af9f
+97a5 6b33 2660 d8fa 2452 ecfa fe75 54f8
+a401 5cfe 36fe 1472 90ea 8384 7df6 446a
+ac93 ee2b 9dae 3615 96d5 1e24 04fe bfd1
+c886 ad58 0e14 ac0c 79d1 497a d946 3b5f
+eb4c 2305 5880 0800 411b e31f 5c69 1d4a
+895d 585c f8e6 3afe 1810 055d 10fc 80d1
+0661 205a 22c7 c5d1 ab6e 8e02 2b5e 7b30
+e42b dc9e c841 3705 8090 4498 7486 e82e
+4e44 48ce 7581 d996 96c5 b28b 4d03 ae34
+2745 67c7 6b5e 7ec6 bf7d fea2 4ddb 7b5a
+69b6 45d1 3345 7fee d56f 7ee5 b1cf 3ebc
+d399 2542 601a ec57 30d3 f923 8f3c f9ad
+ef5c df6a 4ea1 8075 2a37 a414 e952 1177
+ea74 938e 96d5 96c6 d175 34ba 99a3 716a
+3d82 a30b f378 8dd7 cf0d f246 b5ea a8b2
+228c ea81 e159 f868 6238 0aa6 0ca5 63a1
+93a4 2b82 5cf8 aea3 05a2 31fc 8803 1975
+0ed7 963f d111 7ac4 77a3 5ac2 6c2d 3ba3
+7224 705d 4145 2e80 d269 b4dc 7502 c808
+0083 93b9 0a58 b0a5 6206 2122 0c8e cd33
+bc61 d032 3303 0309 a2d3 d832 83b5 c256
+5850 2100 0b3a 86c1 01af 5404 b488 5896
+4138 2622 00e9 4bbf 7beb ec5c 572b 6216
+cb2e 1c03 9190 9000 9554 f485 9c71 fa31
+bb6d 586d 6c49 a480 9d90 8c7b dd85 75eb
+767b d52b cffe bfff f0af 93ed 995e bf3b
+3f3b 77f4 9107 fcd2 2fbe ca14 1d00 01a1
+81d0 8c48 b0d5 9af8 cad7 bef8 d863 5bd6
+addb 4340 30a8 2823 cf8d e8e3 0edd 2023
+a236 fa28 c3f4 a670 87b4 ccac 04d4 c90a
+47a1 f64e cbea f11a afa7 1f79 6bd1 33fc
+1287 8367 5199 e3ab bfa8 40f6 b01b 16bc
+a10c de13 c7e1 9f7c 81ec 42c9 4297 9648
+1a11 3d5a 345b 954a eb95 5283 4e5a c5f3
+324b d53b 6240 0171 14ea 2019 1e01 ddcb
+1214 1466 0002 5d19 fb0a 33b0 22d4 5a5b
+cb00 526b d603 0341 80eb 5a21 a030 3b6b
+1e10 0146 4166 60b1 5935 fac0 002c d630
+30bb 8c4b a711 4614 caf2 7ffc c465 dfbf
+e9ce 6653 5765 78e9 84c9 8088 4288 962d
+0003 bcef 3de7 bfff b7de 5996 7d40 6214
+9642 3321 eade e2dc 2b5e 7ae6 273f 77c9
+b6ed 8bfd 5e77 f7f5 937f f4fb efd9 63fd
+ea5e b710 6406 04b0 0242 8859 a69f da36
+fbe9 7ffd 46b3 3d45 04a4 d19b fcd4 ba41
+d606 e545 1f77 849b 1135 11fe 1cee 6622
+f4ac 558f 8d9a d408 f758 b57d 8bf1 1aaf
+95c2 368c a277 6b87 82d2 2d61 645e eeda
+68be e0f5 bdaf c8c5 318a 4df4 8e0d e909
+931e 4c28 f885 c45b 322d 91bc 0d4d f05c
+56c4 dd05 842d 1286 160a 153b 4160 ad41
+246b ad4b 40af 24c0 95d1 0c02 d4cf c58a
+8822 e2ca 0b17 0060 2003 73fb 0042 6696
+aa9f 1696 7ed6 0e5e bb08 2937 5aa6 26da
+ed99 55ab 5aad 4675 7504 f6af d782 026b
+2dc3 e2e2 dcd7 2ffd de9b 5eff b23d 364c
+8b05 2697 5461 0875 9e4d 7cf7 aa6f ed98
+9def f58a 6686 bff3 be5f 78fe 2947 cdcf
+ce2a a580 0509 01dd dc1c 35a6 a73e f3b1
+4f3c f8d0 e393 abd7 3bd2 0364 6926 7054
+17cb d3be ee73 5f86 c01d c515 2c6f 2736
+ead3 87d1 c314 1182 8f5b 6de3 b542 d986
+dacd 5de4 d497 8a22 d392 c70f 9245 adb6
+34c2 0002 8559 f438 b57b 5557 b466 5916
+ba49 44c3 4e9e 6774 c209 7f01 08c3 2c02
+8f5d 4400 1646 24b6 1689 1c10 fb57 c9d6
+5a04 b656 a980 59b6 26cc 3f0e 6dd7 7d90
+68f5 5e81 88ab 5fab ad83 9361 3056 29c7
+2800 2e1e 1806 231e 8396 2355 2d37 3600
+68ad cd74 d668 4fe4 ad86 6320 8897 a0c7
+a280 298b 12a4 290f 3fb2 e5b2 cbaf 79d7
+db5f d199 5fd0 9211 5ad0 92b7 a63f f9b9
+6fbc ff8f ffbe 67d5 6403 defd f657 bde1
+3567 77e7 7b20 8aa1 0441 1144 41b1 d29a
+68dd f3c0 e3ff f8cf 9f6b 4e4c 0c2e 9200
+5893 e89e 6e74 b4d6 510f 20fc ce44 aeca
+51f2 1e04 63e8 50a7 f30d bd3b 22bd 4d54
+8087 fc4f 6d1c df78 8dd7 0ae5 796b 9b18
+6991 1bda 3244 7709 f360 42f9 515a 77d4
+6e48 7d9f ca83 9a7f 70ad 7596 65a1 2222
+4abe 707a 35c7 e786 6e96 c313 7100 4022
+0862 0491 5910 9da4 a08a 52af a4b5 8095
+1c8e 8549 7ccc 3a58 f1d3 ba6e be39 0405
+77c2 87d1 3b4e 4a86 5069 e5aa 3bb3 0000
+21b0 35e0 480d 4001 6663 dc5b e8a8 0a66
+8b82 600b 54d2 c872 6708 a994 2250 00d5
+bc89 4211 5480 62ad 35a4 2fba f88a f35f
+7eda 7453 09f4 b34c ab6c d507 3ef4 c53f
+ffdb 8ff5 8cce b07f e105 2ff9 955f 7a6d
+bf3b 0fa2 0000 9880 ad6b 2f2a 1400 fadf
+7ffe c18d 4f2d ac5e 33a3 aac8 3649 c7c9
+5252 b5f6 038d ba02 cb34 0f22 75da 280e
+371a 5f0c 0bf0 dadc 8af0 e734 e375 bcc6
+eb69 46de 6564 bca3 8038 f200 4b43 b47c
+3662 14f6 1e15 2f51 5d13 6edb c39b b91f
+1a8d 4696 65de cc21 34fa 49a6 992b 1594
+87e0 10a0 1101 0804 80a5 1451 2020 e06c
+73dd b4ee e041 1858 8cb1 6e86 cc42 a535
+1ea4 0921 2354 2e07 61bd e695 cb55 dda7
+880b 61f7 0e58 9764 2140 2428 c8c2 0420
+8adc d81a 20b3 4bc9 4419 5837 085b 4014
+3682 ac94 ca75 36f8 80c0 8f86 0903 6619
+62df 1834 8de6 1d77 3d78 c5b7 aebb e095
+a791 92b9 05f9 b33f fdc0 a7fe fd9b 1674
+03f1 9d6f 79d9 6ffd c61b 2cf7 ac61 9d29
+304c 000c e852 ef27 27a6 3efe b94b bef4
+b52b 6766 d667 9439 e007 a849 2f86 6010
+66a7 4cd4 2802 21f4 930c 2be2 d48b 27aa
+7c6b bba9 9068 8a47 7d9f c7f5 ef78 ad90
+35f4 6d4e 1d20 d355 db85 0b35 5bcb f449
+a02e 6bc0 ad50 db10 72c4 bd5e cfed eb99
+b9df effb 5a38 12b4 b90a 3454 3284 d461
+703e 3b91 42c1 d688 55d5 c86d 2582 5d3a
+4600 b0cc c654 516d be86 1d98 810d de9f
+6094 0e52 a32c 04c2 6a0c a1ba 500d 26d4
+b88a e0ac bcd8 8366 a6ab 8bbd 9144 754b
+478f 8463 7b4b 9992 4448 a894 cab4 ce1a
+edbe c18b 2efe 76bf c8ee be7b f3bb def3
+a71f fbdc 372d e899 09fc 9ddf 78dd 6fff
+e685 1a4b 5314 ceea 9dc5 5a01 0604 e166
+b379 f3ad f7fd c9ff f9a7 466b 4a29 14b5
+b45f a9ad 16a3 ee28 0c5b e087 9f4e 3ab9
+5b6b 8617 de3e b5f1 5dbe 568d a39e 4627
+6c8e 0bde f15a 4135 af57 35a4 bde3 9d96
+c351 ad1a 65bd 8475 71e8 d810 1526 e1c9
+16cd 74b8 52d7 c5c8 473e 6461 d91b a522
+8649 b70e d05d d38f 9989 1009 4088 302f
+6c07 4568 d047 1ac4 f80a 381a b6ba 9c88
+33bf ac9e d7b1 1620 ce53 12dc c4c7 607a
+cd8f cc55 0703 68ac f181 9a83 2909 713a
+2ef7 ce5a 6345 c48d ba55 e324 e046 cd90
+9c1a 6da0 f775 a93c 83f7 aaaa cd95 52a6
+b48e aa56 4ae7 19b4 2656 ddf9 c0c6 3ffb
+9b4f 7df3 caeb 1f7e 62bb 5274 c0de adf7
+bfef 6d2f 3efb 24d3 ed0b 2aa1 d2b2 a52a
+ee82 80a1 d1ca 376e ebfe caef fec5 e6f9
+de9a 55ab 1501 b002 8a35 da5e 5516 19f5
+4682 1318 76f2 f53d b7f0 a34f a5e2 b588
+b98c 3b5d 6df9 9c5e 746b bfae e373 7ebc
+5604 f246 7bc6 5ac6 2d44 c9b0 7f1d 969f
+a3da 748e 92f3 6742 287d 0d1f 2a8a a570
+ac42 9ee7 0e76 7deb dc23 2911 b9ae 4eba
+e78d e8c8 5059 ac32 458d c6ed f76f da6b
+fdba 83f7 5d87 50b0 65ad 5515 3b29 286e
+00d7 59a7 07ef 8ab3 1543 22a9 8a64 b0cc
+aa0a 8210 42e4 2065 d25f 245c 8426 56f4
+8533 3e13 4106 4045 548d c989 0dea 6d01
+116b 8488 d821 0991 abd2 2384 722c 32b3
+2542 6140 c42c cb90 411a adf9 a2ff 897f
+ff66 2990 5179 ca71 07ff ee6f bdfd 8867
+1dd0 ebcc a310 286d ad11 502c 2862 896d
+336b 75fa f2eb bff3 bf7f 78e7 23ab 57af
+5308 9ab4 1502 b050 27f6 f2ea ecda ebf1
+329e 61cb 1bab a75f 1eff 0946 9db4 08df
+fd4e 2b84 541e e649 c66b bc56 6887 6d54
+6a61 2d35 e6a9 cc90 ef4b 0b5e ffa5 f75d
+e650 6a96 cea7 450a 01bf 852f 8a22 acbc
+c26d 637a d645 6e12 517d 8d48 b9ce a6db
+938f 6c9e fde8 976f 38f1 a803 4e39 fea0
+f5d3 0ac0 0208 8342 d646 4ac3 fd81 c342
+e5e8 eb66 7f45 2a4b dfb2 2cac 5142 a408
+c455 a9d5 c61c 4490 2888 c070 ce99 0280
+c8c2 c696 0028 4820 288c 56d8 6a65 c591
+09e8 c410 2e1b 83b4 16a9 b45e 0095 5f58
+c087 7a27 65b6 6c07 ea61 2405 9893 2d34
+f48b e906 bfe1 d52f 7aef bb5e 3f3d 9d2d
+ceef 2052 020c 62c4 b200 0a81 30ab 4c0a
+86df fabd bfbe f4b2 1bd6 ae5b ab91 8894
+1140 b4a1 43b9 0f31 0be3 cea2 aee9 a81e
+57ed d84b 6abb 1c91 c2d1 bda2 91f1 7443
+b6bc c359 f808 e313 7ebc 5610 db90 86f4
+c0b0 4b7a a4b1 8d8a 8b34 4700 129f b0e5
+f386 2336 b096 61f4 5573 54cf 2e33 dae4
+403f b818 80ce 74cb 64eb a666 663b 9d6f
+dff2 e0dd 0f6d 3cfb f987 1df7 ac7d 33e9
+4abf 30d6 58d1 8321 b680 9f95 6a20 4cd8
+4a09 3965 9df9 1d59 4b53 de20 2405 1604
+9d47 9b57 2d83 e709 9c8e a1e2 79ad 40d5
+7973 8668 919e 3722 d309 1118 30b8 7e44
+7173 eec5 9122 c762 58a5 fbbd 7e6f 76eb
+c1fb ac7d efbb 5f7b ee39 275b b1f3 8bf3
+0a83 6024 1040 83d0 25c4 6e1f 7fef 4fff
+f273 5fbc 6af5 fa75 a474 781d 0d7f 8802
+993c ed10 d2b8 e107 1dd1 b5a3 202f 1d7e
+493f 4a7f d90e afca d195 3ba4 cb6a 076a
+fc60 f7b8 041e af15 84bc cbb0 b791 682c
+cdf7 8661 8784 50cc 1b05 ac41 a0de 0d1a
+4a43 26bc 9e16 5c26 8b13 926e 7bed 3ed7
+f115 5033 52ac 74d6 6e36 3a48 ad46 4b6f
+ef74 ffed eb37 df75 ef93 a79f 78e8 beeb
+2780 fbca 0270 03b0 47ce 3bc6 45e8 b8d7
+28ac 907a 8bdd 83f7 dded cdaf 3ef9 1b57
+fca0 5b9a 667b 1215 8258 0062 169f 28ea
+7b75 1557 0bc0 e2da 6ba0 88dc 54ae 22e2
+816b 2f56 be30 433b 0f17 16a7 9277 60e8
+8350 60d9 186b cad2 cccf 2f90 ed5c f092
+e7fe e2db ce3f 78ff dd7b dded 25e6 4884
+0a2c 5b22 6211 b640 2059 aeb6 2f96 efff
+a3bf bfe8 1b37 ccac 5fa7 b456 98bb b7ca
+37bb 3ce6 7a08 8ebe 0c51 5f31 9a6f acc5
+d954 bd0b 75f1 2551 a335 ca49 a9c5 657f
+b370 7832 fa0a 8d83 dfc7 6b65 f1bc 2195
+169e 2ae1 eeaf b625 9d86 a779 6cf5 278f
+ffa7 f7e7 0dc5 98ce c2dc 6f06 2307 74a8
+cb3d 0c87 97a0 aeb5 5dbb bdad 4a45 4495
+2984 5cf2 0c4b ce75 a357 f47e 78ff 53f7
+3eb8 e994 e30f 7de5 5947 e57a 56c0 0290
+529a 08d9 0800 a042 0060 cba2 902c 7776
+3c79 d211 1b9e 75d0 4b2f bae2 e65b ef79
+6aa2 bdba d150 2c16 1118 ac31 1681 0689
+6ad5 d30b 8b35 96ad 0520 4161 cb44 c462
+85c9 27b3 8988 31a5 1561 cb48 e892 8984
+42d1 857f 3d64 5d40 3da1 656b c5f6 8a5e
+6761 61ff 3da6 dffe c6f3 5f7a f6f1 52f6
+3a0b 3b04 49c8 8235 2cca 2208 b002 0d5c
+4eb4 9b8f 3d39 f79b 7ff0 0f57 5f7f ffea
+35bb 2b0d 99ca 9da9 5aed cea6 a618 4fb4
+b451 ebcc 5f41 c30a 7a99 88cc e53f be51
+4e3a 3062 2e0e 92e6 b0eb 2e8c 0788 c76b
+0521 6f3a 9b1b 4e04 459e 09a3 3a69 2135
+115a 98a7 41b3 de34 dd9d 9cbe 4676 ff8c
+5035 228e d354 985a 5a30 2dde 870a 4940
+5279 4ea2 d016 c008 8d4c e9ce 62e7 d2ab
+6f7f 6afb e2cc 9ab5 cd5c f70b ab08 049c
+9a17 8045 2ca3 a30e 3429 54b3 9bb7 b4a7
+27df f6ea 17dc 76df e68b 2fbf 6edb a234
+db13 1a18 997c aa45 6540 2628 4000 28ec
+44c0 022e 9052 2130 8346 6719 0160 8105
+c458 1610 6154 6ece 4e04 9561 06e6 60ee
+5980 118c 305b 4063 6caf bb90 297e ddb9
+cf7f db05 67ed b5c7 6451 2e1a 6bb5 ced9
+5a84 1290 0c3b fe44 234a bbdd fee1 dd8f
+bdef 0f3f 74e7 bd4f ae59 b34a 29ad 8800
+8401 5030 942b 84b5 6458 a88e 4a99 8cc6
+61a2 cf22 2a9f d3cf 2be2 e863 03e8 0061
+c3c4 93a8 468e 2cfc c38d 971f 6a1f 9ff3
+e3b5 523a 6cb5 609a 561f d169 03c9 5851
+7af7 c839 3072 2cf3 aee7 c1e0 6c4d ec66
+7812 46d4 7038 d1b4 4c1a 7974 c04a 2912
+4100 a2a6 d6da 18a3 14c9 64e3 ee1f 6fce
+1f9f 6f4e b6fa 3bfa 2896 044b 2889 1150
+8579 1322 a275 c606 7a5b 1e3f f680 d507
+bcf3 dcaf 5d7e f32d b7fd d8b6 a65b d444
+2999 b866 8e40 9634 1283 e165 1b1e 5df5
+77cb c24c 4681 4be3 6449 c870 4160 0629
+8df4 fabd b2bf f0cc 0377 7fdb 1b5f 76fa
+4987 49b9 b8b0 30af b36a 0a43 1800 ad00
+2b20 628d 0d69 4ce8 af5f 7ec3 1ffd efcf
+6cdd c11b d66e 4060 248a 2614 6aad 70d2
+3d7e 0a61 2127 30aa e1b6 bcbc 2162 54a2
+41c4 5ab0 4efd 1c22 ea23 4d11 1caf f15a
+41c8 9bb6 c8c2 5217 8607 f66b e723 6a4f
+0caf 3188 d861 1816 5d46 7e3a 108c 877a
+548d 48ba 4866 1f4d b585 1254 4886 a3fc
+cd2a 559c 0b2e e2bc d59a 1414 6656 d49c
+2fca aea5 5696 091b ffaa 9901 515c b283
+9065 453b b66d 6b37 dbbf f0d2 e38f 3a70
+efcf 5f7a ddb6 c5ee e4e4 2456 e85a c91b
+d0dd 5ec4 1823 8e59 4074 2c82 6596 817c
+ad0a f7b1 b6ca f4b1 0c84 5524 1154 2a89
+4a2f 0c58 b22c cccd 4e65 f2ea 973f ff8d
+af39 7bcf f5ed 5e67 8b65 8bd4 b086 5804
+c500 201b f751 b1ca c840 fbaf 3ef0 e57f
+fad8 2592 b757 af9e 5024 000a 829a d15f
+bd46 057a 4290 92e7 2e45 a390 3455 23f8
+99b7 882e a8ad 9a6b 69d9 5a81 5afa ad48
+a3e9 c7d6 0de3 b542 3b6c b5fb be70 566a
+19fe 74d4 3f53 69d7 a815 2990 d24d 65a4
+451b 3573 1c36 55c2 d33b c491 e8cc 5ca2
+a1f3 1c01 8494 0543 b69f b7d5 bd4f ce7e
+f4f3 d7bd f0c4 c30f 7dc6 2a36 854b 5876
+0ab1 6a59 0606 14b4 65b9 75d3 43cf dc77
+fabd 6f7d d157 2fff e16d f73c ae9b cd4c
+55ad cb2a fdcd 73d7 50f5 dc58 2ca0 0d63
+2c96 5811 16b6 1698 1194 2827 dd75 a113
+8ec6 8185 de5c a7b3 fde8 67ee f7ee 37bc
+f4f8 e30e 01db e9ce 770c 9000 2997 c5c6
+5871 18c0 0cd2 9c68 3ff8 f096 3fff bb8f
+7ce7 bafb 26d7 ac69 e7a4 4109 280b a502
+5c26 8932 bc64 4686 47b1 1371 4207 d71a
+32d4 8e14 47df b754 b750 db84 0885 1630
+9c36 1fdd 72cc ed8e d7ca ad79 43d5 4eb4
+c787 5d8e d55a 2615 02ea 4497 1141 b17c
+dc40 74a6 8552 b654 6811 56be 1117 1196
+bd9e 4370 0c20 1189 509f a591 9762 27ef
+7d6c db83 5fb8 e6c4 a3f7 3fed 7907 af9f
+cad0 1600 6209 1510 0923 60e5 aa23 8040
+8b3b e61a 6dfb 0baf 39e9 fb3f fcf1 57be
+7553 a797 b51b 4db1 0c28 804c a22a 571e
+4466 1160 24b2 8239 2302 90a8 419a b011
+cb6c 992c 9308 3389 4585 9c21 5953 1a85
+0573 6761 7622 2fdf f4ba 735e 7bde f3d7
+4d62 b7b3 5540 29d2 aebe 66b0 2442 6e32
+0451 2bc1 acf9 d54b 6ff9 eb0f 7ee5 c9ed
+bde9 b5d3 9942 4225 0002 5621 4112 b11e
+8ebd 4020 f20b e9a0 f0d3 8c04 2ab5 9f66
+84a7 e187 1b2a 6da3 9e6a 6436 1646 5047
+1f65 2d1f 955a dfd5 7692 c76b bc56 0acf
+3baa c24d b7f9 cb97 b1b5 389b 5631 e958
+d432 0793 827b 2a48 4a7f b98c dfb6 cbaf
+0c85 539a 74ab 3141 acb2 55ba bbd8 fdf6
+753f beff a1cd 2f3e f5d9 471d ba4e 510f
+c0a0 0808 0957 43c0 226c 4421 69ee 7716
+9e7a f0a4 c337 1cb2 dfcb 3ef7 b56b ef79
+744b de9c 6042 062b 0822 c4c2 08c4 0c80
+ceff a1d2 9321 0ea6 d406 296a 6c2d 3308
+f5f3 cc2e 2e4e cd2e 762c f77b 7dd3 edce
+3dfb 90bd def6 ba17 1e7d c401 5cce 2ff6
+0c80 4244 06eb 846d c099 0030 320a b726
+a61f d9b8 e31f 3ff6 95af 5c7a 936a 4fad
+5e37 d320 21ca 0430 4a60 aac5 ac70 7ad0
+bbb2 451c 545a ea42 9d15 e4a8 2f09 8cb6
+d61d e57a beeb 2b44 64af b518 9ff0 e3b5
+b2d8 8668 7756 bbd1 8b58 d414 e36a 2d4e
+c2bd 2424 beae 119a d7de 370d 7c83 6143
+dec8 0630 1d36 f5c2 a651 f00d 81f0 8894
+d200 ac33 0444 54ba d97e 74cb dcc7 bffc
+bde7 1f7b f039 a73e 6bc3 24f5 6dc7 6824
+2bc0 9527 6435 4821 80d8 58d8 ba63 66b2
+fdab 6f3b eb9b d7fc e8a2 6fdf d293 0911
+8ddc 05b6 d65a 22c7 f40a 811d e83a 96d0
+8a2b cc75 6531 371a 8d4d 5bcd 073f f5d9
+3b7e fc64 6979 5275 5ff7 d2e7 bdfe e5a7
+ad9a a27e 671b 02a3 d660 8d52 a29c 0ec2
+1229 b2d4 cb73 45d9 d425 57de f181 7ffe
+ca43 4f6c 9d9a 5e9d 3794 5644 3a17 2095
+5c8a fc88 5a44 a446 3569 f81e faf2 339a
+a1a8 2564 6b23 8a6b bb61 11b3 14d2 0ea1
+3169 d485 5b66 b6cd 7fb2 63ce 61bc 563a
+cf9b d626 a372 0f77 5ad1 4032 9491 de66
+54b3 8e87 67b7 429f dfe8 41a2 50fa 70cb
+1c99 6685 77f4 1e92 5137 dff9 df40 9e6b
+ad48 51d6 2f69 f554 af28 afbc e9fe fb1e
+7bea e52f 78ce 730e df43 d98e 155b 45fd
+0aa0 737d 2060 14cc b2d2 9872 f323 2f3d
+f9e0 83f7 dff0 e1cf 7ce7 be27 fb8d 69ea
+0f5c caaa c009 16a1 e0a8 30c4 2900 e166
+bb7d cb3d 4ffd cd87 2fb9 7fe3 f6c9 06ee
+bbe7 aab7 bfee 25a7 9d78 44a7 bfd0 e9b1
+0664 2bca 09dd 4444 39dd 9965 a256 bbb1
+f9a9 debf 7cf2 0b17 7deb 7add 9c58 b76e
+3d60 060a 1420 0859 300a 75ca 0f44 aa95
+daa6 5908 bb21 ed13 3e48 edd0 5a3a cf56
+3b7f 111e 4604 dfd1 20f8 ae57 afcb 280e
+c76b bc9e 4ee4 ad75 980e d356 a209 ce10
+efd2 9327 7d1c ef96 1b15 416e 0f98 5213
+e139 06c3 fe7e e9f9 1cca 2dd2 1209 86c7
+52c3 5d67 346b 17be 5e22 3203 c8ce 010d
+609b 75ae b342 674f 6e5d f8c8 17bf 7bd2
+fd07 9e75 d2a1 ab57 65c8 c665 b809 0300
+1390 6260 3042 5a98 b63f f5d4 fe1b 66fe
+f0bf 5df0 17ff fce5 3bef 7e08 d81a 3124
+baaa dd98 4540 d851 1116 1194 1058 25c6
+0070 b3d1 fed6 758f fcf5 3f7d 79be 6373
+8d87 1fb2 fb6f bcf3 bcfd f7d9 d0ef cc89
+2951 9110 0903 9080 1516 2ba4 ac65 ad0d
+aaec 9b57 def9 4f1f bfec a127 66a7 56cd
+34f2 5c29 e7cf 8622 8220 1a54 3870 1846
+75a4 ec50 3a00 9692 a711 d4d6 caf8 6aef
+0275 6dcf d0db b356 3cee d517 5124 6b78
+9751 7118 63b6 61bc 7e0e 78de 51b4 69aa
+5e48 cfbd 5aac 5cc6 c86a a74c dfa8 bf86
+8fb0 5303 c088 8b88 663d c2df 3b8a d329
+8e7d d405 1151 a67b bdfe b76e bcef d6fb
+1e3f e7d4 234e 7cf6 7e19 f618 0b01 5050
+35eb 84ad 0801 a200 cc6d dfae 71ee fdbf
+f4d2 8b2f bf45 9881 5dbe 3c78 a35f 2720
+5b7a 4300 854c ab31 f9f5 abee ff9b 8f7c
+a363 6d53 cb0b 4f3e f82d 179c be7e 4d6b
+7161 9610 8459 505b 57d1 3397 6c11 34d9
+326b a8c7 9fb2 9ffc dc57 2ebb e20e 6c4e
+af59 bf5e 1312 920c 7225 64f8 135c de3c
+2cf4 4582 814b 1cec 4c12 bbfc 5f53 d39c
+54f3 e725 1361 972f 02d9 eab3 18be b8d6
+9263 e36a 77bc 7e0e 78de d017 ca9f 487e
+de01 464c 7cd6 f643 d2a2 a6b6 d8a9 75bd
+49a1 a176 c318 89c9 a0ce 8105 92a0 e2a8
+f40e 19ed da16 130c 0607 aac4 f8b2 af14
+e86c cd96 f9ce 27bf 76e3 5d3f def8 e253
+8fd8 6f7d 0660 0055 685a c896 5144 3255
+947d bd75 d379 2f38 6cb1 b3dd 5a24 e78c
+eb58 0242 6bed d0b8 9798 89c9 89cb af7d
+e8af 3f72 9131 d0d0 f2f2 b38e 7ecb ab4e
+9c40 2e3b 8ba2 0894 7623 7550 7d34 68c5
+e682 1a5a 975d 71e7 3f7f e63b 8f6d dcbe
+7aed 1add d44a 09a1 7234 462d eaa5 dae7
+b002 4d63 3e6a cd97 47a5 4147 3168 e964
+5af8 754a fb72 cb90 5a69 0c55 aad4 8edc
+d6d3 a31a aff1 5a41 356f 6439 b68c c514
+2439 5aa1 15c3 a8c2 2765 7547 8dff a65a
+ce68 566d 94c0 332c 8e52 981e 5501 454a
+8908 2942 ef18 1020 4204 c9a6 267b bdc6
+f5b7 3f7a ffa3 9bcf 3df5 a817 1cb3 5f86
+c65a 8b38 a87c 4144 4433 00a0 082f ce6f
+43ad 5980 2b1b 3404 7414 2db3 88b5 8cc8
+2092 3727 aeb8 f1a1 bffd d837 5860 6242
+bff2 ece3 5ef5 e2a3 497a 3d26 8588 ec88
+0d44 b0e8 262f 44a6 9a93 9b66 cb0f 7fe4
+b24b afbc 45e7 ad75 bbed a6b5 2224 02f2
+1f4a da1a 0d47 57a2 8f3b 7440 5f5e c910
+0a06 c289 09a8 73bb df95 c233 0d30 4e47
+7b96 e9eb d67e a942 cb88 31db 305e 2bab
+e61d 2559 8f28 e051 bd91 9005 4ecf d25a
+cfdf 5a2e 22f5 3a19 a526 8e2a a6d4 c535
+da47 8f3a 2acf 4147 2970 51e2 8e07 1ac8
+812c 2190 0143 0a74 3eb5 d0e9 7ee6 92eb
+ee7b 78d3 cb4e 3f62 9fdd 26b8 ec81 b16c
+8199 8001 c502 3320 30a2 1204 04e7 0b49
+0883 2960 2622 0b56 1b50 ade6 0fef ddf2
+b71f b9a8 6bca c906 bee6 a527 9dff c223
+d976 ac08 8045 6a88 b1a4 4a10 61d4 4ab4
+d698 3727 aeb9 e9c1 0f7d e6f2 7b9e 989d
+9e5a d56a 3410 5510 ca83 e17c b62f fac2
+df47 1f65 2d33 90c6 4da6 447c 6d1c 5f6d
+f684 1f4d 84d1 1913 a3e8 dd5a d2b6 7668
+0d96 553e 8cd7 78ad 889a 3772 1249 8b8b
+9f62 04f3 279d 1d5a 6636 dfff 7279 55e6
+4f51 d438 0c72 8364 61e8 462d 04b8 6cf3
+41de 58a9 2c11 9156 5951 9637 fee8 d147
+1e7d f2dc d38e 39f1 98fd 492d b265 0016
+040b e4de bc41 0cf1 80e0 9541 c031 0002
+662a 53da dcf3 c8e6 cbaf be77 ae53 4c64
+8d97 9e79 e4b9 671d 6eca c58a 1816 b152
+5611 3e2c 6808 9bb8 28fa 639f bef2 0b97
+dec8 98af 5b3d d554 1a49 4b50 cfa6 ef6a
+88a1 cb43 5e54 ed46 b361 117a a60a eb65
+7c99 7d8e 49ca f6fa 3cbd 3457 cdc3 687a
+31f6 3ff8 af71 ed95 784c f88e d7ca 42de
+5400 5bfb 43ad 0142 9af8 0d23 6c74 a02e
+ae62 d4c9 998e 24d5 3e69 4429 842d a0a8
+f396 8e14 87a7 b46f 1f45 fd9c 90ee 0c8d
+b79d b3a5 b5ce fdca 1029 547a 5b67 e193
+5fbe e6ee 0736 9d7b d691 eb67 088b 0241
+b345 9041 1ad0 90dd 1a0b 20a0 c305 c9b3
+2c6b 4cde 74db c3fd 5201 ab13 8fd9 ef15
+e73c 07fa 3d23 4c8a 9c72 02a4 6401 1225
+2c59 4bdd f3c8 fcbf 7cf6 f25b efdc 3cb9
+6a55 2b47 85c2 a489 b4a2 184c 83b8 fb25
+6ec1 a152 38c0 125d b746 e5fd 8477 8c3e
+94c8 4e2c 523b 44fb 8fda 075f 663c b2b6
+2b18 7e5e 2e26 0a02 1ff4 e88e 6968 d078
+8dd7 8ae0 7943 e5d0 a80a 74a7 b5d2 326b
+d40c fe28 1638 bd41 7846 8500 1196 5aa9
+261f 12a7 1e08 fcd2 6a49 e1b4 7114 dd71
+9001 ac94 d244 4a61 994d f0a2 6e5c 75eb
+8f1f daf8 d42b ce39 eee8 8376 b3c5 3c81
+080c 1c76 2be5 ad20 1133 b802 b6e2 0474
+a6b3 0622 f48a f903 f659 f5d2 339f 93b3
+2d4b 2bc4 000c 504d 69b8 8239 cf5a dfbe
+f6a1 8f7c f63b 3b7a 3cb5 7a55 ae91 9422
+a52a 0e1a e360 3477 7d80 ba41 b534 6669
+5776 e5ee fdf1 8dc1 a887 366a 1f13 7e0d
+6a55 8661 10c6 4e89 f8f4 baee 8994 680e
+3e12 c68d cbde f15a 413c 6f5a 71a4 dfd1
+5d99 0785 3aef 54a8 1b2b 1ae5 e410 fa6a
+d7c2 7a24 59ab edda 2da5 ff06 c79c ea3d
+431f 80a8 46ae b5a9 8dd0 0111 b506 6324
+cb32 4252 9a50 9599 568f 6deb 7cf8 b3df
+3dff 8ca3 5f70 c27e 5a95 6248 4089 f401
+b2aa b926 2c80 82ca 45ac 012a 52c8 a48a
+a2bf a645 2f3f ebb8 f56b b37e 590a 30b0
+cd40 59a5 9119 8195 5206 273e f2c5 ebbf
+74d9 8d79 7b72 6666 5229 54a4 1109 4929
+601c 101a e11b e2e6 d3bc 0972 34bd 1671
+d9b5 956c ed0e c6df c591 03a1 8ac0 3742
+533f 39a8 33b6 87d1 4e3a d167 97f6 00c3
+eadb ff52 6b9d 8ab5 c7a6 65e3 b512 6bde
+f4dc 5b9e b1ad ed83 ed34 6860 d739 df51
+bd97 65ec 1d42 3568 adf5 5a44 7738 8008
+e5fd fef6 2e49 68d4 d4a9 3745 5b1a 3826
+224b 8084 8034 49bd 6ef9 f96f def2 f093
+4f9d 7fee d16b a758 958a b921 9945 a902
+d12a 7cac 8c1b 9048 9545 c165 f779 c71f
+feec 43f7 32dd 794d 2d40 a3c0 3269 23a4
+ac9d 9ac8 9f9c a30f 7ee6 e26b 7ff8 f0aa
+5533 8d4c 675a 1391 9bb9 abfc cc12 efae
+d46c a176 c07a d447 1fd9 9545 d760 07e5
+5996 85f1 2530 6c1d 591b e49e 8e1a d75e
+e6fd a753 ab97 0855 bd21 8311 765c a322
+dd5d 84c6 e7fc 78ad 20e4 ad0d 7d48 4fbf
+8804 8cf0 b756 c35b 8be0 5165 1ad5 b3a3
+cec9 4886 1185 c687 2e91 e918 5534 d714
+56e8 a1af 4afa 50d1 2e35 ecf3 8437 a8ce
+6a44 4d44 2a5b ccf4 753f 7a6c cbf6 8537
+9d7f c281 bb13 170c 8256 3cf4 0033 2355
+5e5f d6b2 359d bdd7 b74f 3ff9 5920 f362
+91c5 3096 1649 8b68 db99 6a4d deb3 a9fc
+bb8f 5df2 c013 f36b d7ae c9b4 ca94 c6ea
+0283 b5f4 4b2d 271e 8da5 d53a d047 6f5a
+4aef 40dd 9c61 caa5 8ef2 0349 e115 9251
+c368 6713 3d97 4fa7 8661 678f 65f8 dcf4
+858c d778 3dbd ab7e 74b8 d6ad 352d 3997
+ffe7 f255 ed4e adce 96f9 6b8a 145e a200
+23c4 6aa9 843e ca28 82e1 d08d a872 0c63
+e2c2 3fb9 b24b 29a5 b5ce b2ac 91e7 59a3
+d96e 65d3 4d5a 35bd eaa1 27e6 3ffc e9ef
+fee0 c1ed b649 3c1c afe0 1ecd 5a6b 8c2d
+4d5f 9139 f979 cfda 636d ae0c 120b 4a21
+ccd6 2298 72a2 d5fa c183 737f f60f 5f79
+e4a9 eeaa 9999 469e 673a c361 a1ae 7b15
+5e95 310a 656a 2d11 467d b890 34ca fcdd
+6bbb 64be 3e4d a924 af85 d8e9 7e28 1c8d
+49e7 e8c2 78b7 08a0 fd6f 7c19 1e71 d963
+e41d af95 85bc b55a f451 cd96 9475 5d7e
+4821 2ac4 a209 a55a e144 44bc faa0 a0d4
+c535 b2d4 0943 c861 c4ac 705a f9fa 4ebd
+effc 8465 9703 c7a8 4c8e 6cd2 42a7 1ea5
+b4ce 7496 e956 b3d1 6ce4 93ab 269f 5ae8
+ffd3 bf5e 75c3 6d4f a9ac 8d68 05ac 000a
+1303 098b b1d6 70d9 eff5 36cc 4c1e 77c4
+0168 0c58 b452 b030 1a50 6c5b 8dec ea1f
+6dff f30f 5fbc d081 99a9 e986 524a 6588
+0a51 9163 7883 bca5 d0f4 2064 5aa3 7709
+4628 b5a3 8fb2 763b 12d1 41ee 1df3 63d6
+d168 5918 230d 89b1 5cf4 a4fe 96e1 6628
+154e f8a9 9690 5cf6 2fd6 7d5e 9edd f64f
+bd2b 2d8a f11a afff 52b6 21d2 60fe 4444
+ed28 a39c 9de2 6fda 685e 46f3 10f2 0021
+450b cb3a 5145 d1e2 617a d832 d57d 24ff
+5c5e e651 573e 0322 316a 1151 0039 e224
+ce2c 743a 1fff c2b5 a5e1 939f b38f f4bb
+a840 c888 6814 b196 fbfd c296 e699 07ee
+be6e 55c3 f6fb 8684 5913 6b30 b63d ddf8
+fe1d dbff ee33 570a 65d3 136d 1787 9c46
+a047 aadb f498 2373 c5f4 3635 61f2 7594
+5104 cd61 cb31 9c13 abb5 f14c dfab 514e
+a1d1 07e1 a0d3 3d85 2f87 3dd1 94b6 1323
+0777 1836 261d 77d8 c66b 65f1 bcb5 5ad7
+da9f 972f 8147 dda5 b6f9 563b d399 d63b
+e1a9 1be6 b3c1 4096 3fca ba77 9467 4ad4
+0d0f 7be5 690d 9e5e 3646 c12e 0088 b85a
+0c00 0089 32b2 190a 427b 6111 3efd e5ef
+23e3 29c7 ec2d b614 a711 0361 66b6 d2ca
+d4c1 fbaf 4731 2503 0010 9350 3f9f 9cba
+e69e d97f fcd4 1579 d668 4e4c 9052 aeb0
+0300 d7bb 8fdc 2752 acac 1593 7845 572d
+6333 2a78 b4d6 f6c1 5797 d1bb 0a49 965a
+d452 aba5 7123 2887 c492 29bc d686 5944
+518f 2132 67f0 5f9e e545 8de3 355e 4f27
+f28e aae9 a2e6 d84f f10d 4e9d 1976 4afb
+7a9a cfb7 b9fd 5e35 1a8e 4851 352a e46b
+cdcf 422c a8f5 9d88 aaaa b0cf 1e06 ccc0
+d0e4 b475 b25d 22ca 094b d04a a089 3da6
+7667 defe dbd7 ae6f e4d9 7147 6dc0 7e29
+b414 c936 3d91 edb5 7eb5 e91b 2040 2b00
+b639 3d71 cfa3 e53f 7dee 3b90 35da 130d
+d410 f694 fca6 2152 718c 02df 65dc 8546
+65ee 850e bce9 6662 d454 6ead d276 14dd
+9caa 7421 7173 0ebf 03b5 31f2 6957 20e4
+3422 166b dc67 1baf 15c4 f38e a205 4641
+672a 0f88 e8bf 886f dd69 bb2c 9455 4425
+675a 6a79 3636 247f 23ea 3012 fc8e 4ab7
+0d1b 3e21 0d9d be84 e8d1 a232 302a ba11
+4929 ad94 26d2 a408 7596 e58d 3ccb 5aed
+89ae e84f 5d74 cddd 0f6e d7b9 6266 0b04
+0882 bc7e fdaa 5513 1396 ad88 6564 95ab
+cd0b 8d7f fed7 2b11 f4f4 e404 a81c 9006
+0a34 0c51 2f7c 076a cbd8 48a2 909a c3b9
+79e8 8893 4d15 08e1 b3a4 4e46 a95e a2b6
+9517 fd5c 9b06 1dbd 96f0 d212 72b5 51b0
+5ec4 7284 e47b 34dc 3cae 79c7 6b65 21ef
+2873 ebb4 aff2 333f 825a 941f 95f8 1d86
+f778 c8f0 28ec c025 9d8f 8aee 1bca ec43
+24f5 5a85 e8f5 fadb a78d 29d7 7f4b 8a62
+27f6 4245 9069 d4a4 1b5a 37f3 567b 627a
+a18f 9ff9 f275 8f6e 319a 08c5 3a83 9bbd
+775b d3d0 e8bc 2545 50f4 aa4f 7cfe aaad
+b3fd 89c9 895c 6bad 9426 ad48 45b5 aad6
+daf5 9122 c2c4 b79b d28a 38b2 caf4 48ea
+1ec7 77c9 42f7 db51 17e0 9461 48ab d1b4
+4de7 7733 61cb 1412 d943 8a95 51af 2ffc
+d422 3bca 107c a12e 6d7a 7cce 8fd7 0a42
+de34 32ab 5615 90c2 65aa c14c 8b9a f4fc
+4f65 4ca9 0829 6581 a3c9 d130 70c8 8be4
+ddcf 51ed 1642 6dba 414e 5bf0 fe61 4385
+00d4 9957 a463 ca30 149d a094 ca94 cef2
+bcd9 6c64 cd06 b426 5a8f 6e5d fcec d7be
+df2d 3411 91a8 469e edb7 fbea 1c0c 301b
+c3cd d69a 8bbf 73c7 adf7 6d9c 5a35 9d69
+0dc3 4467 6d0b 2b7c 27c3 bd76 aae2 f275
+aebf 6554 f87b 3d40 fa26 471f 772a b60b
+055e 7e4a 257c 7bbd 14a4 9622 d829 a08f
+e216 a2eb 65f4 350b ff34 661b c66b 45b3
+0db5 34ee a8b9 86e5 29dd f4d4 ad65 096a
+69e5 545d 9fd2 9761 8dec 8bd0 c8a6 6754
+419d 624a 080d fe50 2345 44ad f829 1cc9
+4de4 aee4 1460 2acb f396 6e36 b389 c999
+dbee dd78 c9f7 ee54 d924 42d1 ceb3 0d6b
+26c4 9686 396f 4cdc 7aff e64b aebe 63f5
+f4b4 d200 75b8 3f8a 0ef2 1a58 d775 f497
+a2f0 bae8 6be4 94e1 f5c0 edaf 5bb0 0b31
+1fd1 845b 7831 88d4 0821 0930 f07b a3e5
+7742 914e 2eba c084 8582 db79 7846 6514
+7701 e30e db78 ad98 a597 2107 6174 ac56
+54ae 8e32 e14d 7594 cb7c f5a3 99d1 dac7
+4f03 c16a 230f 6ac3 e542 8c08 a79e 42c2
+3a3c c96b 8fd0 038a 8712 5742 a695 2322
+8a00 a20c cc71 8030 6f68 82bc b493 53df
+baee 8e23 0ede f384 c3d6 b7b2 be6a 67a5
+65c5 b458 e6ff 76c9 7775 63ba 99e7 1686
+da4a a326 5f23 b6d4 b304 d118 4208 94e1
+db15 8d3f 84c7 bfd3 51b4 dab9 be74 7a02
+ea1c e96a f70a 1188 8744 0a8c 70b3 1bf5
+ec10 9822 a53a 8af1 1aaf 95c8 f386 bf59
+66bc a216 43d3 f0c1 65d4 3cb5 854f d8b2
+0b4b cee8 a8c2 3f45 3bca 6514 1ae9 bc6c
+18d0 0949 bb2c 52c2 861d 7f8f 0b61 dd97
+cca4 b897 894a 61a6 9456 5a69 95e7 badd
+6c95 927f e1b2 1b36 cf8b 56d8 5260 6dd9
+9a98 bae2 dabb 376e 5d9c 6836 8434 02aa
+e0cd 1935 0036 2ae8 7754 b331 c4dc 10bf
+c27f 3a11 452a 8cad 7dde da5d 85f7 6c4c
+bd22 d3d6 e532 cb7d 2e2e 16af 5694 9692
+c2d1 5ffd e4db 3807 68bc 7e0e d886 68d3
+370a 6a6b 350c a94f 6ba4 af0c b30b d37d
+fa28 bbde 5abe 38c4 c470 fc6c 145b 12ed
+9123 fa2f cd1f 4b7b 4151 f959 eb45 9000
+2532 0b20 eac1 6ae4 f944 ab75 dfe3 5bbf
+79fd 1d9d 5ec1 0ca4 b247 e78a ab6e be7f
+d5aa 6952 8401 ee7b a7c7 65b6 0e21 4f5d
+db54 f44e c4d1 7146 be13 0e6d a3d7 589b
+3692 8a85 5369 f0a8 8faf f62a 5eeb 3501
+c3b1 2330 c2f1 27f5 3e8f beb7 ee0d 1c93
+bce3 b512 91f7 a7a6 c052 7662 9914 8051
+c575 5ad9 456d 1c5f e742 3207 9576 9396
+a9c8 d28b 4a8a ad30 9ccc 588b 71b5 15f4
+a8ca d403 992b c174 a69b 4ddd 684d 5e75
+c3bd 77de b769 b694 7c72 cda5 dfbb 6bc1
+800e 7237 2263 1a18 316c 1645 97a6 c286
+f0d2 b2cc 2384 1441 aa25 18f5 39a6 920f
+0854 5fe1 3f47 5dc5 d35e ab7f 33dd db05
+75a3 6ea9 043b 9ce5 4bbf 2a63 9277 bc56
+28f2 8e2a 4946 c1d6 a8d2 78f9 3bfa 3dec
+2850 1e25 3608 db59 e979 553b 07bc 7cf2
+5be8 c050 2b32 8344 af9a 3e6f d4cd 8bdc
+11d3 2bd0 c052 1d15 e989 466b fb5c f9fd
+1f3c 20d9 c443 4f2d fce0 8e87 a6a7 2689
+6a5e 51ca 6587 d5a5 2707 d2dd 7d78 6c1e
+9ac3 3657 346c 366a 20b0 7633 e1d1 dc73
+35fe e57b 2b0c 0fe5 6e53 128d cfa5 e56d
+d8e8 abbd 5286 3788 1cef 523e 21fc 5877
+c5af 67bc c6eb bf6c e914 4947 c9f2 6bab
+a4da 5d6d ad0c 2bec 7487 5555 788e 8dc2
+cada 789e 1437 a1ae eb12 556d 514d 1d16
+98d1 1d53 715b 94b8 3c6a e31f 6ab3 fc3c
+6bd8 fdcb b442 6828 c33a 6f3c ba79 4b61
+f0e6 3bee 2f2d 4d12 a5db f950 4817 8e0b
+d73a bed7 4e91 84f1 9791 9801 82c6 66a8
+1030 c6d4 36a6 52e6 378d baf0 e44f 54f6
+d67e 5b22 a226 8d97 af35 56f7 fa65 c7e1
+46fc 4374 c0e1 fcc5 187c c76b 6521 ef4e
+d7f2 7efe 3b6d 98d4 8e7e d686 142c 53a5
+a690 14da 938f dacc 8606 dbb5 0136 a34c
+817d 15e9 b982 da9b 45ee 3fa1 bed5 3db5
+f359 1f36 a254 44d2 6834 8c35 fd7e 71cb
+8f7e fce0 439b 27a7 57b3 b042 82e1 1665
+f82a c262 302d eaa3 dcfb d4d4 b1d6 0472
+9481 4eaa 184b 737f 6158 fe15 f2aa a186
+ccff 3c2a 58de 3f94 3764 083f bea8 24f7
+77f1 1e69 a394 823e 416a 1c82 395e 2b0e
+7977 6a58 9e6e dc46 595b d5da 5fa5 ed94
+dac8 9951 f89b 1e40 e453 5e5b 7c8d 8a7f
+8f94 b930 4291 1aaa 32a2 81b7 b074 aaad
+a623 088e 08eb f0b5 2ba5 daad a6ce f1f6
+7b1e 55d4 c406 103b bded 5295 5a7b cc11
+bd1b 824e 5ac9 c270 e85c 6812 04c3 4115
+1176 bb31 397f c765 5eef 326f 4238 eb3c
+2a35 35ba 6040 5d86 310c a22d 7da3 2c34
+0b5d a614 f076 91de e267 bcc6 6bc5 d5bc
+a3e2 d152 126d 14b0 2e53 11d7 16bf cbd4
+cea3 ba40 e119 1b75 ab6b e129 dd62 bbdf
+787a 3472 6989 4c2c a399 8e94 5a71 7577
+6a1f 5c6b 371c be22 2295 6519 6945 a844
+4421 68a5 99ad 0794 b4d3 9552 e4a9 294c
+c465 875b 81c8 7327 1a39 1bf5 bcfe 7d8e
+c68e 53fb 08ff 3ef8 b73d 6d9f d69a 91d2
+30cd e2b7 3221 65ec 1964 35dc 844c b73b
+e1a7 bc2b 72c3 f11a afa7 0779 532b b251
+f566 bae5 5fc6 7bac 9609 8d62 7d6b ebd9
+d445 30e4 5ea3 0a2b 42c6 2807 3ebc 7d6d
+2063 b41d 4ef9 e550 f706 7513 1c91 d47f
+9417 6284 9283 f034 9551 f511 9010 20bb
+874f df01 7fa5 49c1 31dc c5a7 9f48 28d7
+ab7d 43a2 f90b ff20 4aa9 106a a3f7 212a
+45a1 ce81 0c46 28d2 5201 6274 914b 55d2
+a951 030c 5c7a d34f 2d0c a188 78e1 31f8
+8ed7 cf07 cf3b 8ac0 8d80 6919 6fb3 9ff4
+f7b5 21b5 69d5 e930 28ea 9547 3edc d11e
+3f35 2a73 a7ae 0f93 8f86 e846 5d7e a206
+4e74 c5aa 750a 1ef5 9646 1712 5fd6 f9e3
+096d 5fa2 fe5e 8471 6988 d14e a34b 2388
+0cc7 49c2 8a35 c5fd e812 1286 44b8 1235
+52dd 45db 8870 5803 1267 f7e8 aa53 3b0b
+974e a887 c6a1 61ce 48b4 f318 cf53 8cd7
+cf07 f2ee 0a39 300a 4f97 39f3 a3c2 1946
+24c3 8f1a fa44 4417 3d9b 3ea9 370f 4b27
+f723 2841 44e1 9ada 3995 3154 4f4a 0489
+59cc a872 7b19 7d48 2d2c 1229 47ef 3a76
+d5a5 b747 4aaf 9491 4744 71ae 6875 481a
+d583 a199 4e54 f53b 9cd2 5a57 b704 e00a
+ec30 acc1 a38e 5cad 3d63 6a70 1ebd b1be
+66f7 be68 e9d5 250c 218d f616 d1d6 24e4
+94d2 89e7 a87d 372e 78c7 6b25 22ef 7fde
+54fb 2e8e 8a42 5d0c 445a 6f8e 7aa8 741c
+204a 0baf a6b3 0000 50ac 3081 8064 4802
+0e18 a287 0300 6061 1264 4042 a8ac cc11
+00dc fe9a 01dc 1e56 8180 2020 080a 232a
+095f 3a08 0a21 0120 300b 300a 1840 0450
+042c 30c0 6e52 c808 d602 2222 2156 0f5e
+2ba5 1071 0ca6 1610 77f5 4071 3118 424a
+6162 5600 22e8 2957 1401 1466 ad95 4335
+6358 0448 0130 1209 22b0 b026 25c2 860d
+3a77 ca20 0aa4 d6d2 2192 e279 fad8 ef2a
+9c11 300c 8b2e c2cd c732 d1c5 ee41 8c31
+e1cd 42d6 db5f aefc 6f42 e00e 3716 e331
+b6f1 5a29 c81b 0927 7711 4623 bcdb 95d2
+6f57 1e70 5445 ec4e 2197 8213 b592 529f
+d691 f3c7 0056 4088 5184 fb45 497d 8d20
+d934 2b12 11e4 e1d1 e70a 476d 5958 634a
+2251 aa91 ab0c 095c ea04 2860 43dd ce82
+1600 2c55 a34d 4a13 010a 2356 bb6f cb86
+4114 8385 7e69 7ac2 ca96 ac9a 2da5 5041
+0f44 0928 11ea f50b 8045 95e5 0a58 eba6
+b500 5882 2822 e505 6643 7436 8030 0b28
+63fb a6db 4325 823a 6f36 1180 0405 e2aa
+dcb9 050b 2254 2f8d 10fa c6e2 42a7 5bf4
+169b 4d35 39d9 6e36 55d1 358b 8bdd 5ec1
+cd89 2995 69b6 86aa 4b4d 756d 823a 1ba3
+882a 09d1 3094 c4f9 cf22 f5d0 49a3 da7d
+2d5c 6beb 13e9 d820 1956 0ecb e488 1b19
+eb79 c7eb e783 6d18 555a a642 f79f 49fd
+9bfe 3522 efd2 d2b8 f6d8 4625 630a 42c1
+b63f 3ffb 82a3 0f3a 60af 359d 822f bdf1
+2e0b 4d25 1ac0 0c95 de20 ccdc e975 d74e
+e0cb ce3a 6eb2 d5b8 feae 076e b96b 63ab
+35e1 d0c0 14d8 5fd8 74d6 2987 1db0 effa
+3cd3 77dc bbe9 ba5b 1ea0 66bb ea9d 55ae
+3100 a08c b5b3 0bdb 5ff3 c213 8e38 609f
+cd8b 9dcf 5df4 7d23 0d85 c060 fbc6 2cce
+2fee b5a6 79e1 abcf 5cb5 6ed5 5c29 fffe
+e5ab b66d 2e89 7216 eb5e 6588 3895 0d26
+2200 96c5 e2aa b679 ef7b de30 339d 3fbc
+75db 073f f635 e429 112b 0ef4 075e 91ae
+e6f5 6f16 8906 1446 3db7 6376 f54c f6aa
+d7be f8b9 cf3d 64c3 9ad5 9aa8 df35 8f3f
+b9e9 da1b eebc ecdb d76f de31 3b31 31ad
+4432 c596 4146 3bd8 a5b3 7fe9 9b1f b2ba
+e93e 26fc 4c43 1e23 14a5 40f0 a260 5843
+1d2a 8523 ca3b 7cc6 9dca 16c7 6bbc fe4b
+9177 19f3 975a 1220 3dcd 9621 646b ebe2
+9fa8 228e 78d8 d437 6714 e39c 8a0a 4480
+c1f6 6cd9 e975 a727 71bf f5ad 2e36 f926
+2b86 8138 be3d 0a5b dbed f5f4 64eb 90bd
+67a6 da8d 479f 9aba de3e 9e99 9210 fb65
+d9db 31ff b233 0f7f c969 cfd4 8a6e bd7f
+f6a6 dbee 166c b128 572e 576f 058a 585b
+987e 67b1 dc7d 323b 74af 89dd 785a 2318
+402b 6880 17e6 77ac 6ed2 7bde f2e2 e38f
+78c6 623f fbf0 672f def8 e496 6663 3580
+2522 1170 1bf6 d4c0 a15f 96f3 3bb6 9cfb
+82e3 4e3e 6677 dbef 1f7e d8de dfbf e6ae
+eb6f 79a8 35d1 4449 d47e 0e7a 8481 0551
+8c98 85d9 ee81 fb34 ffd7 1ffe d201 fbae
+530a 41da cc80 60f7 dabd 71cc 11fb 9d77
+cec9 7fff d12f 5e7f eb83 b96a 2acb 8388
+8d21 e634 2c5a 2305 5e98 db54 2b14 1905
+d0be 4717 cec8 8469 23a9 277d 4a46 85c5
+b88f 281e 8f0e 8fd7 4aac 797f 2286 37fa
+96ff 1404 c54f ba3c d5b0 536a 1886 2708
+a270 7811 11b6 d22f c588 2dca 7eb7 df51
+c00c c802 649d 8585 2710 2d5b 6b8d 29ad
+2db9 28ba fd4c ac61 42c5 00fd a298 ddb6
+fd25 271f 7ae6 c907 28e1 dbef def4 b1cf
+5fdb 57cd 7633 2361 6610 ed87 e500 c418
+6b4c 29fd 5ea7 db9f ebd9 89a2 280d 7548
+b2c5 f9fe de6b b35f 7ed3 8b0e db67 f593
+4fee f8cb 8f5c 76cb bd9b d7ae 590d c002
+1644 01a0 1748 2dc1 1680 58db ef17 134d
+3aed a423 3bf3 7322 1a8b 6d2f 3cf5 39d7
+de70 27db 1c2a 3307 121e 7408 4558 0408
+01c0 082f f67a 65b1 e3bd ef7a fb81 7bae
+dab2 adfb a5af 7df7 b6bb 1e67 960d ab5a
+c73c e719 c73f e788 671e f88c b3cf 3ce1
+eaeb 6ecf a7da c60a d252 ca7a 7a2d 4cb7
+267e 5a3a b598 18e5 3617 4adf 52c1 090c
+8fc6 4557 f130 e93d d2a5 447c d4d8 9f77
+bc56 16cf 0b23 64b6 cbd0 afcb 1011 3f1d
+0a47 0554 281b 88e2 6c77 2adb 8a04 fc43
+9305 96c1 8208 58a6 1294 5801 1621 441c
+7635 4450 a44c 69d1 2209 b2b5 080e 9955
+afd0 0b3b 369e 75d2 c1e7 9e76 3822 de7c
+d7a6 4f7d f95a a39b ad3c 77b2 0022 0c9a
+eb60 04ac b562 4b4b 0002 5c72 afe8 1b85
+fd85 dede ebf5 afbd f3c5 07ef b1fb f6d9
+ce5f 7ff4 6b37 ddb3 75f5 da0d 8856 0411
+148b 54e9 f1ee 955a f68d c0b2 b40b b3f3
+2f3f ed59 07ef b7f7 ecdc dc5d 773f f8ec
+430f 3ce2 9075 871f bad7 dd0f 6c6d 4eb4
+0811 c0f5 0511 1c4d 2b0c 5640 c430 77e7
+7bfb 6d58 7dc8 fe7b 2334 3efd efdf fabf
+1ff8 b7ac d524 c8b8 ec7f f2f3 df3a e984
+23cf 7fe5 8b3e fcf1 cf2b 354d 2424 2080
+e98e be36 f329 d44e 8c1a 68ac 255b 4356
+21cd 5486 e109 e690 118e 3a7e 11c5 1f8a
+22c6 3cef 78ad a855 7d83 231f a951 a0f9
+5ff3 c58d 24ab 3b3d a4c8 403d 3524 f3ff
+ad4c b306 be59 4b19 42c6 56cd 2777 7eb2
+bb0b bb17 6c98 ad00 0b14 65bf 33ff d439
+271c faf2 d39e 431a 6ebd 77f3 bf7c feea
+2e34 f3bc 0128 4484 c3d3 ccd6 daea 3150
+32ca 1568 2bb6 64dc b163 61c3 8cfd 95b7
+9c79 c09e ebe7 4bf9 bb4f 5d7a fdbd db56
+af59 9b61 2586 e564 3c0f 1001 5100 4a6b
+ba45 d1d0 e6c5 671e dbcc d56d f76d fc3f
+7fff d5ad 739d 3698 179f 799c b105 1129
+0630 4be6 c288 e82c d02c 5b61 3165 3f6f
+6845 b931 d82b 2ce6 cd99 9975 33ab a657
+ad5b 3331 b3f6 ba1f dcf7 fb7f f2c1 a79e
+32ad c916 9045 558d 54a4 a319 9170 cdf3
+aaa1 4b46 9aea 36ca 6b29 ed9d d616 cee1
+d7d5 ada2 288c 31a1 835d d855 f3d3 77e1
+4b18 aff1 7afa 9137 728d 5906 5e47 655b
+c12e 44bb ef4a 2d3c 6a4a 2d35 2a4c bd71
+777a 03ff ca58 d815 8195 44c1 fda9 eac7
+c416 0dcc 5c1a 5394 a6b4 b6b0 d29d 9f3b
+ebf8 fd5e 76d6 e1b9 86db efdb f1e9 2f7e
+bf50 ad7c 4221 0921 b947 f098 1bf6 0389
+0850 336a d0ba b3b0 b8c7 0cbe f76d 2fda
+77dd aa2d 5bcc 5f7d e4a2 1bef ddb2 76f5
+6a8d 5646 5844 0200 a308 81a0 5891 8585
+b963 0fdf e7e0 7d56 2df4 f8b2 efde 71ff
+a61d dfbe f616 5bda 939e 73d0 21fb af2f
+ca52 9080 0003 1d98 3b36 4412 00d2 6adb
+b6c5 b905 db59 9cfd 85d7 9dfd 8b17 9e3d
+3325 3d33 dfeb 2c32 cbd4 ea35 1333 3313
+930d 5225 61e6 7645 6924 8f7f af52 574f
+08fc 7323 3ff2 b416 0e07 bbc3 c187 b482
+8ebe 0690 a4a9 d66e 8c22 61d9 187c c76b
+65d5 bc11 c23e 5da3 3ebe 6cf9 99ac 5189
+0952 895c 97c0 1786 731b 43b0 b696 2d4b
+bf5f 2e2e 2c3c f7e8 fdce 7bc1 e162 cabb
+7efc d467 2eba baa0 f664 bbad 2577 9cac
+6f43 0d01 2e00 574f 212c 6c8d 3960 8fe9
+5f7f eb4b f759 dd9c 9fef fcbf 0f7f e1da
+1f3c 35bd 6a75 5309 12b2 f050 bd3c 0413
+0820 0c50 947d 658b 179f 766c aeed 6df7
+3cf2 fd9b ef68 4c4e 5df6 dddb b777 cae9
+26bd e8f4 638b a267 0818 2c0e 5e94 b5ec
+a00c 0081 209f 683e b169 f6d2 cbaf 5599
+ca78 fed7 de7c e6c7 fef2 57ff e68f dff5
+de77 9c77 f2b1 07b4 5569 3a3d 0285 a250
+1482 611e b204 0bd5 5ae1 0c5b 7485 f6df
+a254 5296 ba6e c208 0bdd d4a4 38fd bd1b
+0009 8f24 920c 4362 be3e 5ee3 f5f4 f3bc
+d117 7d99 e897 5d99 62a8 ad76 d3ca 7479
+41fb 282f b4f4 677f 2687 dc6e e8d9 ea3b
+6603 3c15 000b 2020 ca55 c020 0adc 469c
+8307 6797 5e09 822c c2c2 5874 fb47 1db2
+9f6e d85e 67b1 ddd0 d333 33a2 33ad 5033
+a0d2 82ee 650e cdef 8a88 b522 6241 0080
+418c 1869 67ea 175e 73ca beeb 26ca b2af
+b4de 6bef 753f 7af2 1185 c892 2b30 8044
+84a9 090e 200a a098 8219 bbdd ee73 0ed9
+ebc8 43f7 eed8 eccb dfb8 7eb1 6b27 5a33
+0f3e f2d4 2db7 3eb4 db19 ab9e 7fc2 b3be
+f0f5 efef e818 1205 c0e1 c74a a498 9958
+3284 7c62 e21f 3efa f5ed b373 2f39 f384
+f5eb daab 26e1 e423 f638 f188 dd5f f9e2
+a39f d8d6 bbe8 d21b 2ebb e287 59de 4401
+1014 b19e fef1 9fa0 efb9 458e 1f21 c3e0
+a778 43ca 35bc ba47 9405 8c18 d88b 6688
+8767 ffa8 f65b 1af2 bce9 80e2 788d d7d3
+bed4 d4d4 1424 e10b f033 553e 8ef2 defd
+e91e 21ed 8f47 5e0d 9004 3484 486d 6c59
+16e6 b0fd 765b b72a b7a0 6ebd 7f23 80c2
+e1db 22a0 8858 b6bd 5e6f aa95 1d71 d8de
+628b 5c61 d6d0 7373 9d5c c19a 89d6 3efb
+ee7f d36d f765 ba49 9a91 0805 435e b2a2
+aa01 2c5b 636c 5174 4f3a ea80 f5eb a6c1
+7666 26f4 a39b fbdd 0266 9a72 fc73 8f78
+62cb 530f 3fba add1 9824 3058 05b6 0db9
+1654 d65c 6099 d994 522e ce5f f8ca 930e
+3968 8ffb 1fd9 fec1 8f5f dab5 1998 72b1
+d79b 9d9d 3be3 94e7 ac5a ad77 2cf4 7f70
+eb83 59d6 74c8 1b99 0b23 000a 0361 61f5
+f76e f8d1 e557 ffe0 f6bb 1e7f f489 6d3b
+167a 003c d5d0 ab27 f569 a79e 2068 6ffe
+e1fd 4ae5 cce0 063a a2b7 ba96 7f08 cbcf
+6514 0551 c0e8 a8fc 8e51 81c4 b544 9607
+f15a 0bf6 f08e 6fbb e0f9 e3d3 7ebc 9efe
+9a37 ad59 9649 9cdd 2957 bbbc c12e d4e5
+cdfc 6c61 3de4 8b43 a675 e9af 0e83 5cab
+0d6c 25f4 8dc6 a2aa e69a 0020 a122 0466
+93eb 89db efdd f2ed effe e025 a71f 7df8
+becd 0356 e7af 3ceb b82f 7ceb 076b 1a6b
+48c4 1220 0fd5 6232 7810 1106 01c3 56a4
+1463 37cd c3df 7dfc b2a9 56f3 bfff f279
+d8d9 f1ce 0bce dab6 f5a2 879f 986b b59b
+2056 298a e653 aa46 195a 16e8 7516 0fdc
+7be6 b8a3 0fb0 6c99 e50d af7e 6173 a2d5
+44b4 0868 7b73 f373 8a8a 179c 78d8 572f
+b949 5894 a650 6e55 5d12 0409 1a5a 6c9e
+e3aa f56b e7fb ddef 5e7f d795 dfbb 35d3
+b4db ee6b 9e7f cc61 6fbb e0b4 ddf9 b197
+bff0 e86f 5c7e d3e6 ed45 4e24 8048 4399
+3a91 fd0d 04c1 a691 4543 c430 449c 4064
+7693 325d b581 1721 411c baa9 85c7 e3ba
+82b5 8e9a e335 5e2b a2e6 5db5 6ad5 a85a
+e3a7 40c6 9d72 113f 5d59 bd4c d51c 06bb
+a5ec 61c4 f759 6b8d 35a6 3487 eebb 61fd
+eaa6 0175 fb03 9b04 b542 0008 b6a5 022c
+cc62 7b45 7fcd 44f3 9843 d737 337a 6463
+f7df be76 ddc6 59fb c063 1bf7 dd7b 7d8e
+7cc8 debb d90c ee7b 6853 9e35 ad35 0305
+2fc0 d200 1582 b0b1 b6d7 eb1c 7ff8 3e7b
+af6f f7b8 f937 9ff8 f603 8f2f 6cda 3a3f
+37bf f09c 230e 6e72 f7c8 673f f386 5bee
+ea16 e24c 79aa 6318 7244 1410 284a b3b8
+b0ed d52f 3dfe 88c3 f6ed 1766 ddea c9e7
+1ebd d7d1 cfda 70f8 a17b 3ee7 59bb 1ff9
+acbd 45fa b663 57af 9d78 7cf3 c27d 3f7e
+4267 59f5 8a06 0cb4 8830 5a46 e82d 1499
+066b 64aa d99a 9c6e b726 2675 de9e 5fe8
+df70 ebbd f38b f3a7 9e70 443b a36b 7f78
+efa3 4f6c 6f36 b4bb 5c7a ea20 0c30 86ba
+74ce d460 d38b ac47 7dfa 6122 75d8 ef4d
+6d74 a2ab 6ce8 f61b d9bd 8f0a 30fd 85d7
+8e6b def1 7afa 1785 8de9 c84a f127 ad14
+523e 37fa 6b2d 9d37 aa3a 4e2b d95a 7ff1
+b07b 5eeb 4e1b 3e02 1201 a120 b008 0b8a
+a002 371a 4bee de15 3c01 b3b3 b341 4634
+2c90 b5da 0f6f dad2 619a 9a6a 6d9f 375f
+fce6 8ddb 7bb6 33bf f525 cf3b ecf0 4377
+9bef cc11 1156 7758 6af2 2021 0121 5800
+2819 18d4 f65e f9d8 a6b9 c9c9 567b 6af2
+5bdf bff7 cbdf bab1 1458 9595 bff2 f673
+1575 5804 8000 0194 3022 2f95 90c8 56ca
+5e7f f735 ed93 8e39 c41a dc36 5fdc faa3
+47af bbf9 de6b 6ebc fbda 1bef f9de f577
+5f75 ed9d d7df fef8 b66e 69e6 16ce 3ef5
+982c 2346 40c5 825a 109c 2b9b 1b25 59ec
+2dae 9951 ffe7 0fde 7aee 0b8f eecc 778b
+1281 48ab 2c6f 3701 b21d 3b3a 86a5 3465
+bfdf 27a5 4421 0ffa 900e da5c 445b eddb
+1b5e 0243 a374 486c 13c2 9e58 7475 8cc8
+8a68 c632 de0a 0cc7 cdd5 8e32 d7e6 108f
+d778 3dcd 6cc3 ae94 9f3f 4372 6017 117c
+94f1 c24e 0f72 971e 1fc0 0909 2c0b 57f6
+63ee ee75 6c09 220b 5846 a5f3 6653 2bcd
+2d68 3efa d4e2 57af f8e1 85e7 9d28 5b1e
+7fd5 59c7 6fd9 f2ed 27b6 2c4c b5da 0856
+045d c14a 44ec df37 0166 b016 8968 62a2
+6545 d9d2 c0c4 d417 2ebe 71a2 d138 fb84
+830f 589f ffe2 9b5e f88f 9ffa a6ce d721
+8280 080a 08c9 a0a4 eb5b de31 3fff d2e7
+3f67 f735 d38b 7dfb d77f ff95 1f3d b851
+a91c c13a 8997 31a6 dbb7 af7f d9c9 bf7c
+e1a9 87ee 3f75 d2b1 075d 73d3 038d 5643
+1888 0806 91cd b6e0 ee8e b9d7 bfe7 e5cf
+7dd6 6e47 1ef4 9223 0edd e7e2 cb6f 7a74
+d3e6 ae74 1a6c 9f77 f43e bff0 8617 664a
+1edd 34fb e823 db1a ba81 acdc 2520 0441
+ef43 1642 7038 ba16 05f6 84bf 4c1d 9347
+59ce 439d 2783 c7d0 302a 0902 afcb 5acf
+e8a7 51ae 335e e355 8fbc e9f7 3efa f9a7
+03dc ff20 4c8f 728d 1815 7e3e 0abe 631b
+07f7 7fae f765 adab 78c5 011d 21b3 2479
+48c8 8296 d10a 5a46 d14d c8b0 25fd 6c6a
+e2ce 079f baf8 eadb 5ef1 fc67 65db 36bd
+fedc 177c f85f bfde 2f7b ad46 1344 1c71
+e11e ab52 9282 0883 3069 9de7 8dcc 5822
+6021 2acc c427 be78 f5aa 76fb 84c3 d71e
+7df0 860b 5f79 faa7 bff8 dd56 6b35 0b92
+42ef 21c9 6c8b a29c 9954 a71c 7f18 80be
+f147 77dd f3e8 b6e6 d494 1204 8586 4bb4
+2cd6 9014 575c fd83 97bf f0a8 831a f9f9
+679f 78c3 cd77 8b34 50d8 55ad 152a 8945
+515f faea d5cf d87d c351 87ed 71ce 49cf
+38eb c483 b6cd c38e 4ebf 91e3 6eab 5a99
+ea14 8c9f fdf2 d53b e68b 89c9 66ed 7c30
+2401 6ba1 262c 7257 80c0 7b2c a462 a2fe
+5b94 2de2 b1bb b64b 567b a1f5 39f0 e9ae
+6bcc f08e d78a e379 a7a7 a76b 2735 7f26
+00fa 33c1 e85a 7bf5 9d46 c9d6 76c3 9d21
+8331 e5c1 fbac df63 dd94 01ba f3c1 4d0c
+5a0d bb7d 0fce 5b2e 8a62 66a2 79e4 217b
+2bd2 0f3e b1e3 89a7 669b 793b 4762 85a4
+1a0f 3ebe 3157 f9ee 6b66 3265 0e3a f890
+1fdd fb90 6144 52be 610f 88c2 624c d1ef
+f78e 3bfc c03d d7ad 2e20 bfee 87f7 8322
+5080 22a4 a4db e73b ee7b e8d0 039f 31d5
+c88e 7af6 2165 96dd 77df 435a 35fd 4eda
+a1c9 c2c2 ec29 c71c f482 138f ea59 facc
+97ae d83e cfad 56ae 1b3a cf1b 9a32 ad32
+451a 15ed d831 b776 66ea d083 f6de b0c7
+fa7b 1eda f4d8 c62d 99ca 8439 a8eb 5951
+fef8 e62d dfbd e1b6 4ed7 4e4d 4c4c 36f5
+daa9 e90d eb26 a79a 9a7b 72df c31b fff1
+5397 5f71 ed7d ada9 3692 12b4 58ed 1320
+6c8e 8591 cf51 e9ea 7a9b bed4 adb5 5c88
+d285 2337 9c88 a5ad e5a9 60f4 eccc 32b6
+f400 30e6 79c7 6b25 2cdc 6baf bd52 b4aa
+e519 6a83 1747 edf7 4795 27bb 1872 b1cc
+65e0 274a 988f 927b ac48 afec 179d c5b5
+538d d553 6d41 d83c 6f54 d6d2 42a8 c2d7
+258e 465c e82c 8298 bdd6 4e35 73bd bd6b
+4ba3 88b4 301b b6a5 293b dd05 28cb bd76
+5bcb 504e ceac ee74 6d51 8856 99ab ad5d
+6bcb 1a53 14fd 85c5 f9d5 53f9 aa76 0374
+63c7 a221 a585 0d5b 2e4b 6b0c 7717 16d7
+acca f7d9 6b1d 1236 56cd 3cf6 d853 2099
+b5e0 740e c618 6b6d 6761 6e7a 325f b5aa
+6519 b66e eb36 5b93 8008 84c2 e2ea 77b6
+5c58 bbd8 999b 6ad1 41cf d84d e76a ae63
+77ec e811 3581 0150 982b b99b 298b d298
+f985 c56e 6771 ddda c983 f6dd 63ef 0d6b
+da4d bdb8 583c be69 fbfd 8f6d ec94 b87a
+66b5 5608 80ce f33d 72ce 1d05 6d11 ab00
+499f adf6 b38e ac96 a3c7 4ff7 3d50 9714
+1571 c4b5 df2b f7df ef7d e9f7 c6a7 fd78
+ad14 e44d 7d73 768a 68ff f5c8 9b3e e9ae
+8c75 0c97 48d6 d85e 5198 a210 01a5 b346
+b34d b946 2524 a002 bca8 c67f 8db1 ddc2
+d8a2 9769 cadb d3cd 3ca3 417b c7b2 31d6
+16fd b2ec 1b52 5a6b d56e 375a ad0c 9084
+878e d998 b2e8 f716 8b1e 906e e96c bad5
+4690 1219 811c 3f0b 567a 255b 6024 69a8
+6c6a 6a82 88ac 659f c5c0 cc45 617a fd2e
+8b25 a4a9 c9a9 2ccb 4259 957b a252 8ad2
+14b6 6fc5 0092 6ab6 9a8d 8616 b044 1ac1
+a739 b031 a531 a62c 0bc3 5258 2efa 7db1
+c632 0b50 a6d5 64ab d16c 3694 6ab8 2f83
+ef92 4592 865d f99e 788b cb5d 6c1b 2cc3
+6e45 c122 a30a 8570 45d9 4563 e41d af95
+c5f3 4292 b593 8e0f ed8a 87d9 2e22 e9ae
+ff35 cdf1 de45 acaf 65ae 07b1 14a4 2197
+4ca9 5c18 41a3 ce91 1503 200d 1747 ec37
+d46d 85d8 d2a4 4829 2258 3242 4450 08ac
+daaa d936 28a8 54ae 9566 5629 7468 ad01
+1b3a cb08 3222 4162 2420 2161 2052 5a03
+6b9e cc33 0243 ca82 ca9d e701 8216 5912
+c665 0da5 f336 0022 6a4d e4db 59a1 068b
+8d06 a2ac 2528 400a b5d2 8048 a015 69e6
+256a d505 f310 5166 cb96 186e b419 4904
+4000 9188 1469 ad06 0ab0 a85d 560b 76a3
+b078 4944 3c1c 3e3f caaa 3cb5 8a5e de4c
+bdd6 b812 8603 df22 ae7f a7b6 50e3 355e
+ff75 c8bb 4c19 52bb f583 ff72 b543 ed89
+f753 2d42 ca73 6401 0b28 c8a8 6c06 0aad
+6225 9442 7996 655a 8441 2122 5561 6783
+378e 5023 59cc 1814 023b 0919 5626 bf1c
+e148 a635 2841 2120 1004 238c 2244 9a94
+1256 cc16 1100 3482 721e 9522 16c0 b2ad
+3e02 2202 b148 88a8 8449 05dd adf0 e3c8
+5526 240c 22c2 5e3b 2b12 efc1 dd8e 5e6b
+cd5a 5b16 ed7c dc45 1428 a025 31f1 a88f
+60a7 c1a6 21e7 e030 37ad 7c53 6b85 a85c
+4d09 2e6b ad1f 59de 6978 5598 d206 c333
+20e3 737e bc56 04f2 ee34 36b8 b6cc 4927
+eed3 44ee da5d e1ae 7499 6bfd b361 676a
+b3da 3ffd 7fec 5ddb 76db 300c 23d5 eeff
+3fb8 6db4 0725 2a0d 80b4 9a75 9b7b 8ef4
+b48b e3d8 8e0d c110 08a2 34ec c3db d06c
+84df 36bf 997b b309 aa0f 3888 9f6a cdbc
+f9bd 99d9 a722 d1bc 776b f6d2 ec75 16d7
+9add 5453 9c66 d6ec 51d0 e0ee 2fd6 87eb
+d7ba b93f 9ae5 74bb f57b 23ce debb b751
+b67b 3f8b 17ff 753f 17ff ecb6 408d dffd
+d67b ebdd ecc5 dd42 fb32 739f 93e8 bd55
+f148 88f0 d6cd e28c e23e 4afc 82fa 94fd
+ac72 3d00 d275 27f6 c54c 3248 1433 b51c
+3aeb bfa3 c45c f579 3a22 3294 75d8 36f3
+ee71 4dce 9ba1 552c 3dca 9638 d619 eb13
+0fc0 d37e a048 798e b8fe d8b3 d923 9ec6
+bd7b 3739 0399 bbb9 0963 d3dd a7a5 249a
+6c42 81e9 64fe eda1 8474 b39b f9b8 44ad
+a1c0 7270 aa82 656a c0d3 fbb1 5e56 4623
+0253 6eee 7081 c775 886e d9cc 090b 8965
+535a 9904 3342 3047 dd67 4b05 716f 90c8
+015c 98db 4fd4 1af1 1e7b 5c8b f34a 9d4e
+dee2 45e4 4251 735c 3c15 f02c 65c4 8a3f
+9b02 6ba2 48b2 b729 123a 7900 801a 328a
+c58e aed5 da77 cc55 dafc bf0f 8d52 400f
+7459 866f 8939 6de0 ba9b 9f82 1ac5 5863
+068a 0418 bc38 5b2e dac5 f8df 0728 4bd1
+40f2 50f0 3964 3e5c b9bd 51db 2760 c1b6
+fdbc 7b5c 1679 1739 ec4a 09c3 df60 be2b
+eac4 e281 9d1a 818b 43e5 f0ad faab 8bd5
+ff98 239e 0d28 d38a 0a29 1c03 2320 ff52
+c01f e59b beec 073c 8466 2827 83a9 65d6
+4a8c cd78 6398 b627 569e 4ebd c5c5 8c51
+3b9c 9bce 351a 7bec 7121 e49d 329c cc85
+0212 111d f219 f69d 663e 4054 8a2c 21e5
+7fe1 e707 1eec 189e 923d a899 949c 8542
+c86d 3866 bbf0 9fb2 e209 afde 4036 2147
+5c76 f39c 3560 119a b90d a884 3cd0 91e0
+cd23 033b 3609 4832 3ba1 50ba 11c6 4c33
+8836 446d c448 df6c e540 de00 98cb 41ab
+02eb 13ed 1e7b fc6b 9d17 d625 b2db 946d
+3acc a4be ca7f 573a adad f065 40c6 c51d
+2e6e c941 9adf c2e5 4f8d b159 72d0 20a1
+c05b 65c1 0277 7882 86ea 5151 3d2d 7990
+530b c062 e4a1 f575 9692 42f1 d552 a6e0
+9697 fb91 dee3 6720 2f77 bb2a 24d7 e246
+971d 0ae4 f390 3191 da2b 6a5f afc2 5804
+474e 0660 cf56 eda3 3aad f193 ae0c e0b9
+85e0 c307 108f 738c 59e9 60aa dd3d 10ff
+acfa cb54 4c33 f786 60ad 63fc 79b6 6a8f
+6a03 4794 0101 6710 97f8 ce1a 8b1d dbf4
+c91f 6863 f11e d7e5 bc19 d22d 72d2 6f59
+3b86 12d2 27b8 e4e2 31fc b9d0 7c2a aac8
+afe0 04cb c543 8a89 04b0 9a27 816c 04c7
+142d 21b8 9d44 5c88 93dd 456d cd1a c8ad
+4be1 94a5 e49a 9502 c315 e6dc 3253 beb4
+fd48 eff1 3390 5746 d9d6 b09b 3db7 11af
+4fab d7b2 6d6a d7d1 3adb ad0b 8b79 8229
+5eb7 ed58 cbc7 1721 3320 b300 cd4d 85a5
+6062 7976 1704 e0da b1c9 790c d931 6550
+91e0 153f c8bf bb24 e399 ed01 5e1a 98a2
+c624 1d29 5c40 d735 79b3 c104 206f 2736
+546c b577 8f2b 725e 788a 9e7e b55f c44a
+5e4e f9d2 ae16 5588 45f8 1e8b 87c5 96eb
+1d92 e24b 7a91 fe2e 7d72 c5c9 c6b6 0e90
+7b1b 7715 bbae 1945 3b66 e73e 3b27 bdbe
+be66 f34a 4dd8 e35a 1cd8 efea d3e7 d5c5
+8f8f 8ff7 f7f7 289e 64bf f87a 64e8 1e7b
+5c14 79fd 1893 b892 a8f0 04cc c975 6756
+3664 7cc4 5755 05de 9e1b c165 d300 a30c
+0341 c65b a5e6 cb2c 9e95 4d66 c4d1 7612
+dfb5 27ba cd2c f059 d506 d602 700e 486d
+979b 989d b2e0 89ad ec0c 03d7 7004 6228
+3363 4139 5369 6ab3 8aac 27ae 9d2a 7bec
+7139 9df7 ef8d 9542 7b20 dddf fb86 584b
+81eb 0d90 5624 c5e5 c236 fd2e 0c3d 6fa2
+b63b d110 f8ec b87a adb5 b7b7 3740 46cb
+d700 23ed 0538 9bca 40d1 597d 5664 4cc2
+3e44 1b58 8863 c3b8 9c80 67b9 73d6 69b8
+a6db 4fdc 757b ecf1 9f75 deb8 529c 2d7f
+d7de a053 d82a dcfb 9654 82d9 d9e2 cc8a
+fecb b96b 323f 1bda 29c2 c3cf 74b5 3e1e
+7843 9765 7520 4a40 831c f95a 1059 ea14
+a663 8e0c ec30 4437 9c80 945c 0de3 2b19
+27c8 f191 c1bb 613e 30b2 3164 9717 6a0b
+b35e 3e11 9725 7fb7 c414 b161 778f 6b8e
+df03 008d 21eb c400 3b14 e600 0000 0049
+454e 44ae 4260 82" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="col-auto">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="dropdownHome" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Home</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Home Layout 1</a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Home Layout 2 </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Home Layout 3 </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Home Layout 4 </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownShop" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Shop</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Shop Sidebar </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Shop Three Column </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Shop Three Column Wide </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Shop Four Column </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Shop Four Column Wide </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Shop Six Column </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Shop Six Column Wide </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Single Product </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Single Product V2 </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownBlog" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Blog</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownBlog">
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Blog Classic </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Blog Grid with Sidebar </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Blog Grid Four Column </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Blog No Sidebar </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Blog Right Sidebar </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Single Post </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Single Post No Sidebar </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Pages</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">About </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Cart </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Checkout </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Coming Soon </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Contact </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Error Page </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">FAQs </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">My Account </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Order Tracking </a>
+                    </li>
+                    <li>
+                      <a href="index.html" class="dropdown-item item-anchor">Wishlist </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-3 col-lg-auto">
+          <ul class="list-unstyled d-flex m-0">
+            <li class="d-none d-lg-block">
+              <a href="index.html" class="text-uppercase mx-3">Wishlist <span class="wishlist-count">(0)</span>
+              </a>
+            </li>
+            <li class="d-none d-lg-block">
+              <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart">Cart <span class="cart-count">(0)</span>
+              </a>
+            </li>
+            <li class="d-lg-none">
+              <a href="#" class="mx-2">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#heart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="d-lg-none">
+              <a href="#" class="mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#cart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="search-box" class="mx-2">
+              <a href="#search" class="search-button">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#search"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <section id="billboard" class="bg-light py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1 class="section-title text-center mt-4" data-aos="fade-up">Elavate Your Style</h1>
+        <div class="col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
+          <p>Discover premium men's fasion designed for confidence,
+          comfort,and everyday elegance.!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="swiper main-swiper py-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="swiper-wrapper d-flex border-animation-left">
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img src="images/banner-image-6.jpg" alt="product" class="img-fluid">
+                  </a>
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html" class="item-anchor">Casual Wear</a>
+                  </h5>
+                  <p>Carefully curated outfits that blend quality and style.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img src="images/banner-image-1.jpg" alt="product" class="img-fluid">
+                  </a>
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html" class="item-anchor">Casual Wear</a>
+                  </h5>
+                  <p>Carefully curated outfits that blend quality and style.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img src="images/banner-image-2.jpg" alt="product" class="img-fluid">
+                  </a>
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html" class="item-anchor">Casual Wear</a>
+                  </h5>
+                  <p>Carefully curated outfits that blend quality and style.</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img src="images/banner-image-3.jpg" alt="product" class="img-fluid">
+                  </a>
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html" class="item-anchor">Casual Wear</a>
+                  </h5>
+                  <p>Carefully curated outfits that blend quality and style</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img src="images/banner-image-4.jpg" alt="product" class="img-fluid">
+                  </a>
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html" class="item-anchor">Best Sellers</a>
+                  </h5>
+                  <p>Experience fashion that combines premium quality with exceptional value</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-item image-zoom-effect">
+                <div class="image-holder">
+                  <a href="#">
+                    <img src="images/banner-image-5.jpg" alt="product" class="img-fluid">
+                  </a>
+                </div>
+                <div class="banner-content py-4">
+                  <h5 class="element-title text-uppercase">
+                    <a href="index.html" class="item-anchor">Casual Wear</a>
+                  </h5>
+                  <p>Carefully curated outfits that blend quality and style</p>
+                  <div class="btn-left">
+                    <a href="#" class="btn-link fs-6 text-uppercase item-anchor text-decoration-none">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+            <use xlink:href="#arrow-left"></use>
+          </svg></div>
+        <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
+            <use xlink:href="#arrow-right"></use>
+          </svg></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="0">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24">
+              <use xlink:href="#calendar"></use>
+            </svg>
+            <h4 class="element-title text-capitalize my-3">Premium Quality</h4>
+            <p>Crafted from high- quality materials for comfort.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="300">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24">
+              <use xlink:href="#shopping-bag"></use>
+            </svg>
+            <h4 class="element-title text-capitalize my-3">Easy Exchanges</h4>
+            <p>Needa diffrent size or style ,Exchange your items with easy.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="600">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24">
+              <use xlink:href="#gift"></use>
+            </svg>
+            <h4 class="element-title text-capitalize my-3">Premium Packaging</h4>
+            <p>Every order is carefully packed with style andattention to detail.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="900">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24">
+              <use xlink:href="#arrow-cycle"></use>
+            </svg>
+            <h4 class="element-title text-capitalize my-3">Secure Payments</h4>
+            <p>Your Transactions are protucted with trusted payment methords.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories overflow-hidden">
+    <div class="container">
+      <div class="open-up" data-aos="zoom-out">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="cat-item image-zoom-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/cat-item1.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+              </div>
+              <div class="category-content">
+                <div class="product-button">
+                  <a href="index.html" class="btn btn-common text-uppercase">Shop for men</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="cat-item image-zoom-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/cat-item2.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+              </div>
+              <div class="category-content">
+                <div class="product-button">
+                  <a href="index.html" class="btn btn-common text-uppercase">Shop for men</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="cat-item image-zoom-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/cat-item3.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+              </div>
+              <div class="category-content">
+                <div class="product-button">
+                  <a href="index.html" class="btn btn-common text-uppercase">Shop New arrivals</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="new-arrival" class="new-arrival product-carousel py-5 position-relative overflow-hidden">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
+        <h4 class="text-uppercase">Our New Arrivals</h4>
+        <a href="index.html" class="btn-link">View All Products</a>
+      </div>
+      <div class="swiper product-swiper open-up" data-aos="zoom-out">
+        <div class="swiper-wrapper d-flex">
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="images/product-item-1.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="element-title text-uppercase fs-5 mt-3">
+                    <a href="index.html">Perfect fit</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>1200.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="images/product-item-2.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">CASUAL WEAR</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>999.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="images/product-item-3.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">CASUAL WEAR</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>1399.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="images/product-item-4.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Crop sweater</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>1599.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder position-relative">
+                <a href="index.html">
+                  <img src="images/product-item-10.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Sports wear</a>
+                  </h5>
+                  <a href="#" class="text-decoration-none" data-after="Add to cart"><span>1299.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-left"></use>
+        </svg></div>
+      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-right"></use>
+        </svg></div>
+    </div>
+  </section>
+
+  <section class="collection bg-light position-relative py-5">
+    <div class="container">
+      <div class="row">
+        <div class="title-xlarge text-uppercase txt-fx domino">Collection</div>
+        <div class="collection-item d-flex flex-wrap my-5">
+          <div class="col-md-6 column-container">
+            <div class="image-holder">
+              <img src="images/single-image-2.jpg" alt="collection" class="product-image img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6 column-container bg-white">
+            <div class="collection-content p-5 m-0 m-md-5">
+              <h3 class="element-title text-uppercase">Classic trending  collection</h3>
+              <p>Discover the latest men's fashion trendsdesigned for confidence and style
+              Explore our most popular styles,carefully selected for the modern man
+            Stay ahead with premium mens wear inspired by todays top fashion trends
+          from casual essential to statement pieces.</p>
+              <a href="#" class="btn btn-dark text-uppercase mt-3">Shop Collection</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="best-sellers" class="best-sellers product-carousel py-5 position-relative overflow-hidden">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
+        <h4 class="text-uppercase">Best Selling Items</h4>
+        <a href="index.html" class="btn-link">View All Products</a>
+      </div>
+      <div class="swiper product-swiper open-up" data-aos="zoom-out">
+        <div class="swiper-wrapper d-flex">
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-4.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Formal wear </a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>1299.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-3.jpg" alt="product" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Formal wear</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>999.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-5.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">CASUAL WEAR</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>1399.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-6.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Handmade crop sweater</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>1599.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-9.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Party wear</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>1799.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-10.jpg" alt="categories" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">CASUAL WEAR</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>1999.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-left"></use>
+        </svg></div>
+      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-right"></use>
+        </svg></div>
+    </div>
+  </section>
+
+  <section class="video py-5 overflow-hidden">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="video-content open-up" data-aos="zoom-out">
+          <div class="video-bg">
+            <img src="images/video-image.jpg" alt="video" class="video-image img-fluid">
+          </div>
+          <div class="video-player">
+            <a class="youtube" href="https://www.youtube.com/embed/pjtsGzQjFM4">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="#play"></use>
+              </svg>
+              <img src="images/text-pattern.png" alt="pattern" class="text-rotate">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials py-5 bg-light">
+    <div class="section-header text-center mt-5">
+      <h3 class="section-title">Loved by our costomers</h3>
+    </div>
+    <div class="swiper testimonial-swiper overflow-hidden my-5">
+      <div class="swiper-wrapper d-flex">
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Complete your look with premium accesoriesdesigned for modern gentleman”</p>
+              <div class="review-title text-uppercase">Accessories</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Best fitted white denim shirt more than expected crazy soft, flexible</p>
+              <div class="review-title text-uppercase">uptop</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Best fitted white denim shirt more white denim than expected flexible crazy soft.”</p>
+              <div class="review-title text-uppercase">Denim craze</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Best fitted white denim shirt more than expected crazy soft, flexible</p>
+              <div class="review-title text-uppercase">uptop</div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-swiper-pagination d-flex justify-content-center mb-5"></div>
+  </section>
+
+  <section id="related-products" class="related-products product-carousel py-5 position-relative overflow-hidden">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
+        <h4 class="text-uppercase">You May Also Like</h4>
+        <a href="index.html" class="btn-link">View All Products</a>
+      </div>
+      <div class="swiper product-swiper open-up" data-aos="zoom-out">
+        <div class="swiper-wrapper d-flex">
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-5.jpg" alt="product" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">CASUAL WEAR</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>1200.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-6.jpg" alt="product" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">TRENDY DESIGNS</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>999.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-7.jpg" alt="product" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Cotton shirt</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>1399.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-8.jpg" alt="product" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Handmade crop sweater</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>1599.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-item image-zoom-effect link-effect">
+              <div class="image-holder">
+                <a href="index.html">
+                  <img src="images/product-item-1.jpg" alt="product" class="product-image img-fluid">
+                </a>
+                <a href="index.html" class="btn-icon btn-wishlist">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#heart"></use>
+                  </svg>
+                </a>
+                <div class="product-content">
+                  <h5 class="text-uppercase fs-5 mt-3">
+                    <a href="index.html">Handmade crop sweater</a>
+                  </h5>
+                  <a href="index.html" class="text-decoration-none" data-after="Add to cart"><span>1799.00</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="icon-arrow icon-arrow-left"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-left"></use>
+        </svg></div>
+      <div class="icon-arrow icon-arrow-right"><svg width="50" height="50" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-right"></use>
+        </svg></div>
+    </div>
+  </section>
+
+  <section class="blog py-5">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
+        <h4 class="text-uppercase">Read Blog Posts</h4>
+        <a href="index.html" class="btn-link">View All</a>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a href="index.html">
+                <img src="images/post-image1.jpg" alt="image" class="post-grid-image img-fluid">
+              </a>
+            </div>
+            <div class="post-content d-flex flex-wrap gap-2 my-3">
+              <div class="post-meta text-uppercase fs-6 text-secondary">
+                <span class="post-category">Fashion /</span>
+                <span class="meta-day"> jul 11, 2022</span>
+              </div>
+              <h5 class="post-title text-uppercase">
+                <a href="index.html">How to look outstanding in pastel</a>
+              </h5>
+              <p>Dignissim lacus,turpis ut suspendisse vel tellus.Turpis purus,gravida orci,fringilla...</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a href="index.html">
+                <img src="images/post-image2.jpg" alt="image" class="post-grid-image img-fluid">
+              </a>
+            </div>
+            <div class="post-content d-flex flex-wrap gap-2 my-3">
+              <div class="post-meta text-uppercase fs-6 text-secondary">
+                <span class="post-category">Fashion /</span>
+                <span class="meta-day"> jul 11, 2022</span>
+              </div>
+              <h5 class="post-title text-uppercase">
+                <a href="index.html">Top 10 fashion trend for summer</a>
+              </h5>
+              <p>Turpis purus, gravida orci, fringilla dignissim lacus, turpis ut suspendisse vel tellus...</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a href="index.html">
+                <img src="images/post-image3.jpg" alt="image" class="post-grid-image img-fluid">
+              </a>
+            </div>
+            <div class="post-content d-flex flex-wrap gap-2 my-3">
+              <div class="post-meta text-uppercase fs-6 text-secondary">
+                <span class="post-category">Fashion /</span>
+                <span class="meta-day"> jul 11, 2022</span>
+              </div>
+              <h5 class="post-title text-uppercase">
+                <a href="index.html">Crazy fashion with unique moment</a>
+              </h5>
+              <p>Turpis purus, gravida orci, fringilla dignissim lacus, turpis ut suspendisse vel tellus...</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="logo-bar py-5 my-5">
+    <div class="container">
+      <div class="row">
+        <div class="logo-content d-flex flex-wrap justify-content-between">
+          <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
+          <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 py-5 my-5">
+          <div class="subscribe-header text-center pb-3">
+            <h3 class="section-title text-uppercase">Sign Up for our newsletter</h3>
+          </div>
+          <form id="form" class="d-flex flex-wrap gap-2">
+            <input type="text" name="email" placeholder="Your Email Addresss" class="form-control form-control-lg">
+            <button class="btn btn-dark btn-lg text-uppercase w-100">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="instagram position-relative">
+    <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
+      <a href="https://www.instagram.com/templatesjungle/" class="btn btn-dark px-5">Follow us on Instagram</a>
+    </div>
+    <div class="row g-0">
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <img src="images/insta-item1.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <img src="images/insta-item2.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <img src="images/insta-item3.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <img src="images/insta-item4.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <img src="images/insta-item5.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="insta-item">
+          <a href="https://www.instagram.com/templatesjungle/" target="_blank">
+            <img src="images/insta-item6.jpg" alt="instagram" class="insta-image img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="mt-5">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between py-5">
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-001">
+            <div class="footer-intro mb-4">
+              <a href="index.html">
+                <img src="images/main-logo.png" alt="logo">
+              </a>
+            </div>
+            <p> Location
+            PLAZA TOWER Near puthanalkkavu Temple,Palakkad Road Cherppulassery Palakkad KERALA 679503</p>
+            <div class="social-links">
+              <ul class="list-unstyled d-flex flex-wrap gap-3">
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="#pinterest"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-002">
+            <h5 class="widget-title text-uppercase mb-4">Quick Links</h5>
+            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+              <li class="menu-item">
+                <a href="index.html" class="item-anchor">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="index.html" class="item-anchor">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="blog.html" class="item-anchor">Services</a>
+              </li>
+              <li class="menu-item">
+                <a href="styles.html" class="item-anchor">Single item</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-003">
+            <h5 class="widget-title text-uppercase mb-4">Help & Info</h5>
+            <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+              <li class="menu-item">
+                <a href="#" class="item-anchor">Track Your Order</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor">Returns + Exchanges</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor">Shipping + Delivery</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor">Contact Us</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-anchor">Find us easy</a>
+              </li>
+              <li class="menu-item">
+                <a href="index.html" class="item-anchor">Faqs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-menu footer-menu-004 border-animation-left">
+            <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
+            <p>Do you have any questions or suggestions? <a href="mailto:contact@yourcompany.com"
+                class="item-anchor">contact@ikkasmenswear.com</a></p>
+            <p>Do you need support? Give us a call. <a href="tel:+43 720 11 52 78" class="item-anchor">+91 9946965632
+            ,+91 9526237867</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-top py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex flex-wrap">
+            <div class="shipping">
+              <span>We ship with:</span>
+              <img src="images/arct-icon.png" alt="icon">
+              <img src="images/dhl-logo.png" alt="icon">
+            </div>
+            <div class="payment-option">
+              <span>Payment Option:</span>
+              <img src="images/visa-card.png" alt="card">
+              <img src="images/paypal-card.png" alt="card">
+              <img src="images/master-card.png" alt="card">
+            </div>
+          </div>
+          <div class="col-md-6 text-end">
+            <p>© Copyright IKKAS Menswear. All rights reserved. Design by <a href="https://templatesjungle.com"
+                target="_blank">TemplatesJungle</a> Distribution By <a href="https://themewagon.com"
+              target="blank">ThemeWagon</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
